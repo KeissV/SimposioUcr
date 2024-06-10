@@ -10,7 +10,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Symposium Principal</title>
+        <title>Simposio Ucr 2024</title>
         <!-- Enlace a Bootstrap CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
@@ -46,11 +46,11 @@
             }
             .carousel-item {
                 width: auto !important;
-                min-width: 200px; /* Ajusta el ancho mínimo de cada imagen */
+                min-width: 400px; /* Ajusta el ancho mínimo de cada imagen */
             }
         </style>
 
-    </style>
+   
 </head>
 <body>
     <!-- Barra de Navegación Bootstrap -->
@@ -73,7 +73,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Calendario</a>
+                            <a class="nav-link" href="Calender.jsp">Calendario</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Historia</a>
@@ -88,7 +88,9 @@
                             <a class="nav-link" href="#">Descargas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="Login.jsp">
+                                
+                              
                                 <img src="pictures/icons8-user-48.png" alt="Botón de Registro" width="40" height="40">
                             </a>
                         </li>
@@ -97,16 +99,16 @@
             </div>
         </div>
     </nav>
-
+  
     <!-- Contenido principal -->
-    <div class="container-fluid p-0">
-        <div class="text-center">
+    <div class="p">
+        <div class="pict">
             <!-- Imagen local -->
             <img src="pictures/Golfito 7.jpg" class="fullscreen-image" alt="Imagen Ucr">
 
         </div>
-
-        <div class="text-container">
+       
+        <div class="t">
             <br/>
             <div class="container-fluid">
                 <h3 class="text-left">¿Qué es un Simposio?</h3>
@@ -160,4 +162,6 @@
 </div>
 
         </div>
+</body>
+</html>
     
