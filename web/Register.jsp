@@ -14,7 +14,7 @@
         <!-- Bootstrap CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <style>
-            /* Personalización adicional si es necesario */
+        
             body {
                 height: 100%;
                 margin: 0;
@@ -71,7 +71,7 @@
         
         <div class="login-form">
             <form action="/login" method="post">
-                <h2 class="text-center">Iniciar Sesión</h2>   
+                <h2 class="text-center">Registrarse</h2>   
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Nombre" required="required">
                 </div>
@@ -85,7 +85,7 @@
                     <input type="password" class="form-control" placeholder="Contraseña" required="required">
                 </div>
                 <div class="form-group">
-                    <input type="passwordConfirm" class="form-control" placeholder="Confirmar Contraseña" required="required">
+                    <input type="password" class="form-control" placeholder="Confirmar Contraseña" required="required">
                 </div>
 
                 <div class="form-group">
