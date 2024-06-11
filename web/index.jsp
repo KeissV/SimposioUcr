@@ -33,8 +33,14 @@
                     <!-- Contenido de la barra de navegación -->
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
+                              <li class="nav-item">
+                                <a class="nav-link" href="">Accesibilidad</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Calender.jsp">Calendario</a>
+                            </li>
+                               <li class="nav-item">
+                                <a class="nav-link" href="Downloads.jsp">Descargas</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="History.jsp">Historia</a>
@@ -45,15 +51,14 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="Contacts.jsp">Contactos</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Downloads.jsp">Descargas</a>
-                            </li>
+                          
                             <li class="nav-item">
                                 <a class="nav-link" href="Login.jsp">
                                     <img src="pictures/icons8-user-48.png" alt="Botón de sesión" width="30" height="30">
                                 </a>
                             </li>
                         </ul>
+                     
                     </div>
                 </div>
             </div>
@@ -69,7 +74,7 @@
             <div class="t">
                 <br/>
                 <div class="text-left">
-                    <h3 class="text-Ti">¿Qué es un Simposio?</h3>
+                    <h3 class="text-Ti">Simposio Informatica Empresarial 2024</h3>
                     <p class="text-Ta">Un simposio es un evento académico o profesional donde expertos 
                         y participantes interesados se reúnen para discutir y compartir 
                         conocimientos sobre un tema específico. Su propósito principal
