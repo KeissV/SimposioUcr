@@ -94,7 +94,7 @@
                         elementum per in, est pharetra fringilla iaculis purus cras mus lacinia, blandit gravida pretium 
                         quis enim taciti. Rhoncus senectus commodo lobortis tempus at scelerisque, turpis vel odio fermentum 
                         fusce cursus habitasse vestibulum condimentum. Potenti tincidunt quisque porta facilisis lobortis rhoncus ultricies blandit
-                       ,nostra porttitor duis conubia habitasse suspendisse auctor, quam vivamus phasellus torquent pretium non facilisi.</p>
+                        ,nostra porttitor duis conubia habitasse suspendisse auctor, quam vivamus phasellus torquent pretium non facilisi.</p>
                 </div>
                 <br/>
                 <div class="text-left">
@@ -252,4 +252,10 @@
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
+    <br>
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 UCR SIMPOSiO INFORMATICA EMPRESARIAL. </p>
+        </div>
+    </footer>
 </html>

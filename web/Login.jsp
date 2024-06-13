@@ -16,16 +16,17 @@
         <style>
             /* Personalización adicional si es necesario */
             body {
-              height: 100%;
+                height: 100%;
                 margin: 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-               background: url('pictures/Imagen de WhatsApp 2024-06-10 a las 01.50.48_35fc9572.jpg') no-repeat center center fixed;
-               background-size: cover;
+                background: url('pictures/Imagen de WhatsApp 2024-06-10 a las 01.50.48_35fc9572.jpg') no-repeat center center fixed;
+                background-size: cover;
                 font-family: Arial, sans-serif;
-                font-size: 18px;  
-            }.login-form {
+                font-size: 18px;
+            }
+            .login-form {
                 width: 340px;
                 margin: 50px auto;
             }
@@ -67,9 +68,9 @@
         </style>
     </head>
     <body>
-        
+
         <div class="login-form">
-            
+
             <form action="/login" method="post">
                 <h2 class="text-center">Iniciar Sesión</h2>       
                 <div class="form-group">
@@ -87,8 +88,8 @@
                 </div>
             </form>
         </div>
-        
-        </div>
-        
-    </body>
+
+    </div>
+
+</body>
 </html>
