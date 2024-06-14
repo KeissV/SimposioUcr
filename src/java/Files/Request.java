@@ -7,9 +7,9 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class Documents {
+public class Request {
     private static final String FILE_PATH = "C:\\Users\\Jordy vindas\\OneDrive - Universidad de Costa Rica\\Documentos\\NetBeansProjects\\SimposioUcr\\request.txt";
-
+    
     /**
      * This method saves a new user to a file users.txt
      *
@@ -31,4 +31,15 @@ public class Documents {
             return false;
         }
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

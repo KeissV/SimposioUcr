@@ -1,10 +1,10 @@
-<%-- 
+ <%-- 
     Document   : registrar
     Created on : 16 may. 2024, 09:51:53
     Author     : Jordy
 --%>
 
-<%@ page import="Files.Documents, Files.Encrypted" %>
+<%@ page import="Files.Request, Files.Encrypted" %>
 <%@ page contentType="text/html" pageEncoding="UTF-8" %>
 
 <!DOCTYPE html>
@@ -75,44 +75,44 @@
 
     <body>
 
-        <div class="container">
-            <h2>Contáctenos</h2>
-            <form action="Contacts.jsp" method="POST">
-                
-                <label for="nombre">Nombre Completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="Contacts.jsp" method="POST">
 
-                <label for="correo">Correo Electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
+            <label for="name">Nombre completo:</label>
+            <input type="text" id="name" name="name" required>
 
-                <label for="telefono">Número de Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono">
+            <label for="email">Correo electronico:</label>
+            <input type="email" id="email" name="email" required>
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <label for="phone">Numero de telefono:</label>
+            <input type="tel" id="phone" name="phone">
 
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
+            <label for="message">Mesaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-        <%
-            Encrypted encrypted = new Encrypted();
-            String nombre = request.getParameter("nombre");
-            String correo = request.getParameter("correo");
-            String telefono = request.getParameter("telefono");
-            String mensaje = request.getParameter("mensaje");
+            <button type="submit">Enviar solicitud</button>
+        </form>
+    </div>
 
-            if (nombre != null && correo != null && mensaje != null) {
-                String nombreEnc = encrypted.encrypt(nombre);
-                String correoEnc = encrypted.encrypt(correo);
-                String telefonoEnc = telefono != null ? encrypted.encrypt(telefono) : null;
-                String mensajeEnc = encrypted.encrypt(mensaje);
+    <%
+        Encrypted encrypted = new Encrypted();
+        String name = request.getParameter("name");
+        String email = request.getParameter("email");
+        String phone = request.getParameter("phone");
+        String message = request.getParameter("message");
 
-                Documents gc = new Documents();
-                boolean bandera = gc.saverequests(nombreEnc, correoEnc, telefonoEnc, mensajeEnc);
+        if (name != null && email != null && message != null) {
+            String nameEnc = encrypted.encrypt(name);
+            String emailEnc = encrypted.encrypt(email);
+            String phoneEnc = phone != null ? encrypted.encrypt(phone) : null;
+            String messageEnc = encrypted.encrypt(message);
 
-            }
-        %>
-    </body>
+            Request gc = new Request();
+            boolean save = gc.saverequests(nameEnc, emailEnc, phoneEnc, messageEnc);
+
+        }
+    %>
+</body>
 
 </html>
