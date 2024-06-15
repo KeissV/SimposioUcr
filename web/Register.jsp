@@ -71,7 +71,7 @@
 
         <div class="login-form">
             <form action="Register.jsp" method="post">
-                <h2 class="text-center">Register</h2>   
+                <h2 class="text-center">Registro</h2>   
                 <div class="form-group">
                     <input type="text" class="form-control" name="first_name" placeholder="Nombre" required="required">
                 </div>
@@ -89,7 +89,7 @@
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" class="btn btn-purple btn-block">Confirm</button>
+                    <button type="submit" class="btn btn-purple btn-block">Confirmar</button>
                 </div>
             </form>
         </div>

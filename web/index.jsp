@@ -17,16 +17,15 @@
 
     </head>
     <body>
-        <!-- Barra de Navegación Bootstrap -->
+        <!-- Barra de Navegación  -->
         <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
             <div class="container-fluid">
                 <div class="d-flex w-100 justify-content-between">
                     <!-- Logos de la UCR -->
-                    <a class="navbar-brand" href="#">
-                        <img src="pictures/firma-ucr-ico.png" alt="logo UCR" width="130" height="60"/>
-                        <img src="pictures/images-removebg-preview.png" alt="" width="95" height="40"/>
-                        <img src="pictures/SSUR.png" alt="Logo Sede" width="130" height="54"/>
+                    <a class="navbar-brand">
+                        <img src="pictures/logos.png" alt="logos UCR" width="303.7" height="60.1"/>
                     </a>
+           
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -68,7 +67,7 @@
 
                             <li class="nav-item">
                                 <a class="nav-link" href="Login.jsp">
-                                    <img src="pictures/icons8-user-48.png" alt="Botón de sesión" width="30" height="30">
+                                    <img src="pictures/icons8-test-account-100.png"" alt="Botón de sesión" width="40" height="40">
                                 </a>
                             </li>
                         </ul>
@@ -82,9 +81,9 @@
         <div class="p">
             <div class="pict">
                 <!-- Imagen local -->
-                <img src="pictures/Picsart_24-06-10_15-49-10-448.png" class="fullscreen-image" alt="Imagen UCR">
+                <img src="pictures/bn.png" class="fullscreen-image" alt="Imagen UCR">
             </div>
-
+            <div class="separator-bar"></div>
             <div class="t">
                 <br/>
                 <div class="text-left">
@@ -252,6 +251,7 @@
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
+    <br>
     <br>
     <footer class="footer">
         <div class="container text-center">

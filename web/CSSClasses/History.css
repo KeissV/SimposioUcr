@@ -8,7 +8,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 */
 /* Estilos de la Barra de Navegación */
 .navbar-custom {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(0, 93, 164, 0.8); /* Cambiar el color de fondo a azul */
     backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
@@ -24,14 +24,35 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 
 .navbar-toggler {
     border: none;
-    color: #0033a0;
+    color: white; /* Color blanco para el ícono del toggler */
 }
 
 .navbar-toggler-icon {
-    color: #0033a0;
+    color: white !important; 
 }
 
-/* Sección Principal */
+/* Contenido del menú */
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar-nav .nav-link {
+    color: white !important; /* Asegura que el color sea blanco */
+    margin-right: 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f0f0f0; 
+}
+
+
 main {
     padding-top: 80px; /* Ajusta el espacio para la navbar fija */
     overflow-y: auto; /* Permitir scroll vertical */
@@ -106,21 +127,20 @@ p {
 }
 
 /* Pie de Página */
-footer {
-    background-color: rgba(0, 93, 164, 0.8);
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    position: fixed;
+.footer {
+    background-color: rgba(0, 93, 164, 0.8); 
+    color: white; 
+    position: relative;
     width: 100%;
-    bottom: 0;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
 }
 
-footer p {
+.footer p {
     margin: 0;
+    color: white; 
 }
 
 /* Contenedor */
@@ -170,7 +190,4 @@ html, body {
         padding-top: 60px;
     }
 }
-
-
-
 

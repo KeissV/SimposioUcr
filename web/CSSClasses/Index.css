@@ -6,30 +6,41 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Created on : 10 jun. 2024, 18:57:09
     Author     : franc
 */
+
 .navbar-custom {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 93, 164, 0.8); /* Fondo con transparencia similar al footer */
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 1;
 }
+
 .fullscreen-image {
     width: 100%;
     height: 70vh;
     object-fit: cover;
     object-position: top;
 }
+
+.separator-bar {
+    background-color: rgba(0, 93, 164, 0.8); 
+    height: 30px; 
+    width: 100%;
+}
+
 .t {
     font-family: Arial, sans-serif;
     font-size: 15px;
     width: 90%;
     margin: auto;
 }
+
 .navbar-nav .nav-link {
     font-family: Arial, sans-serif;
     font-size: 15px;
-    color: rgb(65, 173, 231) !important;
+    color: white !important; /* Color del texto en blanco */
 }
+
 .card-scroll {
     display: flex;
     overflow-x: auto;
@@ -39,6 +50,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     margin: 5px auto; /* Márgenes superior e inferior */
     width: 90%; /* Ancho del contenedor */
 }
+
 .card {
     flex: 0 0 auto; /* Evitar que las tarjetas se redimensionen */
     width: 150px; /* Ancho de la tarjeta */
@@ -47,6 +59,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra para las tarjetas */
     background-color: white; /* Fondo blanco para las tarjetas */
 }
+
 .card img {
     width: 100%;
     height: 100px; /* Altura de la imagen */
@@ -54,44 +67,58 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     border-top-left-radius: 8px; /* Bordes redondeados en la parte superior de la imagen */
     border-top-right-radius: 8px; /* Bordes redondeados en la parte superior de la imagen */
 }
+
 .card-body {
     padding: 10px;
 }
+
 .card-title {
     font-size: 14px;
     margin-bottom: 5px;
 }
+
 .card-text {
     font-size: 12px;
     color: #555;
 }
+
 .carousel-card {
     margin: 10px;
 }
+
 .carousel-card .card {
     height: 300px;
     width: 200%;
 }
-.carrusel-eventos{
+
+.carrusel-eventos {
     width: 90%;
     overflow-x: auto;
     padding: 10px 0;
     gap: 10px;
     margin: 10px auto;
-    width: 90%;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     font-family: Arial, sans-serif;
     font-size: 12px;
-    color: #005da4de;
+    background-color: rgba(0, 93, 164, 0.8); /* Mismo color de fondo para el dropdown */
+    color: white; /* Color del texto en blanco */
 }
+
+.dropdown-item {
+    color: white; /* Color del texto en blanco para los elementos del dropdown */
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 93, 164, 0.6); /* Color de fondo ligeramente más claro al hacer hover */
+}
+
 .footer {
     background-color: rgba(0, 93, 164, 0.8); /* Fondo con transparencia similar a la navbar */
     color: white; /* Color del texto en blanco */
-    position: absolute;
+    position: relative;
     width: 100%;
-    bottom: 0;
-    z-index: 1;
     text-align: center;
     padding: 10px 0;
     font-family: Arial, sans-serif;
@@ -103,3 +130,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     color: white; /* Asegurando que el texto sea blanco */
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
