@@ -47,15 +47,16 @@
                                     <a class="dropdown-item" href="#">Grande</a>
                                 </div>
                             </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="index.jsp">Inicio</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Calender.jsp">Calendario</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Downloads.jsp">Descargas</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="History.jsp">Historia</a>
-                            </li>
+                         
                             <li class="nav-item">
                                 <a class="nav-link" href="Questions.jsp">Preguntas</a>
                             </li>
