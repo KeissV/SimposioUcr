@@ -32,6 +32,33 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 .dropdown-item:hover {
     background-color: rgba(0, 93, 164, 0.6); /* Color de fondo ligeramente más claro al hacer hover */
 }
+.section-title {
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #333;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.card-header {
+    background-color: #00c0f3;
+    border: none;
+}
+.card-header .btn-link {
+    color: #ffffff !important;
+}
+
+
+.card-body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
 .footer {
     background-color: rgba(0, 93, 164, 0.8);
     color: white;
@@ -46,6 +73,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 .footer p {
     margin: 0;
     color: white;
+}body{
+  font-family: Arial, sans-serif;
+    font-size: 15px;  
 }
 
 
