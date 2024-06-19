@@ -9,10 +9,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 
 .navbar-custom {
     background-color: rgba(0, 93, 164, 0.8); /* Fondo con transparencia similar al footer */
-    position: absolute;
+    position: fixed; /* Cambiado a fixed para que la barra de navegación permanezca fija en la parte superior */
     top: 0;
     width: 100%;
     z-index: 1;
+    height: 80px; /* Altura aumentada de la barra de navegación */
 }
 
 .fullscreen-image {
@@ -23,9 +24,44 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 }
 
 .separator-bar {
-    background-color: rgba(0, 93, 164, 0.8); 
-    height: 30px; 
+    background-color: rgba(143, 89, 2, 0.8); /* Color café para el primer separador */
+    height: 80px; /* Misma altura que el footer */
     width: 100%;
+    margin-top: 0; /* Sin espacio superior */
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+.separatorTwo {
+    background-color: rgba(229, 179, 101, 0.7); /* Color café para el segundo separador */
+    height: 80px; /* Misma altura que el footer */
+    width: 100%;
+    margin-top: 0; /* Sin espacio superior */
+    margin-bottom: 20px; /* Espacio inferior */
+    position: relative; /* Necesario para el título absoluto */
+}
+
+.titulo {
+    text-align: center; /* Centrar el título */
+    font-size: 24px; /* Tamaño del texto */
+    color: rgba(143, 89, 2, 1); /* Color café más oscuro para el título */
+    margin-bottom: 0; /* Eliminar espacio inferior */
+    position: absolute; /* Posición absoluta para que se superponga a la barra */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustar posición */
+}
+
+.carousel-item .card {
+    width: 22rem; /* Aumento del ancho de las tarjetas en el carrusel */
+}
+
+.carousel-item .card-img-top {
+    height: 300px; /* Aumento de la altura de las imágenes en las tarjetas */
+    object-fit: cover; /* Ajuste de la imagen para cubrir */
+}
+
+.dropdown-menu {
+    font-size: 14px; /* Tamaño de fuente aumentado para los elementos del menú desplegable */
 }
 
 .t {
@@ -58,14 +94,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra para las tarjetas */
     background-color: white; /* Fondo blanco para las tarjetas */
+    text-align: center; /* Centrar el contenido de las tarjetas */
 }
 
 .card img {
-    width: 100%;
-    height: 100px; /* Altura de la imagen */
+    width: 80%;
+    height: 80px; /* Altura de la imagen */
     object-fit: cover;
     border-top-left-radius: 8px; /* Bordes redondeados en la parte superior de la imagen */
     border-top-right-radius: 8px; /* Bordes redondeados en la parte superior de la imagen */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
 }
 
 .card-body {
@@ -120,7 +158,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     position: relative;
     width: 100%;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0; /* Aumentar el padding para que sea más alto */
     font-family: Arial, sans-serif;
     font-size: 15px;
 }
@@ -141,4 +179,10 @@ body {
 
 .container {
     flex: 1;
+}
+
+.carousel-title {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
 }

@@ -25,7 +25,7 @@
                     <a class="navbar-brand">
                         <img src="pictures/logos.png" alt="logos UCR" width="303.7" height="60.1"/>
                     </a>
-           
+
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -81,7 +81,7 @@
         <div class="p">
             <div class="pict">
                 <!-- Imagen local -->
-                <img src="pictures/bn.png" class="fullscreen-image" alt="Imagen UCR">
+                <img src="pictures/giraBA.png"  class="fullscreen-image" alt="Imagen UCR">
             </div>
             <div class="separator-bar"></div>
             <div class="t">
@@ -96,75 +96,97 @@
                         ,nostra porttitor duis conubia habitasse suspendisse auctor, quam vivamus phasellus torquent pretium non facilisi.</p>
                 </div>
                 <br/>
-                <div class="text-left">
-                    <h4 class="text-Ti">Presentadores</h4>
-                </div>
-            </div>
-
-
-            <!-- Carrusel horizontal de tarjetas -->
-            <div class="card-scroll">
-
-                <div class="card">
-                    <img src="pictures/userrr.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 1</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="pictures/userrr.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 2</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="pictures/userrr.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 3</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="pictures/userrr.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 4</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="pictures/userrr.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 1</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="pictures/userrr.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 2</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="pictures/userrr.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 3</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="pictures/userrr.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Título 4</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
 
             </div>
 
-            <div class="carrusel-eventos"> 
+           <div class="separatorTwo">
+                <div class="titulo">Presentadores</div>
+            </div>
+
+           <br/>
+            <div id="presentersCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-title">Bloque 1</div>
+                        <div class="d-flex justify-content-center">
+                            <!-- Primer bloque de presentadores -->
+                            <div class="card mx-3" style="width: 18rem;">
+                                <img src="pictures/userrr.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título 1</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="card mx-3" style="width: 18rem;">
+                                <img src="pictures/userrr.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título 2</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="card mx-3" style="width: 18rem;">
+                                <img src="pictures/userrr.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título 3</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="card mx-3" style="width: 18rem;">
+                                <img src="pictures/userrr.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título 4</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-title">Bloque 2</div>
+                        <div class="d-flex justify-content-center">
+                            <!-- Segundo bloque de presentadores -->
+                            <div class="card mx-3" style="width: 18rem;">
+                                <img src="pictures/userrr.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título 5</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="card mx-3" style="width: 18rem;">
+                                <img src="pictures/userrr.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título 6</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="card mx-3" style="width: 18rem;">
+                                <img src="pictures/userrr.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título 7</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="card mx-3" style="width: 18rem;">
+                                <img src="pictures/userrr.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título 8</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <a class="carousel-control-prev" href="#presentersCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#presentersCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+           
+           <div class="carrusel-eventos"> 
                 <!-- CSS Personalizado -->
 
 
@@ -245,11 +267,18 @@
                     </a>
                 </div>
             </div>
+        
 
-            <!-- Enlace a Bootstrap JS y dependencias -->
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </div>
+
+            
+
+
+
+        <!-- Enlace a Bootstrap JS y dependencias -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
     <br>
     <br>
