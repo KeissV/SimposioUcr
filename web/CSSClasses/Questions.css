@@ -6,6 +6,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Created on : 15 jun. 2024, 21:35:04
     Author     : franc
 */
+/* Estilos para la barra de navegación */
 .navbar-custom {
     background-color: rgba(0, 93, 164, 0.8);
     position: absolute;
@@ -13,25 +14,35 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     width: 100%;
     z-index: 1;
 }
+
 .navbar-nav .nav-link {
     font-family: Arial, sans-serif;
     font-size: 15px;
     color: white !important; /* Color del texto en blanco */
 }
+
+/* Estilos para el dropdown-menu */
 .dropdown-menu {
     font-family: Arial, sans-serif;
     font-size: 12px;
     background-color: rgba(0, 93, 164, 0.8); /* Mismo color de fondo para el dropdown */
     color: white; /* Color del texto en blanco */
+    border: none; /* Sin borde */
+    padding: 0; /* Sin espaciado interno */
+    box-shadow: none; /* Sin sombra */
+    min-width: 200px; /* Ancho mínimo */
 }
 
 .dropdown-item {
     color: white; /* Color del texto en blanco para los elementos del dropdown */
+    padding: 10px 20px; /* Espaciado interno */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
 }
 
 .dropdown-item:hover {
     background-color: rgba(0, 93, 164, 0.6); /* Color de fondo ligeramente más claro al hacer hover */
 }
+
 .section-title {
     margin-bottom: 40px;
     font-size: 32px;

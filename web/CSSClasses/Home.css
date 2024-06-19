@@ -1,0 +1,248 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 10 jun. 2024, 18:57:09
+    Author     : franc
+*/
+
+/* Estilo del menú desplegable para que coincida con el color de la barra de navegación */
+.navbar-custom {
+    background-color: rgba(0, 93, 164, 0.8); /* Color original de la barra de navegación */
+    color: white; /* Color del texto */
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 93, 164, 0.8); /* Fondo coincidente con la barra de navegación */
+    border: none; /* Sin borde */
+    padding: 0; /* Sin espaciado interno */
+    box-shadow: none; /* Sin sombra */
+    min-width: 200px; /* Ancho mínimo */
+}
+
+.dropdown-item {
+    font-size: 14px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: rgba(0, 93, 164, 1); /* Fondo más oscuro en hover */
+    color: white; /* Texto blanco en hover */
+    outline: none; /* Sin borde de enfoque */
+}
+
+.dropdown-divider {
+    height: 1px; /* Altura de la línea */
+    margin: 0; /* Sin margen */
+    overflow: hidden; /* Oculta el desbordamiento */
+    background-color: #e9ecef; /* Color de la línea */
+}
+
+.dropdown-menu h8 {
+    font-size: 14px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+    margin-top: 10px; /* Espacio superior */
+    margin-bottom: 5px; /* Espacio inferior */
+    padding-left: 20px; /* Espaciado a la izquierda */
+    display: block; /* Mostrar como bloque */
+}
+
+/* Espaciado entre secciones */
+.dropdown-menu h8 + .dropdown-item {
+    margin-top: 5px; /* Espacio superior entre h8 y el primer item */
+}
+
+
+.fullscreen-image {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+.separator-bar {
+    background-color: rgba(142,216,248, 0.7); /* Color café para el primer separador */
+    height: 20px; /* Misma altura que el footer */
+    width: 100%;
+    margin-top: 0; /* Sin espacio superior */
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+.text-Ti {
+    font-size: 30px; /* Tamaño del título principal */
+    font-weight: bold; /* Negrita */
+    color: #000;/* Azul oscuro */
+    text-align: center; /* Centrado */
+    margin-top: 0px; /* Margen superior */
+    margin-bottom: 40px; /* Margen inferior */
+    font-family: 'Arial', serif; /* Fuente elegante */
+    position: relative; /* Posicionamiento relativo */
+}
+
+
+
+.title-section {
+    font-size: 23px; /* Tamaño adecuado */
+    font-weight: normal; /* Fuente normal */
+    color: #000; /* Azul más claro */
+    text-align: center; /* Centrado */
+    margin-top: 40px; /* Espacio superior */
+    margin-bottom: 6px; /* Espacio inferior */
+    font-family: 'Arial', sans-serif; /* Fuente profesional */
+    position: relative; /* Posicionamiento relativo */
+}
+
+.title-section::before {
+    content: "";
+    display: block;
+    width: 1100px;
+    height: 3px;
+    background-color:rgb(142,216,248);  /* Color de la línea decorativa */
+    margin: 0 auto 10px;
+}
+
+.title-section::after {
+    content: "";
+    display: block;
+    width: 1100px;
+    height: 3px;
+    background-color:rgb(142,216,248);  /* Color de la línea decorativa */
+    margin: 0 auto 10px;
+}
+
+.text-Ta {
+    font-size: 18px; /* Tamaño del texto del cuerpo */
+}
+
+
+
+   
+
+    .t {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        width: 85%;
+        margin: auto;
+    }
+
+    .navbar-nav .nav-link {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        color: white !important; /* Color del texto en blanco */
+    }
+
+    .footer {
+        background-color: rgba(0, 93, 164, 0.8); /* Fondo con transparencia similar a la navbar */
+        color: white; /* Color del texto en blanco */
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0; /* Aumentar el padding para que sea más alto */
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+    }
+
+    .footer p {
+        margin: 0;
+        color: white; /* Asegurando que el texto sea blanco */
+    }
+
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        flex: 1;
+    }
+
+    .carousel-title {
+        font-size: 24px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    /* Estilos para las tarjetas de eventos */
+    .event-cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px; /* Espacio entre las tarjetas */
+        padding: 20px; /* Padding alrededor de las tarjetas */
+    }
+
+    .event-card {
+        position: relative;
+        width: calc(50% - 20px); /* Dos tarjetas por fila, con espacio entre ellas */
+        box-sizing: border-box; /* Incluye el borde en el tamaño total */
+        cursor: pointer; /* Cambia el cursor a pointer */
+        border: 1px solid #ccc; /* Borde delgado para las tarjetas */
+        border-radius: 8px; /* Bordes redondeados */
+        overflow: hidden; /* Oculta contenido que sobresalga del borde */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+        max-width: 550px; /* Ancho máximo para las tarjetas */
+        transition: transform 0.5s; /* Transición suave para la rotación */
+    }
+
+    .event-card:hover {
+
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra más pronunciada */
+    }
+
+    .event-card .card-face {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden; /* Oculta la cara posterior */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .event-card .card-face .card-img-top {
+        width: 100%;
+        height: 200px; /* Altura fija para las imágenes */
+        object-fit: cover; /* Ajuste de la imagen para cubrir */
+        border-top-left-radius: 8px; /* Bordes redondeados en la parte superior de la imagen */
+        border-top-right-radius: 8px; /* Bordes redondeados en la parte superior de la imagen */
+    }
+
+    .event-card .card-face .card-body {
+        padding: 15px;
+    }
+
+    .event-card .card-face .card-title {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .event-card .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden; /* Oculta la cara posterior */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transform: rotateY(180deg); /* Inicia girada 180 grados (oculta por defecto) */
+        transition: transform 0.9s; /* Transición suave para la rotación */
+    }
+
+    .event-card:hover .card-face {
+        transform: rotateY(180deg); /* Gira 180 grados al hacer hover */
+    }
+
+    .event-card:hover .card-back {
+        transform: rotateY(0deg); /* Vuelve a posición normal al hacer hover */
+    }
