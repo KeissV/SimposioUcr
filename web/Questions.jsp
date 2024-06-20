@@ -14,6 +14,7 @@
         <!-- Enlace a Bootstrap CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <!-- Enlace a tu archivo CSS personalizado -->
+      
         <link rel="stylesheet" href="CSSClasses/Questions.css">
     </head>
     <body>
@@ -49,8 +50,8 @@
                                         <a class="dropdown-item" href="#">Grande</a>
                                     </div>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.jsp">Inicio</a>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="Home.jsp">Inicio</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="Calender.jsp">Calendario</a>
@@ -61,18 +62,16 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="History.jsp">Historia</a>
                                 </li>
-
+                               
                                 <li class="nav-item">
                                     <a class="nav-link" href="Contacts.jsp">Contactos</a>
                                 </li>
-
                                 <li class="nav-item">
                                     <a class="nav-link" href="Login.jsp">
-                                        <img src="pictures/icons8-test-account-100.png"" alt="Botón de sesión" width="40" height="40">
+                                        <img src="pictures/icons8-test-account-100.png" alt="Botón de sesión" width="40" height="40">
                                     </a>
                                 </li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
@@ -165,9 +164,9 @@
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                             </div>
                                         </div>
-                                </div>
-                                     <div class="card">
-                                                <div class="card-header" id="headingSix">
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingSix">
                                             <h5 class="mb-0">
                                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                                     ¿Pregunta 6?
@@ -180,9 +179,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                          <div class="card">
-                                         
-                                                <div class="card-header" id="headingSeven">
+                                    <div class="card">
+
+                                        <div class="card-header" id="headingSeven">
                                             <h5 class="mb-0">
                                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                                                     ¿Pregunta 7?
@@ -195,9 +194,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                          <div class="card">
-                                         
-                                                <div class="card-header" id="headingEight">
+                                    <div class="card">
+
+                                        <div class="card-header" id="headingEight">
                                             <h5 class="mb-0">
                                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                                                     ¿Pregunta 8?
@@ -210,7 +209,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

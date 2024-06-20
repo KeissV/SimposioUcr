@@ -76,7 +76,7 @@
     <body>
 
     <div class="container">
-        <h2>Contact Us</h2>
+        <h2>Contactenos</h2>
         <form action="Contacts.jsp" method="POST">
 
             <label for="name">Nombre completo:</label>

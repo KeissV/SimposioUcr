@@ -7,6 +7,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Author     : franc
 */
 
+/* CSSClasses/Common.css */
+
+/* Estilos comunes para la barra de navegación y footer */
+
 .navbar-custom {
     background-color: rgba(0, 93, 164, 0.8);
     position: absolute;
@@ -24,7 +28,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 /* Estilos para el dropdown-menu */
 .dropdown-menu {
     font-family: Arial, sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     background-color: rgba(0, 93, 164, 0.8); /* Mismo color de fondo para el dropdown */
     color: white; /* Color del texto en blanco */
     border: none; /* Sin borde */
@@ -41,6 +45,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 
 .dropdown-item:hover {
     background-color: rgba(0, 93, 164, 0.6); /* Color de fondo ligeramente más claro al hacer hover */
+}
+.dropdown-menu h8 {
+    font-size: 14px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+    margin-top: 10px; /* Espacio superior */
+    margin-bottom: 5px; /* Espacio inferior */
+    padding-left: 20px; /* Espaciado a la izquierda */
+    display: block; /* Mostrar como bloque */
+}
+
+/* Espaciado entre secciones */
+.dropdown-menu h8 + .dropdown-item {
+    margin-top: 5px; /* Espacio superior entre h8 y el primer item */
 }
 
 /* Estilos para el pie de página */
@@ -59,3 +76,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     margin: 0;
     color: white;
 }
+
+
+
