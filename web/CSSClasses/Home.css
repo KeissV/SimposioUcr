@@ -24,7 +24,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 
 .dropdown-menu {
     font-family: Arial, sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     background-color: rgba(0, 93, 164, 0.8); /* Mismo color de fondo para el dropdown */
     color: white; /* Color del texto en blanco */
     border: none; /* Sin borde */
@@ -50,7 +50,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     background-color: rgba(0, 93, 164, 0.6); /* Color de fondo ligeramente más claro al hacer hover */
 }
 .dropdown-menu h8 {
-    font-size: 14px; /* Tamaño de fuente */
+    font-size: 15px; /* Tamaño de fuente */
     color: white; /* Color del texto */
     margin-top: 10px; /* Espacio superior */
     margin-bottom: 5px; /* Espacio inferior */
@@ -176,80 +176,87 @@ body {
     margin: 20px 0;
 }
 
-/* Estilos para las tarjetas de eventos */
-.event-cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px; /* Espacio entre las tarjetas */
-    padding: 20px; /* Padding alrededor de las tarjetas */
+
+.calendar-events-container {
+
+    gap: 10 px; /* Espacio entre las tarjetas */
+    padding: 40px 150px;  /* Margen a los lados del contenedor */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+
+
 }
 
-.event-card {
+.card-event {
+    width: calc(102% - 1px);
+    height: 320px; /* Ajusta la altura total de la tarjeta */
+    perspective: 1000px;
+}
+
+.card-event-inner {
     position: relative;
-    width: calc(50% - 20px); /* Dos tarjetas por fila, con espacio entre ellas */
-    box-sizing: border-box; /* Incluye el borde en el tamaño total */
-    cursor: pointer; /* Cambia el cursor a pointer */
-    border: 1px solid #ccc; /* Borde delgado para las tarjetas */
-    border-radius: 8px; /* Bordes redondeados */
-    overflow: hidden; /* Oculta contenido que sobresalga del borde */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
-    max-width: 550px; /* Ancho máximo para las tarjetas */
-    transition: transform 0.5s; /* Transición suave para la rotación */
-}
-
-.event-card:hover {
-
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra más pronunciada */
-}
-
-.event-card .card-face {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; /* Oculta la cara posterior */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 97%;
+    height: 270px; /* Ajusta el tamaño de la tarjeta según tus necesidades */
     text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
-.event-card .card-face .card-img-top {
-    width: 100%;
-    height: 200px; /* Altura fija para las imágenes */
-    object-fit: cover; /* Ajuste de la imagen para cubrir */
-    border-top-left-radius: 8px; /* Bordes redondeados en la parte superior de la imagen */
-    border-top-right-radius: 8px; /* Bordes redondeados en la parte superior de la imagen */
+.card-event:hover .card-event-inner {
+    transform: rotateY(180deg);
 }
 
-.event-card .card-face .card-body {
-    padding: 15px;
-}
-
-.event-card .card-face .card-title {
-    font-size: 15px;
-    margin-bottom: 10px;
-}
-
-.event-card .card-back {
+.card-event-front, .card-event-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Oculta la cara posterior */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transform: rotateY(180deg); /* Inicia girada 180 grados (oculta por defecto) */
-    transition: transform 0.9s; /* Transición suave para la rotación */
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-event {
+    width: 100%;
+    height: 320px; /* Ajusta la altura total de la tarjeta según tu diseño */
+    perspective: 1000px;
+    position: relative;
+    overflow: hidden; /* Evita que la imagen sobresalga */
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
 }
 
-.event-card:hover .card-face {
-    transform: rotateY(180deg); /* Gira 180 grados al hacer hover */
+.card-event img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: 100%; /* Ajusta la altura al 100% del contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    margin: 0; /* Elimina cualquier margen */
+    padding: 0; /* Elimina cualquier relleno */
 }
 
-.event-card:hover .card-back {
-    transform: rotateY(0deg); /* Vuelve a posición normal al hacer hover */
+.card-event .card-body {
+    position: absolute;
+    bottom: 0; /* Coloca el título en la parte inferior */
+    left: 0;
+    width: 100%;
+    padding: 10px; /* Espaciado interno */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación centrada del texto */
+    box-sizing: border-box; /* Ajusta el tamaño total incluyendo el padding */
+}
+
+
+.card-event-back {
+    background-color: rgb(128,169,188);
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.btn-primary {
+    background-color: rgb(255,224,106,0.75);
+    border-color: #e5b365;
+}
+
+.btn-primary:hover {
+    background-color: #6dc067;
+    border-color: #008641;
 }

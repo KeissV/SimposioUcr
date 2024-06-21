@@ -28,7 +28,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 /* Estilos para el dropdown-menu */
 .dropdown-menu {
     font-family: Arial, sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     background-color: rgba(0, 93, 164, 0.8); /* Mismo color de fondo para el dropdown */
     color: white; /* Color del texto en blanco */
     border: none; /* Sin borde */
@@ -47,7 +47,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     background-color: rgba(0, 93, 164, 0.6); /* Color de fondo ligeramente más claro al hacer hover */
 }
 .dropdown-menu h8 {
-    font-size: 14px; /* Tamaño de fuente */
+    font-size: 15px; /* Tamaño de fuente */
     color: white; /* Color del texto */
     margin-top: 10px; /* Espacio superior */
     margin-bottom: 5px; /* Espacio inferior */

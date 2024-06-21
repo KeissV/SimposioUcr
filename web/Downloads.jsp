@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Simposio UCR 2024</title>
         <link rel="stylesheet" href="CSSClasses/Downloads.css">
-
+        <link href="CSSClasses/Questions.css" rel="stylesheet" type="text/css"/>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     </head>
@@ -39,13 +39,13 @@
                                     Accesibilidad
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <h8> Contraste de color :</h8>
+                                    <h5> Contraste de color :</h5>
                                     <a class="dropdown-item" href="#">Normal</a>
                                     <a class="dropdown-item" href="#">Escala de Azules</a>
                                     <a class="dropdown-item" href="#">Alto contraste</a>
                                     <a class="dropdown-item" href="#">Fondo claro</a>
 
-                                    <h8> Tamaño de Fuente:</h8>
+                                    <h5> Tamaño de Fuente:</h5>
                                     <a class="dropdown-item" href="#">Pequeña</a>
                                     <a class="dropdown-item" href="#">Mediana</a>
                                     <a class="dropdown-item" href="#">Grande</a>

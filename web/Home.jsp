@@ -82,10 +82,12 @@
             </div>
             <div class="separator-bar"></div>
             <div class="t">
-                <br/>
                 <div class="text-left">
                     <h3 class="text-Ti">Simposio Informatica Empresarial 2024</h3>
-                    <p class="text-Ta">Lorem ipsum dolor sit amet consectetur adipiscing elit eu erat etiam sodales, litora vel iaculis netus donec non aliquam cras laoreet nulla. Non eget cum auctor dictum elementum per in, est pharetra fringilla iaculis purus cras mus lacinia, blandit gravida pretium quis enim taciti. Rhoncus senectus commodo lobortis tempus at scelerisque, turpis vel odio fermentum fusce cursus habitasse vestibulum condimentum. Potenti tincidunt quisque porta facilisis lobortis rhoncus ultricies blandit, nostra porttitor duis conubia habitasse suspendisse auctor, quam vivamus phasellus torquent pretium non facilisi.</p>
+                    <p class="text-Ta"> Lorem ipsum dolor sit amet consectetur adipiscing elit eu erat etiam sodales, litora vel iaculis netus donec non aliquam cras laoreet nulla. 
+                        Non eget cum auctor dictum elementum per in, est pharetra fringilla iaculis purus cras mus lacinia, blandit gravida pretium quis enim taciti.
+                        Rhoncus senectus commodo lobortis tempus at scelerisque, turpis vel odio fermentum fusce cursus habitasse vestibulum condimentum.
+                        Potenti tincidunt quisque porta facilisis lobortis rhoncus ultricies blandit, nostra porttitor duis conubia habitasse suspendisse auctor, quam vivamus phasellus torquent pretium non facilisi.</p>
                 </div>
                 <br/>
                 <br/>
@@ -177,75 +179,167 @@
             </div>
             <br/>
             <br/>
-            <div class="container mt-5">
-                <h5 class="text-center title-section">Eventos</h5>
-                <br/>
-                <div class="event-cards-container">
-                    <!-- Primera tarjeta de evento -->
-                    <div class="event-card">
-                        <div class="card-face">
-                            <img src="pictures/giraCeles.png" class="card-img-top" alt="Evento 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Concierto en el Parque</h5>
+            <br/>
+
+            <h5 class="text-center title-section">Eventos</h5>
+            <div class="calendar-events-container">
+                <!-- Columnas de eventos -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- Columna 1 -->
+                        <div class="card-event">
+                            <div class="card-event-inner">
+                                <div class="card-event-front">
+                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Título del evento 1</h5>
+                                    </div>
+                                </div>                                <div class="card-event-back">
+                                    <h5 class="card-title"> evento 1</h5>
+                                    <p class="card-text center">Más información sobre el evento 1...</p>
+                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-back">
-                            <div class="card-body">
-                                <p class="card-text">Disfruta de una tarde llena de música en nuestro concurso anual en el parque central.</p>
-                                <a href="evento1.html" class="btn btn-primary">Ver más</a>
+                        <div class="card-event">
+                            <div class="card-event-inner">
+                                <div class="card-event-front">
+                                    <img src="pictures/giraCeles.png" class="card-img-top" alt="Imagen del Evento 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Título del evento 3</h5>
+                                    </div>
+                                </div>
+                                <div class="card-event-back">
+                                    <h5 class="card-title"> evento 3</h5>
+                                    <p class="card-text center">Más información sobre el evento 3...</p>
+                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-event">
+                            <div class="card-event-inner">
+                                <div class="card-event-front">
+                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Título del evento 5</h5>
+                                    </div>
+                                </div>                                <div class="card-event-back">
+                                    <h5 class="card-title"> evento 5</h5>
+                                    <p class="card-text center">Más información sobre el evento 5...</p>
+                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-event">
+                            <div class="card-event-inner">
+                                <div class="card-event-front">
+                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Título del evento 7</h5>
+                                    </div>
+                                </div>
+                                <div class="card-event-back">
+                                    <h5 class="card-title"> evento 7</h5>
+                                    <p class="card-text center">Más información sobre el evento 7...</p>
+                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-event">
+                            <div class="card-event-inner">
+                                <div class="card-event-front">
+                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Título del evento 9</h5>
+                                    </div>
+                                </div>                                <div class="card-event-back">
+                                    <h5 class="card-title"> evento 9</h5>
+                                    <p class="card-text center">Más información sobre el eventooooooooooooooooooo, </p>
+                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Segunda tarjeta de evento -->
-                    <div class="event-card">
-                        <div class="card-face">
-                            <img src="pictures/giraCeles.png" class="card-img-top" alt="Evento 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Exposición de Arte Moderno</h5>
+                    <div class="col-md-6">
+                        <!-- Columna 2 -->
+                        <div class="card-event">
+                            <div class="card-event-inner">
+                                <div class="card-event-front">
+                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Título del evento 2</h5>
+                                    </div>
+                                </div>
+                                <div class="card-event-back">
+                                    <h5 class="card-title">evento 2</h5>
+                                    <p class="card-text center"> detalws evento 2...</p>
+                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-back">
-                            <div class="card-body">
-                                <p class="card-text">Descubre las últimas tendencias en el mundo del arte moderno con nuestra nueva exposición.</p>
-                                <a href="evento2.html" class="btn btn-primary">Ver más</a>
+                        <div class="card-event">
+                            <div class="card-event-inner">
+                                <div class="card-event-front">
+                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Título del evento 4</h5>
+                                    </div>
+                                </div>
+                                <div class="card-event-back">
+                                    <h5 class="card-title">l evento 4</h5>
+                                    <p class="card-text center"> evento 4...</p>
+                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-event">
+                            <div class="card-event-inner">
+                                <div class="card-event-front">
+                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Título del evento 6</h5>
+                                    </div>
+                                </div>
+                                <div class="card-event-back">
+                                    <h5 class="card-title"> evento 6</h5>
+                                    <p class="card-text center"> evento 6...</p>
+                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-event">
+                            <div class="card-event-inner">
+                                <div class="card-event-front">
+                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Título del evento 8</h5>
+                                    </div>
+                                </div>                                <div class="card-event-back">
+                                    <h5 class="card-title"> evento 8</h5>
+                                    <p class="card-text center">Más información sobre el evento 8...</p>
+                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-event">
+                            <div class="card-event-inner">
+                                <div class="card-event-front">
+                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Título del evento 10</h5>
+                                    </div>
+                                </div>
+                                <div class="card-event-back">
+                                    <h5 class="card-title"> evento 10</h5>
+                                    <p class="card-text center">Más información sobre el evento 10...</p>
+                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Tercera tarjeta de evento -->
-                    <div class="event-card">
-                        <div class="card-face">
-                            <img src="pictures/giraCeles.png" class="card-img-top" alt="Evento 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Feria Gastronómica</h5>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <div class="card-body">
-                                <p class="card-text">Deléitate con los sabores del mundo en nuestra feria gastronómica anual.</p>
-                                <a href="evento3.html" class="btn btn-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Cuarta tarjeta de evento -->
-                    <div class="event-card">
-                        <div class="card-face">
-                            <img src="pictures/giraCeles.png" class="card-img-top" alt="Evento 4">
-                            <div class="card-body">
-                                <h5 class="card-title">Conferencia Internacional</h5>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <div class="card-body">
-                                <p class="card-text">Únete a expertos de todo el mundo en nuestra conferencia anual sobre innovación tecnológica.</p>
-                                <a href="evento4.html" class="btn btn-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Añade más tarjetas de evento según sea necesario -->
                 </div>
             </div>
         </div>
-
         <!-- Enlace a Bootstrap JS y dependencias -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
