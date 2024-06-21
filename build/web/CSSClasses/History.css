@@ -1,0 +1,76 @@
+.navbar-custom {
+    background-color: rgba(0, 93, 164, 0.8); /* Color original de la barra de navegación */
+    color: white; /* Color del texto */
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 93, 164, 0.8); /* Fondo coincidente con la barra de navegación */
+    border: none; /* Sin borde */
+    padding: 0; /* Sin espaciado interno */
+    box-shadow: none; /* Sin sombra */
+    min-width: 200px; /* Ancho mínimo */
+}
+
+.dropdown-item {
+    font-size: 14px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: rgba(0, 93, 164, 1); /* Fondo más oscuro en hover */
+    color: white; /* Texto blanco en hover */
+    outline: none; /* Sin borde de enfoque */
+}
+
+.dropdown-divider {
+    height: 1px; /* Altura de la línea */
+    margin: 0; /* Sin margen */
+    overflow: hidden; /* Oculta el desbordamiento */
+    background-color: #e9ecef; /* Color de la línea */
+}
+
+.dropdown-menu h8 {
+    font-size: 14px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+    margin-top: 10px; /* Espacio superior */
+    margin-bottom: 5px; /* Espacio inferior */
+    padding-left: 20px; /* Espaciado a la izquierda */
+    display: block; /* Mostrar como bloque */
+}
+
+/* Espaciado entre secciones */
+.dropdown-menu h8 + .dropdown-item {
+    margin-top: 5px; /* Espacio superior entre h8 y el primer item */
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para la sección de historia */
+.container {
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0;
+}
+
+.img-custom {
+    width: 100%;
+    height: auto;
+    border: 2px solid #00cfff; /* Borde celeste */
+}

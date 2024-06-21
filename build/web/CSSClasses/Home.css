@@ -1,0 +1,262 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 10 jun. 2024, 18:57:09
+    Author     : franc
+*/
+
+/* Estilo del menú desplegable para que coincida con el color de la barra de navegación */
+.navbar-custom {
+    background-color: rgba(0, 93, 164, 0.8);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.navbar-nav .nav-link {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: white !important; /* Color del texto en blanco */
+}
+
+
+.dropdown-menu {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: rgba(0, 93, 164, 0.8); /* Mismo color de fondo para el dropdown */
+    color: white; /* Color del texto en blanco */
+    border: none; /* Sin borde */
+    padding: 0; /* Sin espaciado interno */
+    box-shadow: none; /* Sin sombra */
+    min-width: 200px; /* Ancho mínimo */
+}
+
+.dropdown-item {
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+.dropdown-divider {
+    height: 1px; /* Altura de la línea */
+    margin: 0; /* Sin margen */
+    overflow: hidden; /* Oculta el desbordamiento */
+    background-color: #e9ecef; /* Color de la línea */
+}
+
+
+.dropdown-item:hover {
+    background-color: rgba(0, 93, 164, 0.6); /* Color de fondo ligeramente más claro al hacer hover */
+}
+.dropdown-menu h8 {
+    font-size: 15px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+    margin-top: 10px; /* Espacio superior */
+    margin-bottom: 5px; /* Espacio inferior */
+    padding-left: 20px; /* Espaciado a la izquierda */
+    display: block; /* Mostrar como bloque */
+}
+
+/* Espaciado entre secciones */
+.dropdown-menu h8 + .dropdown-item {
+    margin-top: 5px; /* Espacio superior entre h8 y el primer item */
+}
+
+.fullscreen-image {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+.separator-bar {
+    background-color: rgba(142,216,248, 0.7); /* Color café para el primer separador */
+    height: 20px; /* Misma altura que el footer */
+    width: 100%;
+    margin-top: 0; /* Sin espacio superior */
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+.text-Ti {
+    font-size: 30px; /* Tamaño del título principal */
+    font-weight: bold; /* Negrita */
+    color: #000;/* Azul oscuro */
+    text-align: center; /* Centrado */
+    margin-top: 0px; /* Margen superior */
+    margin-bottom: 40px; /* Margen inferior */
+    font-family: 'Arial', serif; /* Fuente elegante */
+    position: relative; /* Posicionamiento relativo */
+}
+
+
+
+.title-section {
+    font-size: 23px; /* Tamaño adecuado */
+    font-weight: normal; /* Fuente normal */
+    color: #000; /* Azul más claro */
+    text-align: center; /* Centrado */
+    margin-top: 40px; /* Espacio superior */
+    margin-bottom: 6px; /* Espacio inferior */
+    font-family: 'Arial', sans-serif; /* Fuente profesional */
+    position: relative; /* Posicionamiento relativo */
+}
+
+.title-section::before {
+    content: "";
+    display: block;
+    width: 1100px;
+    height: 3px;
+    background-color:rgb(142,216,248);  /* Color de la línea decorativa */
+    margin: 0 auto 10px;
+}
+
+.title-section::after {
+    content: "";
+    display: block;
+    width: 1100px;
+    height: 3px;
+    background-color:rgb(142,216,248);  /* Color de la línea decorativa */
+    margin: 0 auto 10px;
+}
+
+.text-Ta {
+    font-size: 18px; /* Tamaño del texto del cuerpo */
+}
+
+
+
+
+
+.t {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    width: 85%;
+    margin: auto;
+}
+
+.navbar-nav .nav-link {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: white !important; /* Color del texto en blanco */
+}
+
+.footer {
+    background-color: rgba(0, 93, 164, 0.8); /* Fondo con transparencia similar a la navbar */
+    color: white; /* Color del texto en blanco */
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0; /* Aumentar el padding para que sea más alto */
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.footer p {
+    margin: 0;
+    color: white; /* Asegurando que el texto sea blanco */
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+.carousel-title {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.calendar-events-container {
+
+    gap: 10 px; /* Espacio entre las tarjetas */
+    padding: 40px 150px;  /* Margen a los lados del contenedor */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+
+
+}
+
+.card-event {
+    width: calc(102% - 1px);
+    height: 320px; /* Ajusta la altura total de la tarjeta */
+    perspective: 1000px;
+}
+
+.card-event-inner {
+    position: relative;
+    width: 97%;
+    height: 270px; /* Ajusta el tamaño de la tarjeta según tus necesidades */
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card-event:hover .card-event-inner {
+    transform: rotateY(180deg);
+}
+
+.card-event-front, .card-event-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-event {
+    width: 100%;
+    height: 320px; /* Ajusta la altura total de la tarjeta según tu diseño */
+    perspective: 1000px;
+    position: relative;
+    overflow: hidden; /* Evita que la imagen sobresalga */
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+}
+
+.card-event img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: 100%; /* Ajusta la altura al 100% del contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    margin: 0; /* Elimina cualquier margen */
+    padding: 0; /* Elimina cualquier relleno */
+}
+
+.card-event .card-body {
+    position: absolute;
+    bottom: 0; /* Coloca el título en la parte inferior */
+    left: 0;
+    width: 100%;
+    padding: 10px; /* Espaciado interno */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación centrada del texto */
+    box-sizing: border-box; /* Ajusta el tamaño total incluyendo el padding */
+}
+
+
+.card-event-back {
+    background-color: rgb(128,169,188);
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.btn-primary {
+    background-color: rgb(255,224,106,0.75);
+    border-color: #e5b365;
+}
+
+.btn-primary:hover {
+    background-color: #6dc067;
+    border-color: #008641;
+}
