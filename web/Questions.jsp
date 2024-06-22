@@ -147,7 +147,7 @@
                                         </div>
                                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
                                             <div class="card-body">
-                                                Puedes encontrar los eventos en la página principal en la sección de <a href="Home.jsp">“Eventos”</a>. Selecciona el evento de tu interés y haz clic en “Inscribirme”. Cuando te registras en nuestra página web, debes indicar un nombre de usuario, el cual será necesario para inscribirte en los diferentes eventos del simposio. 
+                                                Puedes encontrar los eventos en la página principal en la sección de “Eventos”. Selecciona el evento de tu interés y haz clic en “Inscribirme”. Cuando te registras en nuestra página web, debes indicar un nombre de usuario, el cual será necesario para inscribirte en los diferentes eventos del simposio. 
                                             </div>
                                         </div>
                                     </div>
