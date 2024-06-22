@@ -6,6 +6,39 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Created on : 15 jun. 2024, 21:35:04
     Author     : franc
 */
+
+/* Estilos para el acordeón */
+.card-header {
+    background-color: #e9ecef; /* Color de fondo del encabezado */
+    border: none; /* Sin borde */
+}
+.card-header h5 {
+    margin: 0; /* Sin margen en los títulos dentro del encabezado */
+}
+.card-header button {
+    color: #005da4; /* Color del texto en blanco */
+    text-align: left; /* Alinear texto a la izquierda dentro del botón */
+    width: 100%; /* Ancho completo del botón */
+    padding: 1rem; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    outline: none; /* Sin contorno */
+}
+.card-header button:hover {
+    background-color: rgba(0, 93, 164, 0.1); /* Color de fondo ligeramente más claro al hacer hover */
+}
+
+.card-body {
+    border-top: 1px solid rgba(0, 93, 164, 0.8); /* Borde superior del cuerpo */
+    padding: 1rem; /* Espaciado interno del cuerpo */
+    background-color: rgba(0, 93, 164, 0.2); /* Color de fondo ligeramente más claro */
+    color: black; /* Color del texto en negro */
+}
+
+/* Añadir transición suave a los colapsos */
+.collapse {
+    transition: height 0.3s ease; /* Transición suave para la altura */
+}
+
 .navbar-custom {
     background-color: rgba(0, 93, 164, 0.8);
     position: absolute;
@@ -13,7 +46,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     width: 100%;
     z-index: 1;
 }
-
 
 .navbar-nav .nav-link {
     font-family: Arial, sans-serif;
