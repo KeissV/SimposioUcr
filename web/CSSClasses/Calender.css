@@ -1,16 +1,4 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
-*/
-/* 
-    Created on : 15 jun. 2024, 21:08:33
-    Author     : franc
-*/
-
-/* CSSClasses/Common.css */
-
-/* Estilos comunes para la barra de navegación y footer */
-
+/* Estilos para la barra de navegación */
 .navbar-custom {
     background-color: rgba(0, 93, 164, 0.8);
     position: absolute;
@@ -19,13 +7,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     z-index: 1;
 }
 
+/* Estilos para los enlaces de la barra de navegación */
 .navbar-nav .nav-link {
     font-family: Arial, sans-serif;
     font-size: 15px;
     color: white !important; /* Color del texto en blanco */
 }
 
-/* Estilos para el dropdown-menu */
+/* Estilos para el menú desplegable */
 .dropdown-menu {
     font-family: Arial, sans-serif;
     font-size: 13px;
@@ -37,6 +26,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     min-width: 200px; /* Ancho mínimo */
 }
 
+/* Efecto hover para los ítems del menú desplegable */
 .dropdown-item {
     color: white; /* Color del texto en blanco para los elementos del dropdown */
     padding: 10px 20px; /* Espaciado interno */
@@ -46,36 +36,87 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 .dropdown-item:hover {
     background-color: rgba(0, 93, 164, 0.6); /* Color de fondo ligeramente más claro al hacer hover */
 }
-.dropdown-menu h8 {
-    font-size: 15px; /* Tamaño de fuente */
-    color: white; /* Color del texto */
-    margin-top: 10px; /* Espacio superior */
-    margin-bottom: 5px; /* Espacio inferior */
-    padding-left: 20px; /* Espaciado a la izquierda */
-    display: block; /* Mostrar como bloque */
+
+/* Estilos para la imagen de pantalla completa */
+.fullscreen-image {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: top;
 }
 
-/* Espaciado entre secciones */
-.dropdown-menu h8 + .dropdown-item {
-    margin-top: 5px; /* Espacio superior entre h8 y el primer item */
+/* Barra separadora bajo la imagen */
+.separator-bar {
+    background-color: rgba(142,216,248, 0.7);
+    height: 20px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+/* Estilos para las tarjetas de eventos */
+.card-event {
+    margin-bottom: 30px;
+    perspective: 1000px;
+}
+
+.card-event-inner {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.card-event:hover .card-event-inner {
+    transform: rotateY(180deg);
+}
+
+.card-event-front, .card-event-back {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.card-event-back {
+    transform: rotateY(180deg);
+}
+
+/* Estilos para la barra de fecha en las tarjetas */
+.event-date-bar {
+    background-color: #005BAC;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Estilos para las imágenes de las tarjetas */
+.card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Estilos para el cuerpo de las tarjetas */
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el título de las tarjetas */
+.card-title {
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 /* Estilos para el pie de página */
 .footer {
     background-color: rgba(0, 93, 164, 0.8);
     color: white;
-    position: relative;
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    font-family: Arial, sans-serif;
-    font-size: 15px;
+    position: relative; /* Cambiado de 'absolute' a 'relative' para asegurar que siempre esté al final */
+    clear: both; /* Esto asegura que el footer no se solape con elementos flotantes */
 }
-
-.footer p {
-    margin: 0;
-    color: white;
-}
-
-
-
