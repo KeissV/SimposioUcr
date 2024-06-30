@@ -1,3 +1,10 @@
+/* Estilos globales y reset para HTML y Body */
+html {
+    height: 100%; 
+}
+
+
+
 /* Estilos para la barra de navegación */
 .navbar-custom {
     background-color: rgba(0, 93, 164, 0.8);
@@ -117,6 +124,26 @@
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    position: relative; /* Cambiado de 'absolute' a 'relative' para asegurar que siempre esté al final */
-    clear: both; /* Esto asegura que el footer no se solape con elementos flotantes */
+    position: relative;
+}
+
+.calendar-events-container {
+    margin-bottom: 250px; 
+}
+
+
+
+/* Flexbox setup para garantizar el posicionamiento del pie de página */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
