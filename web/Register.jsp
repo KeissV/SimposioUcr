@@ -1,8 +1,3 @@
-<%-- 
-    Document   : Register
-    Created on : 9 jun. 2024, 23:01:56
-    Author     : franc
---%>
 <%@ page import="Files.Users, Files.Encrypted" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -24,13 +19,13 @@
             <form action="Register.jsp" method="post">
                 <h2 class="text-center">Registro</h2>   
                 <div class="form-group">
-                    <input type="text" class="form-control" name="first_name" placeholder="Nombre" required="required">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="last_name" placeholder="Apellido" required="required">
+                    <input type="text" class="form-control" name="full_name" placeholder="Nombre completo" required="required">
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" name="username" placeholder="Nombre de usuario" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Correo" required="required">
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" name="password" placeholder="Contraseña" required="required">
@@ -38,7 +33,14 @@
                 <div class="form-group">
                     <input type="password" class="form-control" name="confirm_password" placeholder="Confirmar contraseña" required="required">
                 </div>
-
+                <div class="form-group">
+                    <select class="form-control" name="role" required="required">
+                        <option value="">Seleccione su rol</option>
+                        <option value="Profesor">Profesor</option>
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Externo">Externo</option>
+                    </select>
+                </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-purple btn-block">Confirmar</button>
                 </div>
@@ -48,20 +50,22 @@
         <%
             if ("POST".equalsIgnoreCase(request.getMethod())) {
                 Encrypted encrypted = new Encrypted();
-                String firstName = request.getParameter("first_name");
-                String lastName = request.getParameter("last_name");
+                String fullName = request.getParameter("full_name");
                 String username = request.getParameter("username");
+                String email = request.getParameter("email");
                 String password = request.getParameter("password");
                 String confirmPassword = request.getParameter("confirm_password");
+                String role = request.getParameter("role");
 
                 if (password != null && password.equals(confirmPassword)) {
-                    String encryptedFirstName = encrypted.encrypt(firstName);
-                    String encryptedLastName = encrypted.encrypt(lastName);
+                    String encryptedFullName = encrypted.encrypt(fullName);
                     String encryptedUsername = encrypted.encrypt(username);
+                    String encryptedEmail = encrypted.encrypt(email);
                     String encryptedPassword = encrypted.encrypt(password);
+                    String encryptedRole = encrypted.encrypt(role);
 
                     Users userController = new Users();
-                    boolean saveSuccess = userController.saveusers(encryptedFirstName, encryptedLastName, encryptedUsername, encryptedPassword);
+                    boolean saveSuccess = userController.saveusers(encryptedFullName, encryptedUsername, encryptedEmail, encryptedPassword, encryptedRole);
                     if (saveSuccess) {
                         session.setAttribute("message", "Usuario registrado exitosamente.");
                         response.sendRedirect("Login.jsp");

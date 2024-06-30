@@ -9,18 +9,15 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Base64;
-import javax.crypto.Cipher;
-import javax.crypto.spec.SecretKeySpec;
 
    public class Users {
 
     private static final String FILE_PATH_2 = "C:\\Users\\Jordy vindas\\OneDrive - Universidad de Costa Rica\\Documentos\\NetBeansProjects\\SimposioUcr\\register.txt";
 
-  public boolean saveusers(String name, String lastname, String username, String password) {
+  public boolean saveusers(String name, String username, String gmail, String password, String role) {
         Path filePath = Paths.get(FILE_PATH_2);
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath.toString(), true))) {
-            writer.write(name + "," + lastname + "," + username + "," + password); // Guardar sin cifrar
+            writer.write(name + "," + username + "," + gmail + "," + password+","+role); // Guardar sin cifrar
             writer.newLine();
             System.out.println("User saved successfully to the file.");
             return true;
@@ -36,10 +33,10 @@ import javax.crypto.spec.SecretKeySpec;
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(",");
-                if (data.length < 4) {
+                if (data.length < 5) {
                     continue;
                 }
-                String storedUsername = encryptor.decrypt(data[2].trim());
+                String storedUsername = encryptor.decrypt(data[1].trim());
                 String storedPassword = encryptor.decrypt(data[3].trim());
 
                 System.out.println("Stored Username: " + storedUsername);
