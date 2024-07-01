@@ -13,10 +13,10 @@ public class Users {
 
     private static final String FILE_PATH_2 = "C:\\Users\\Jordy vindas\\OneDrive - Universidad de Costa Rica\\Documentos\\NetBeansProjects\\SimposioUcr\\register.txt";
 
-    public boolean saveusers(String name, String username, String gmail, String idNumber, String institution, String interestArea, String role, String participantType, String password) {
+    public boolean saveusers(String name, String username, String gmail, String idNumber, String phoneNumber, String institution, String interestArea, String role, String participantType, String password) {
         Path filePath = Paths.get(FILE_PATH_2);
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath.toString(), true))) {
-            writer.write(name + "," + username + "," + gmail + "," + idNumber + "," + institution + "," + interestArea + "," + role + "," + participantType + "," + password);
+            writer.write(name + "," + username + "," + gmail + "," + idNumber + "," + phoneNumber + "," + institution + "," + interestArea + "," + role + "," + participantType + "," + password);
             writer.newLine();
             System.out.println("User saved successfully to the file.");
             return true;
@@ -32,11 +32,11 @@ public class Users {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(",");
-                if (data.length < 9) {
+                if (data.length < 10) { // Verificar que haya al menos 10 campos
                     continue;
                 }
                 String storedUsername = encryptor.decrypt(data[1].trim());
-                String storedPassword = encryptor.decrypt(data[8].trim());
+                String storedPassword = encryptor.decrypt(data[9].trim());
 
                 System.out.println("Stored Username: " + storedUsername);
                 System.out.println("Stored Password: " + storedPassword);

@@ -28,7 +28,10 @@
                     <input type="email" class="form-control" name="email" placeholder="Correo" required="required">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="id_number" placeholder="Número de identificación" required="required">
+                    <input type="text" class="form-control" name="id_number" placeholder="Número de identificación" required="required" pattern="^\d{1}-\d{4}-\d{4}$" title="Formato: X-XXXX-XXXX">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="phone_number" placeholder="Número de teléfono" required="required" pattern="^\d{8}$" title="Número de teléfono debe tener 8 dígitos">
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" name="institution" placeholder="Institución educativa" required="required">
@@ -70,6 +73,7 @@
                 String username = request.getParameter("username");
                 String email = request.getParameter("email");
                 String idNumber = request.getParameter("id_number");
+                String phoneNumber = request.getParameter("phone_number");
                 String institution = request.getParameter("institution");
                 String interestArea = request.getParameter("interest_area");
                 String role = request.getParameter("role");
@@ -77,11 +81,26 @@
                 String password = request.getParameter("password");
                 String confirmPassword = request.getParameter("confirm_password");
 
-                if (password != null && password.equals(confirmPassword)) {
+                boolean isValid = true;
+                String errorMessage = "";
+
+                if (password == null || !password.equals(confirmPassword)) {
+                    isValid = false;
+                    errorMessage = "Las contraseñas no coinciden.";
+                } else if (!idNumber.matches("^\\d{1}-\\d{4}-\\d{4}$")) {
+                    isValid = false;
+                    errorMessage = "Formato de número de identificación incorrecto. Debe ser X-XXXX-XXXX.";
+                } else if (!phoneNumber.matches("^\\d{8}$")) {
+                    isValid = false;
+                    errorMessage = "Número de teléfono debe tener 8 dígitos.";
+                }
+
+                if (isValid) {
                     String encryptedFullName = encrypted.encrypt(fullName);
                     String encryptedUsername = encrypted.encrypt(username);
                     String encryptedEmail = encrypted.encrypt(email);
                     String encryptedIdNumber = encrypted.encrypt(idNumber);
+                    String encryptedPhoneNumber = encrypted.encrypt(phoneNumber);
                     String encryptedInstitution = encrypted.encrypt(institution);
                     String encryptedInterestArea = encrypted.encrypt(interestArea);
                     String encryptedRole = encrypted.encrypt(role);
@@ -89,7 +108,7 @@
                     String encryptedPassword = encrypted.encrypt(password);
 
                     Users userController = new Users();
-                    boolean saveSuccess = userController.saveusers(encryptedFullName, encryptedUsername, encryptedEmail, encryptedIdNumber, encryptedInstitution, encryptedInterestArea, encryptedRole, encryptedParticipantType, encryptedPassword);
+                    boolean saveSuccess = userController.saveusers(encryptedFullName, encryptedUsername, encryptedEmail, encryptedIdNumber, encryptedPhoneNumber, encryptedInstitution, encryptedInterestArea, encryptedRole, encryptedParticipantType, encryptedPassword);
                     if (saveSuccess) {
                         session.setAttribute("message", "Usuario registrado exitosamente.");
                         response.sendRedirect("Login.jsp");
@@ -98,7 +117,7 @@
                         response.sendRedirect("Register.jsp");
                     }
                 } else {
-                    session.setAttribute("error", "Las contraseñas no coinciden.");
+                    session.setAttribute("error", errorMessage);
                     response.sendRedirect("Register.jsp");
                 }
             }
