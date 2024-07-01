@@ -28,18 +28,34 @@
                     <input type="email" class="form-control" name="email" placeholder="Correo" required="required">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" name="password" placeholder="Contraseña" required="required">
+                    <input type="text" class="form-control" name="id_number" placeholder="Número de identificación" required="required">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" name="confirm_password" placeholder="Confirmar contraseña" required="required">
+                    <input type="text" class="form-control" name="institution" placeholder="Institución educativa" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="interest_area" placeholder="Área de interés" required="required">
                 </div>
                 <div class="form-group">
                     <select class="form-control" name="role" required="required">
                         <option value="">Seleccione su rol</option>
                         <option value="Profesor">Profesor</option>
                         <option value="Estudiante">Estudiante</option>
-                        <option value="Externo">Externo</option>
                     </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" name="participant_type" required="required">
+                        <option value="">Tipo de participante</option>
+                        <option value="Asistente">Asistente</option>
+                        <option value="Ponente">Ponente</option>
+                        <option value="Empresa">Empresa</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" placeholder="Contraseña" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="confirm_password" placeholder="Confirmar contraseña" required="required">
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-purple btn-block">Confirmar</button>
@@ -53,19 +69,27 @@
                 String fullName = request.getParameter("full_name");
                 String username = request.getParameter("username");
                 String email = request.getParameter("email");
+                String idNumber = request.getParameter("id_number");
+                String institution = request.getParameter("institution");
+                String interestArea = request.getParameter("interest_area");
+                String role = request.getParameter("role");
+                String participantType = request.getParameter("participant_type");
                 String password = request.getParameter("password");
                 String confirmPassword = request.getParameter("confirm_password");
-                String role = request.getParameter("role");
 
                 if (password != null && password.equals(confirmPassword)) {
                     String encryptedFullName = encrypted.encrypt(fullName);
                     String encryptedUsername = encrypted.encrypt(username);
                     String encryptedEmail = encrypted.encrypt(email);
-                    String encryptedPassword = encrypted.encrypt(password);
+                    String encryptedIdNumber = encrypted.encrypt(idNumber);
+                    String encryptedInstitution = encrypted.encrypt(institution);
+                    String encryptedInterestArea = encrypted.encrypt(interestArea);
                     String encryptedRole = encrypted.encrypt(role);
+                    String encryptedParticipantType = encrypted.encrypt(participantType);
+                    String encryptedPassword = encrypted.encrypt(password);
 
                     Users userController = new Users();
-                    boolean saveSuccess = userController.saveusers(encryptedFullName, encryptedUsername, encryptedEmail, encryptedPassword, encryptedRole);
+                    boolean saveSuccess = userController.saveusers(encryptedFullName, encryptedUsername, encryptedEmail, encryptedIdNumber, encryptedInstitution, encryptedInterestArea, encryptedRole, encryptedParticipantType, encryptedPassword);
                     if (saveSuccess) {
                         session.setAttribute("message", "Usuario registrado exitosamente.");
                         response.sendRedirect("Login.jsp");
