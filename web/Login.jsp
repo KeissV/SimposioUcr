@@ -24,6 +24,14 @@
         <div class="login-form">
             <form action="Login.jsp" method="post">
                 <h2 class="text-center">Iniciar Sesión</h2>
+                <% if (session.getAttribute("loginError") != null) { %>
+                    <div class="alert alert-danger">
+                        <%= session.getAttribute("loginError") %>
+                    </div>
+                    <%
+                        session.removeAttribute("loginError");
+                    %>
+                <% } %>
                 <div class="form-group">
                     <input type="text" class="form-control" name="usuario" placeholder="Usuario" required="required">
                 </div>
@@ -50,13 +58,13 @@
                             session.setAttribute("usuarioLogueado", user);
                             response.sendRedirect("index.jsp");
                         } else {
-                            request.setAttribute("loginError", "Usuario o contraseña incorrectos.");
-                            request.getRequestDispatcher("Login.jsp").forward(request, response);
+                            session.setAttribute("loginError", "Usuario o contraseña incorrectos.");
+                            response.sendRedirect("Login.jsp");
                         }
                     } catch (Exception e) {
                         e.printStackTrace();
-                        request.setAttribute("loginError", "Error en el sistema: " + e.getMessage());
-                        request.getRequestDispatcher("Login.jsp").forward(request, response);
+                        session.setAttribute("loginError", "Error en el sistema: " + e.getMessage());
+                        response.sendRedirect("Login.jsp");
                     }
                 }
             %>
