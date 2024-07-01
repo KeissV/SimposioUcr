@@ -1,5 +1,5 @@
-<%@ page import="Files.Users, Files.Encrypted" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import="Files.Users, Files.Encrypted, Files.EmailService" %>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -109,18 +109,34 @@
 
                     Users userController = new Users();
                     boolean saveSuccess = userController.saveusers(encryptedFullName, encryptedUsername, encryptedEmail, encryptedIdNumber, encryptedPhoneNumber, encryptedInstitution, encryptedInterestArea, encryptedRole, encryptedParticipantType, encryptedPassword);
-                    if (saveSuccess) {
-                        session.setAttribute("message", "Usuario registrado exitosamente.");
-                        response.sendRedirect("Login.jsp");
+                  if (saveSuccess) {
+                out.println("Usuario guardado exitosamente en la base de datos.<br>");
+                // Envío del correo de confirmación
+                try {
+                    out.println("Intentando enviar correo...<br>"); // Mensaje de depuración
+                    String emailResponse = EmailService.sendEmail(email, "Bienvenido al Simposio UCR 2024", "Hola, " +fullName + " " + ". Tu registro se ha completado exitosamente.");
+                    out.println("Respuesta del servicio de email: " + emailResponse + "<br>"); // Mensaje de depuración
+                    if ("Success".equals(emailResponse)) {
+                        session.setAttribute("message", "Usuario registrado exitosamente. Email de confirmación enviado correctamente.");
                     } else {
-                        session.setAttribute("error", "No se pudo registrar al usuario.");
-                        response.sendRedirect("Register.jsp");
+                        session.setAttribute("error", "Usuario registrado pero falló el envío de email. Error: " + emailResponse);
                     }
-                } else {
-                    session.setAttribute("error", errorMessage);
-                    response.sendRedirect("Register.jsp");
+                } catch (Exception e) {
+                    out.println("Error al enviar correo: " + e.getMessage() + "<br>"); // Mensaje de depuración
+                    session.setAttribute("error", "Usuario registrado pero falló el envío de email. Error: " + e.getMessage());
                 }
+                response.sendRedirect("Login.jsp");
+            } else {
+                out.println("No se pudo registrar al usuario.<br>"); // Mensaje de depuración
+                session.setAttribute("error", "No se pudo registrar al usuario.");
+                response.sendRedirect("Register.jsp");
             }
+        } else {
+            out.println("Las contraseñas no coinciden.<br>"); // Mensaje de depuración
+            session.setAttribute("error", "Las contraseñas no coinciden.");
+            response.sendRedirect("Register.jsp");
+        }
+    }
         %>
     </body>
 </html>
