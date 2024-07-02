@@ -13,10 +13,11 @@
         <title>Simposio UCR 2024</title>
         <!-- Enlace a Bootstrap CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+           <link href="CSSClasses/nav.css" rel="stylesheet">
         <link rel="stylesheet" href="CSSClasses/Home.css">
     </head>
     <body>
-        <!-- Barra de Navegación  -->
+       <!-- Barra de Navegación  -->
         <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
             <div class="container-fluid">
                 <div class="d-flex w-100 justify-content-between">
@@ -73,7 +74,6 @@
                 </div>
             </div>
         </nav>
-
         <!-- Contenido principal -->
         <div class="p">
             <div class="pict">

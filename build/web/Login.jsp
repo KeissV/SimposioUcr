@@ -16,7 +16,7 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="CSSClasses/Login.css">
     </head>
-    <body style="background-image: url('pictures/Imagen de WhatsApp 2024-06-10 a las 01.50.48_35fc9572.jpg'); 
+    <body style="background-image: url('pictures/nuevoFondo.png'); 
           background-repeat: no-repeat; background-position: center center; background-attachment: fixed; background-size: cover;">
     </body>
 
