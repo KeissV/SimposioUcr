@@ -10,7 +10,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 
 .fullscreen-image {
     width: 100%;
-    height: 70vh;
+    height: 70vh; /* Altura relativa para adaptabilidad */
     object-fit: cover;
     object-position: top;
 }
@@ -132,8 +132,8 @@ body {
 }
 
 .card-event {
-    width: calc(102% - 1px);
-    height: 320px; /* Ajusta la altura total de la tarjeta */
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto;  Ajusta la altura total de la tarjeta */
     perspective: 1000px;
 }
 

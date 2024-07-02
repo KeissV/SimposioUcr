@@ -31,7 +31,7 @@
                 background-color: #00c0f3;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 margin-bottom: 15px;
-                background: #00c0f3;
+                background: rgb(142,216,248,0.75);
                 border-radius: 10px;
                 padding: 30px;
                 box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
@@ -92,6 +92,7 @@
             <textarea id="message" name="message" rows="5" required></textarea>
 
             <button type="submit">Enviar solicitud</button>
+            
         </form>
     </div>
 

@@ -47,6 +47,9 @@
                 <div class="form-group">
                     <a href="Register.jsp" class="btn btn-purple btn-block">Registrarse</a>
                 </div>
+                 <div class="form-group">
+                    <a href="Home.jsp" class="btn btn-purple btn-block">Volver</a>
+                </div>
             </form>
             <%
                 if ("POST".equalsIgnoreCase(request.getMethod())) {
