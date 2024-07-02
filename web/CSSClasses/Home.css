@@ -133,7 +133,7 @@ body {
 
 .card-event {
     width: 100%; /* Ajusta el ancho al 100% del contenedor */
-    height: auto;  Ajusta la altura total de la tarjeta */
+    height: auto;  
     perspective: 1000px;
 }
 
