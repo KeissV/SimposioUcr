@@ -19,7 +19,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background: url('pictures/Imagen de WhatsApp 2024-06-10 a las 01.50.48_35fc9572.jpg') no-repeat center center fixed;
+                background: url('pictures/nuevoFondo.png') no-repeat center center fixed;
                 background-size: cover;
                 font-family: Arial, sans-serif;
                 font-size: 18px;
