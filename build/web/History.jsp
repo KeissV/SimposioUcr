@@ -26,7 +26,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle  nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Accesibilidad
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -43,24 +43,24 @@
                                 </div>
                             </li>
                              <li class="nav-item">
-                                <a class="nav-link" href="Home.jsp">Inicio</a>
+                                <a class="nav-link  nav-text" href="Home.jsp">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Calender.jsp">Calendario</a>
+                                <a class="nav-link  nav-text" href="Calender.jsp">Calendario</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Downloads.jsp">Descargas</a>
+                                <a class="nav-link nav-text" href="Downloads.jsp">Descargas</a>
                             </li>
                            
                             <li class="nav-item">
-                                <a class="nav-link" href="Questions.jsp">Preguntas</a>
+                                <a class="nav-link  nav-text" href="Questions.jsp">Preguntas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contacts.jsp">Contactos</a>
+                                <a class="nav-link  nav-text" href="Contacts.jsp">Contactos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Login.jsp">
-                                    <img src="pictures/icons8-test-account-100.png" alt="Botón de sesión" width="40" height="40">
+                                   <img src="pictures/icons8-nombre-48 (1).png" alt="Botón de sesión" width="40" height="40">
                                 </a>
                             </li>
                         </ul>
