@@ -95,7 +95,7 @@
 
             body {
                 display: flex;
-                flex-direction: column;
+                flex-direction: column;}
 
                 .navbar-nav .nav-link.nav-text {
                     font-size: 17px;
