@@ -40,6 +40,9 @@
                             <a class="nav-link nav-text" href="Home.jsp">Inicio</a>
                         </li>
                         <li class="nav-item">
+                                    <a class="nav-link nav-text" href="Map.jsp">Mapa</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link nav-text" href="Downloads.jsp">Descargas</a>
                         </li>
                         <li class="nav-item">
