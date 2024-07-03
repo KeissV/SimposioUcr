@@ -19,31 +19,44 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background: url('pictures/Imagen de WhatsApp 2024-06-10 a las 01.50.48_35fc9572.jpg') no-repeat center center fixed;
+                background: url('pictures/nuevoFondo.png') no-repeat center center fixed;
                 background-size: cover;
                 font-family: Arial, sans-serif;
                 font-size: 18px;
             }
-            .container {
-                width: 340px;
-                margin: 50px auto;
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: 90%;
+                margin-top: 50px;
+            }
+            .form-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgba(142, 216, 248, 0.75);
                 padding: 20px;
-                background-color: #00c0f3;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                margin-bottom: 15px;
-                background: #00c0f3;
                 border-radius: 10px;
-                padding: 30px;
                 box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
             }
-            h2 {
+            @media (min-width: 768px) {
+                .content {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                .form-container, .contact-info {
+                    width: 45%;
+                    margin: 10px;
+                }
+            }
+            h2, h3 {
                 text-align: center;
                 color: #333;
             }
             form {
                 display: flex;
                 flex-direction: column;
-                
             }
             label {
                 margin-bottom: 5px;
@@ -66,53 +79,63 @@
                 border-color: #005da4de;
             }
             button:hover {
-
                 background-color: #005da4de;
                 border-color: #005da4de;
+            }
+            .contact-info {
+                align-self: flex-start;
+            }
+            .contact-info p {
+                color: #333;
+                font-size: 16px;
+                margin: 5px 0;
             }
         </style>
     </head>
 
     <body>
+        <div class="content">
+            <div class="contact-info">
+                <h3>Información de Contacto de los Organizadores</h3>
+                <p><strong>Correo Electrónico:</strong> organizadores@simposio.com</p>
+                <p><strong>Número de Teléfono:</strong> +123 456 7890</p>
+            </div>
+            <div class="form-container">
+                <h2>Contáctenos</h2>
+                <form action="Contacts.jsp" method="POST">
+                    <label for="name">Nombre completo:</label>
+                    <input type="text" id="name" name="name" required>
 
-    <div class="container">
-        <h2>Contactenos</h2>
-        <form action="Contacts.jsp" method="POST">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
 
-            <label for="name">Nombre completo:</label>
-            <input type="text" id="name" name="name" required>
+                    <label for="phone">Número de teléfono:</label>
+                    <input type="tel" id="phone" name="phone">
 
-            <label for="email">Correo electronico:</label>
-            <input type="email" id="email" name="email" required>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
 
-            <label for="phone">Numero de telefono:</label>
-            <input type="tel" id="phone" name="phone">
+                    <button type="submit">Enviar solicitud</button>
+                </form>
+            </div>
+        </div>
 
-            <label for="message">Mesaje:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+        <%
+            Encrypted encrypted = new Encrypted();
+            String name = request.getParameter("name");
+            String email = request.getParameter("email");
+            String phone = request.getParameter("phone");
+            String message = request.getParameter("message");
 
-            <button type="submit">Enviar solicitud</button>
-        </form>
-    </div>
+            if (name != null && email != null && message != null) {
+                String nameEnc = encrypted.encrypt(name);
+                String emailEnc = encrypted.encrypt(email);
+                String phoneEnc = phone != null ? encrypted.encrypt(phone) : null;
+                String messageEnc = encrypted.encrypt(message);
 
-    <%
-        Encrypted encrypted = new Encrypted();
-        String name = request.getParameter("name");
-        String email = request.getParameter("email");
-        String phone = request.getParameter("phone");
-        String message = request.getParameter("message");
-
-        if (name != null && email != null && message != null) {
-            String nameEnc = encrypted.encrypt(name);
-            String emailEnc = encrypted.encrypt(email);
-            String phoneEnc = phone != null ? encrypted.encrypt(phone) : null;
-            String messageEnc = encrypted.encrypt(message);
-
-            Request gc = new Request();
-            boolean save = gc.saverequests(nameEnc, emailEnc, phoneEnc, messageEnc);
-
-        }
-    %>
-</body>
-
+                Request gc = new Request();
+                boolean save = gc.saverequests(nameEnc, emailEnc, phoneEnc, messageEnc);
+            }
+        %>
+    </body>
 </html>

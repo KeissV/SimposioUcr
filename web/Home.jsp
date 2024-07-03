@@ -10,75 +10,78 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Simposio UCR 2024</title>
         <!-- Enlace a Bootstrap CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="CSSClasses/nav.css" rel="stylesheet">
         <link rel="stylesheet" href="CSSClasses/Home.css">
     </head>
     <body>
         <!-- Barra de Navegación  -->
-        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-            <div class="container-fluid">
-                <div class="d-flex w-100 justify-content-between">
-                    <!-- Logos de la UCR -->
-                    <a class="navbar-brand">
-                        <img src="pictures/logos.png" alt="logos UCR" width="303.7" height="60.1"/>
-                    </a>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+                <div class="container-fluid">
+                    <div class="d-flex w-100 justify-content-between">
+                        <!-- Logos de la UCR -->
+                        <a class="navbar-brand">
+                            <img src="pictures/logos.png" alt="logos UCR" width="303.7" height="60.1"/>
+                        </a>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- Contenido de la barra de navegación -->
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Accesibilidad
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <h8> Contraste de color :</h8>
-                                    <a class="dropdown-item" href="#">Normal</a>
-                                    <a class="dropdown-item" href="#">Escala de Azules</a>
-                                    <a class="dropdown-item" href="#">Alto contraste</a>
-                                    <a class="dropdown-item" href="#">Fondo claro</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Contenido de la barra de navegación -->
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Accesibilidad
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <h8> Contraste de color :</h8>
+                                        <a class="dropdown-item" href="#">Normal</a>
+                                        <a class="dropdown-item" href="#">Escala de Azules</a>
+                                        <a class="dropdown-item" href="#">Alto contraste</a>
+                                        <a class="dropdown-item" href="#">Fondo claro</a>
 
-                                    <h8> Tamaño de Fuente:</h8>
-                                    <a class="dropdown-item" href="#">Pequeña</a>
-                                    <a class="dropdown-item" href="#">Mediana</a>
-                                    <a class="dropdown-item" href="#">Grande</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Calender.jsp">Calendario</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Downloads.jsp">Descargas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="History.jsp">Historia</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Questions.jsp">Preguntas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Contacts.jsp">Contactos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Login.jsp">
-                                    <img src="pictures/icons8-test-account-100.png" alt="Botón de sesión" width="40" height="40">
-                                </a>
-                            </li>
-                        </ul>
+                                        <h8> Tamaño de Fuente:</h8>
+                                        <a class="dropdown-item" href="#">Pequeña</a>
+                                        <a class="dropdown-item" href="#">Mediana</a>
+                                        <a class="dropdown-item" href="#">Grande</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-text" href="Calender.jsp">Calendario</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-text" href="Downloads.jsp">Descargas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-text" href="History.jsp">Historia</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-text" href="Questions.jsp">Preguntas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-text" href="Contacts.jsp">Contactos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Login.jsp">
+                                        <img src="pictures/icons8-nombre-48 (1).png" alt="Botón de sesión" width="40" height="40">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-
+            </nav>
+        </div>
         <!-- Contenido principal -->
         <div class="p">
             <div class="pict">
                 <!-- Imagen local -->
-                <img src="pictures/bn.png" class="fullscreen-image" alt="Imagen UCR">
+                <img src="pictures/bn.png" class="fullscreen-image img-fluid" alt="Imagen UCR">
             </div>
             <div class="separator-bar"></div>
             <div class="t">
@@ -197,7 +200,7 @@
                                 </div>                                <div class="card-event-back">
                                     <h5 class="card-title"> evento 1</h5>
                                     <p class="card-text center">Más información sobre el evento 1...</p>
-                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                    <a href="Calender.jsp#event-1" class="btn btn-primary">Ver más</a>
                                 </div>
                             </div>
                         </div>
@@ -212,7 +215,7 @@
                                 <div class="card-event-back">
                                     <h5 class="card-title"> evento 3</h5>
                                     <p class="card-text center">Más información sobre el evento 3...</p>
-                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                    <a href="Calender.jsp#event-3" class="btn btn-primary">Ver más</a>
                                 </div>
                             </div>
                         </div>
@@ -226,7 +229,7 @@
                                 </div>                                <div class="card-event-back">
                                     <h5 class="card-title"> evento 5</h5>
                                     <p class="card-text center">Más información sobre el evento 5...</p>
-                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                    <a href="Calender.jsp#event-5" class="btn btn-primary">Ver más</a>
                                 </div>
                             </div>
                         </div>
@@ -241,7 +244,7 @@
                                 <div class="card-event-back">
                                     <h5 class="card-title"> evento 7</h5>
                                     <p class="card-text center">Más información sobre el evento 7...</p>
-                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                    <a href="Calender.jsp#event-7" class="btn btn-primary">Ver más</a>
                                 </div>
                             </div>
                         </div>
@@ -255,7 +258,7 @@
                                 </div>                                <div class="card-event-back">
                                     <h5 class="card-title"> evento 9</h5>
                                     <p class="card-text center">Más información sobre el eventooooooooooooooooooo, </p>
-                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                    <a href="Calender.jsp#event-9" class="btn btn-primary">Ver más</a>
                                 </div>
                             </div>
                         </div>
@@ -273,7 +276,7 @@
                                 <div class="card-event-back">
                                     <h5 class="card-title">evento 2</h5>
                                     <p class="card-text center"> detalws evento 2...</p>
-                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                    <a href="Calender.jsp#event-2" class="btn btn-primary">Ver más</a>
                                 </div>
                             </div>
                         </div>
@@ -288,7 +291,7 @@
                                 <div class="card-event-back">
                                     <h5 class="card-title">l evento 4</h5>
                                     <p class="card-text center"> evento 4...</p>
-                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                    <a href="Calender.jsp#event-4" class="btn btn-primary">Ver más</a>
                                 </div>
                             </div>
                         </div>
@@ -303,7 +306,7 @@
                                 <div class="card-event-back">
                                     <h5 class="card-title"> evento 6</h5>
                                     <p class="card-text center"> evento 6...</p>
-                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                    <a href="Calender.jsp#event-6" class="btn btn-primary">Ver más</a>
                                 </div>
                             </div>
                         </div>
@@ -317,7 +320,7 @@
                                 </div>                                <div class="card-event-back">
                                     <h5 class="card-title"> evento 8</h5>
                                     <p class="card-text center">Más información sobre el evento 8...</p>
-                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                    <a href="Calender.jsp#event-8" class="btn btn-primary">Ver más</a>
                                 </div>
                             </div>
                         </div>
@@ -332,7 +335,7 @@
                                 <div class="card-event-back">
                                     <h5 class="card-title"> evento 10</h5>
                                     <p class="card-text center">Más información sobre el evento 10...</p>
-                                    <a href="#" class="btn btn-primary">Ver más</a>
+                                    <a href="Calender.jsp#event-10" class="btn btn-primary">Ver más</a>
                                 </div>
                             </div>
                         </div>
