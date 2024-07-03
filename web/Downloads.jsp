@@ -190,6 +190,9 @@
                                 <a class="nav-link nav-text" href="Calender.jsp">Calendario</a>
                             </li>
                             <li class="nav-item">
+                                    <a class="nav-link nav-text" href="Map.jsp">Mapa</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link nav-text" href="History.jsp">Historia</a>
                             </li>
                             <li class="nav-item">
