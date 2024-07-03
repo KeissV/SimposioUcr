@@ -6,6 +6,14 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="java.io.File" %>
+<%
+    if (session == null || session.getAttribute("usuarioLogueado") == null) {
+        response.sendRedirect("Login.jsp?message=Debe%20iniciar%20sesion%20para%20continuar.");
+        return;
+    }
+%>
+
+
 <!DOCTYPE html>
 <html>
     <head>

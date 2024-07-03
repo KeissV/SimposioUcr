@@ -6,7 +6,12 @@
 
 <%@ page import="Files.Request, Files.Encrypted" %>
 <%@ page contentType="text/html" pageEncoding="UTF-8" %>
-
+<%
+    if (session == null || session.getAttribute("usuarioLogueado") == null) {
+        response.sendRedirect("Login.jsp?message=Debe%20iniciar%20sesion%20para%20continuar.");
+        return;
+    }
+%>
 <!DOCTYPE html>
 <html>
     <head>
