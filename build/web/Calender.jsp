@@ -20,7 +20,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Accesibilidad
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -34,23 +34,23 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-text" href="Home.jsp">Inicio</a>
+                            <a class="nav-link" href="Home.jsp">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-text" href="Downloads.jsp">Descargas</a>
+                            <a class="nav-link" href="Downloads.jsp">Descargas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-text" href="History.jsp">Historia</a>
+                            <a class="nav-link" href="History.jsp">Historia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-text" href="Questions.jsp">Preguntas</a>
+                            <a class="nav-link" href="Questions.jsp">Preguntas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-text" href="Contacts.jsp">Contactos</a>
+                            <a class="nav-link" href="Contacts.jsp">Contactos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-text" href="Login.jsp">
-                                <img src="pictures/icons8-nombre-48 (1).png" alt="Botón de sesión" width="40" height="40">
+                            <a class="nav-link" href="Login.jsp">
+                                <img src="pictures/icons8-test-account-100.png" alt="Botón de sesión" width="40" height="40">
                             </a>
                         </li>
                     </ul>
@@ -64,70 +64,177 @@
             <div class="separator-bar"></div>
         </div>
         <div class="container mt-5">
-            <h4 class="text-center title-section">Calendario</h4>
-            <div class="calendar-events-container mt-5">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card-event">
-                            <div class="event-date-bar">Fecha del Evento 1</div>
-                            <div class="card-event-inner">
-                                <div class="card-event-front">
-                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Título del evento 1</h5>
-                                    </div>
-                                </div>
-                                <div class="card-event-back">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Información adicional del Evento 1</h5>
-                                        <p class="card-text">Más detalles sobre el evento 1...</p>
-                                        <a href="Day1.jsp" class="btn btn-primary">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-event">
-                            <div class="event-date-bar">Fecha del Evento 2</div>
-                            <div class="card-event-inner">
-                                <div class="card-event-front">
-                                    <img src="img/evento2.jpg" class="card-img-top" alt="Imagen del Evento 2">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Título del evento 2</h5>
-                                    </div>
-                                </div>
-                                <div class="card-event-back">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Información adicional del Evento 2</h5>
-                                        <p class="card-text">Más detalles sobre el evento 2...</p>
-                                        <a href="Day2.jsp" class="btn btn-primary">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <h1 class="text-center title-section">Calendario</h1>
+            <h2 style="text-align: center">Feha en formato preferido</h2>
+            <div class="event"  id="event-1">
+                <div class="event-image">
+                    <img src="url_de_la_imagen_evento1.jpg" alt="Imagen del Evento 1">
+                </div>
+                <div class="event-content">
+                    <h2>Nombre del Evento 1</h2>
+                    <p><strong>Hora del Evento:</strong> 10:00 AM</p>
+                    <p><strong>Información acerca de la actividad:</strong> Descripción del evento 1.</p>
+                    <p><strong>Presentadores y encargados:</strong> Nombre de los encargados.</p>
+                    <p><strong>Contacto:</strong> contacto@evento1.com</p>
+                    <p><strong>Enlace a formulario de inscripción:</strong> <a href="enlace_formulario_evento1.com">Inscribirse</a></p>
+                </div>
+            </div>
+            <div class="event" id="event-2">
+                <div class="event-image">
+                    <img src="url_de_la_imagen_evento2.jpg" alt="Imagen del Evento 2">
+                </div>
+                <div class="event-content">
+                    <h2>Nombre del Evento 2</h2>
+                    <p><strong>Hora del Evento:</strong> 1:00 PM</p>
+                    <p><strong>Información acerca de la actividad:</strong> Descripción del evento 2.</p>
+                    <p><strong>Presentadores y encargados:</strong> Nombre de los encargados.</p>
+                    <p><strong>Contacto:</strong> contacto@evento2.com</p>
+                    <p><strong>Enlace a formulario de inscripción:</strong> <a href="enlace_formulario_evento2.com">Inscribirse</a></p>
+                </div>
+            </div>
+            <!-- Agrega más eventos aquí de la misma manera -->
 
-                    <div class="col-md-4">
-                        <div class="card-event">
-                            <div class="event-date-bar">Fecha del Evento 3</div>
-                            <div class="card-event-inner">
-                                <div class="card-event-front">
-                                    <img src="img/evento3.jpg" class="card-img-top" alt="Imagen del Evento 3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Título del evento 3</h5>
-                                    </div>
-                                </div>
-                                <div class="card-event-back">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Información adicional del Evento 3</h5>
-                                        <p class="card-text">Más detalles sobre el evento 3...</p>
-                                        <a href="Day3.jsp" class="btn btn-primary">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="event" id="event-3">
+                <div class="event-image">
+                    <img src="url_de_la_imagen_evento2.jpg" alt="Imagen del Evento 2">
+                </div>
+                <div class="event-content">
+                    <h2>Nombre del Evento 2</h2>
+                    <p><strong>Hora del Evento:</strong> 1:00 PM</p>
+                    <p><strong>Información acerca de la actividad:</strong> Descripción del evento 2.</p>
+                    <p><strong>Presentadores y encargados:</strong> Nombre de los encargados.</p>
+                    <p><strong>Contacto:</strong> contacto@evento2.com</p>
+                    <p><strong>Enlace a formulario de inscripción:</strong> <a href="enlace_formulario_evento2.com">Inscribirse</a></p>
+                </div>
+            </div>
+           
+            <div class="event"id="event-4">
+                <div class="event-image">
+                    <img src="url_de_la_imagen_evento2.jpg" alt="Imagen del Evento 2">
+                </div>
+                <div class="event-content">
+                    <h2>Nombre del Evento 2</h2>
+                    <p><strong>Hora del Evento:</strong> 1:00 PM</p>
+                    <p><strong>Información acerca de la actividad:</strong> Descripción del evento 2.</p>
+                    <p><strong>Presentadores y encargados:</strong> Nombre de los encargados.</p>
+                    <p><strong>Contacto:</strong> contacto@evento2.com</p>
+                    <p><strong>Enlace a formulario de inscripción:</strong> <a href="enlace_formulario_evento2.com">Inscribirse</a></p>
+                </div>
+            </div>
+            <div class="separator-bar"></div>
+            <h2 style="text-align: center">Feha 2 en formato preferido</h2>
+            <div class="event" id="event-5">
+                <div class="event-image">
+                    <img src="url_de_la_imagen_evento1.jpg" alt="Imagen del Evento 1">
+                </div>
+                <div class="event-content">
+                    <h2>Nombre del Evento 1</h2>
+                    <p><strong>Hora del Evento:</strong> 10:00 AM</p>
+                    <p><strong>Información acerca de la actividad:</strong> Descripción del evento 1.</p>
+                    <p><strong>Presentadores y encargados:</strong> Nombre de los encargados.</p>
+                    <p><strong>Contacto:</strong> contacto@evento1.com</p>
+                    <p><strong>Enlace a formulario de inscripción:</strong> <a href="enlace_formulario_evento1.com">Inscribirse</a></p>
+                </div>
+            </div>
+            <div class="event" id="event-6">
+                <div class="event-image">
+                    <img src="url_de_la_imagen_evento2.jpg" alt="Imagen del Evento 2">
+                </div>
+                <div class="event-content">
+                    <h2>Nombre del Evento 2</h2>
+                    <p><strong>Hora del Evento:</strong> 1:00 PM</p>
+                    <p><strong>Información acerca de la actividad:</strong> Descripción del evento 2.</p>
+                    <p><strong>Presentadores y encargados:</strong> Nombre de los encargados.</p>
+                    <p><strong>Contacto:</strong> contacto@evento2.com</p>
+                    <p><strong>Enlace a formulario de inscripción:</strong> <a href="enlace_formulario_evento2.com">Inscribirse</a></p>
+                </div>
+            </div>
+            <!-- Agrega más eventos aquí de la misma manera -->
+
+            <div class="event" id="event-7">
+                <div class="event-image">
+                    <img src="url_de_la_imagen_evento2.jpg" alt="Imagen del Evento 2">
+                </div>
+                <div class="event-content">
+                    <h2>Nombre del Evento 2</h2>
+                    <p><strong>Hora del Evento:</strong> 1:00 PM</p>
+                    <p><strong>Información acerca de la actividad:</strong> Descripción del evento 2.</p>
+                    <p><strong>Presentadores y encargados:</strong> Nombre de los encargados.</p>
+                    <p><strong>Contacto:</strong> contacto@evento2.com</p>
+                    <p><strong>Enlace a formulario de inscripción:</strong> <a href="enlace_formulario_evento2.com">Inscribirse</a></p>
+                </div>
+            </div>
+
+            <div class="event" id="event-8">
+                <div class="event-image">
+                    <img src="url_de_la_imagen_evento2.jpg" alt="Imagen del Evento 2">
+                </div>
+                <div class="event-content">
+                    <h2>Nombre del Evento 2</h2>
+                    <p><strong>Hora del Evento:</strong> 1:00 PM</p>
+                    <p><strong>Información acerca de la actividad:</strong> Descripción del evento 2.</p>
+                    <p><strong>Presentadores y encargados:</strong> Nombre de los encargados.</p>
+                    <p><strong>Contacto:</strong> contacto@evento2.com</p>
+                    <p><strong>Enlace a formulario de inscripción:</strong> <a href="enlace_formulario_evento2.com">Inscribirse</a></p>
+                </div>
+            </div>
+
+            <div class="separator-bar"></div>
+
+            <h2 style="text-align: center">Feha 3 en formato preferido</h2>
+            <div class="event" id="event-9">
+                <div class="event-image">
+                    <img src="url_de_la_imagen_evento1.jpg" alt="Imagen del Evento 1">
+                </div>
+                <div class="event-content">
+                    <h2>Nombre del Evento 1</h2>
+                    <p><strong>Hora del Evento:</strong> 10:00 AM</p>
+                    <p><strong>Información acerca de la actividad:</strong> Descripción del evento 1.</p>
+                    <p><strong>Presentadores y encargados:</strong> Nombre de los encargados.</p>
+                    <p><strong>Contacto:</strong> contacto@evento1.com</p>
+                    <p><strong>Enlace a formulario de inscripción:</strong> <a href="enlace_formulario_evento1.com">Inscribirse</a></p>
+                </div>
+            </div>
+            <div class="event" id="event-10">
+                <div class="event-image">
+                    <img src="url_de_la_imagen_evento2.jpg" alt="Imagen del Evento 2">
+                </div>
+                <div class="event-content">
+                    <h2>Nombre del Evento 2</h2>
+                    <p><strong>Hora del Evento:</strong> 1:00 PM</p>
+                    <p><strong>Información acerca de la actividad:</strong> Descripción del evento 2.</p>
+                    <p><strong>Presentadores y encargados:</strong> Nombre de los encargados.</p>
+                    <p><strong>Contacto:</strong> contacto@evento2.com</p>
+                    <p><strong>Enlace a formulario de inscripción:</strong> <a href="enlace_formulario_evento2.com">Inscribirse</a></p>
+                </div>
+            </div>
+            <!-- Agrega más eventos aquí de la misma manera -->
+
+            <div class="event" id="event-11">
+                <div class="event-image">
+                    <img src="url_de_la_imagen_evento2.jpg" alt="Imagen del Evento 2">
+                </div>
+                <div class="event-content">
+                    <h2>Nombre del Evento 2</h2>
+                    <p><strong>Hora del Evento:</strong> 1:00 PM</p>
+                    <p><strong>Información acerca de la actividad:</strong> Descripción del evento 2.</p>
+                    <p><strong>Presentadores y encargados:</strong> Nombre de los encargados.</p>
+                    <p><strong>Contacto:</strong> contacto@evento2.com</p>
+                    <p><strong>Enlace a formulario de inscripción:</strong> <a href="enlace_formulario_evento2.com">Inscribirse</a></p>
+                </div>
+            </div>
+
+            <div class="event" id="event-12">
+                <div class="event-image">
+                    <img src="url_de_la_imagen_evento2.jpg" alt="Imagen del Evento 2">
+                </div>
+                <div class="event-content">
+                    <h2>Nombre del Evento 2</h2>
+                    <p><strong>Hora del Evento:</strong> 1:00 PM</p>
+                    <p><strong>Información acerca de la actividad:</strong> Descripción del evento 2.</p>
+                    <p><strong>Presentadores y encargados:</strong> Nombre de los encargados.</p>
+                    <p><strong>Contacto:</strong> contacto@evento2.com</p>
+                    <p><strong>Enlace a formulario de inscripción:</strong> <a href="enlace_formulario_evento2.com">Inscribirse</a></p>
                 </div>
             </div>
         </div>
@@ -136,9 +243,9 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <footer class="footer">
-            <div class="container text-center">
-                <p>&copy; 2024 UCR SIMPOSIO INFORMATICA EMPRESARIAL. </p>
-            </div>
+
+            <p>&copy; 2024 UCR SIMPOSIO INFORMATICA EMPRESARIAL. </p>
+
         </footer>
     </body>
 </html>
