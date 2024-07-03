@@ -90,7 +90,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
-                            <h3 class="section-title text-center">Preguntas Frecuentes</h3>
+                             <h3 class="text-center title-section">Preguntas Frecuentes</h3>
                             <br/>
                             <div class="accordion" id="faqAccordion">
                                

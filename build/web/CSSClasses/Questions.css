@@ -14,11 +14,33 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Created on : 15 jun. 2024, 21:35:04
     Author     : franc
 */
+.title-section {
+    font-size: 23px; /* Tamaño adecuado */
+    font-weight: normal; /* Fuente normal */
+    color: #000; /* Azul más claro */
+    text-align: center; /* Centrado */
+    margin-top: 40px; /* Espacio superior */
+    margin-bottom: 6px; /* Espacio inferior */
+    font-family: 'Arial', sans-serif; /* Fuente profesional */
+    position: relative; /* Posicionamiento relativo */
+}
 
-/* Estilos para el acordeón */
-/* Estilo para el título principal */
-.section-title {
-    margin-top: 30px; /* Ajusta el margen superior para separar del navbar */
+.title-section::before {
+    content: "";
+    display: block;
+    width: 706px;
+    height: 3px;
+    background-color:rgb(185,217,137,0.75);  /* Color de la línea decorativa */
+    margin: 0 auto 10px;
+}
+
+.title-section::after {
+    content: "";
+    display: block;
+    width: 706px;
+    height: 3px;
+    background-color:rgb(185,217,137,0.75);  /* Color de la línea decorativa */
+    margin: 0 auto 10px;
 }
 /* Estilo para el contenedor de preguntas frecuentes */
 .faq-section {
