@@ -17,6 +17,7 @@
         <link href="CSSClasses/Questions.css" rel="stylesheet" >
         <link href="CSSClasses/nav.css" rel="stylesheet" type="text/css"/>
     </head>
+
     <body>
         <!-- Barra de Navegación  -->
         <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
@@ -76,18 +77,15 @@
                 </div>
             </div>
         </nav>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+
 
         <div class="container">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <section class="faq-section">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -95,12 +93,15 @@
                             <h3 class="section-title text-center">Preguntas Frecuentes</h3>
                             <br/>
                             <div class="accordion" id="faqAccordion">
-
+                               
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
                                         <h5 class="mb-0">
                                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                 ¿Cuándo y dónde se llevará a cabo el simposio?
+                                                <img src="pictures/edi.png" alt="Botón de sesión" width="40" height="40"  class="float-right">
+                                                <img src="pictures/calendario.png" alt="Botón de sesión" width="40" height="40"  class="float-right">
+
                                             </button>
                                         </h5>
                                     </div>
@@ -118,6 +119,7 @@
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                                 ¿Cuántas personas pueden asistir al simposio?
+                                                <img src="pictures/personas.png" alt="Botón de sesión" width="40" height="40"  class="float-right">
                                             </button>
                                         </h5>
                                     </div>
@@ -133,6 +135,7 @@
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTree" aria-expanded="false" aria-controls="collapseTree">
                                                 ¿Cómo puedo registrarme para el simposio?
+                                                <img src="pictures/reg.png" alt="Botón de sesión" width="40" height="40"  class="float-right">
                                             </button>
                                         </h5>
                                     </div>
@@ -147,6 +150,7 @@
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                                 ¿Cómo puedo inscribirme en una actividad?
+                                                <img src="pictures/ins.png" alt="Botón de sesión" width="40" height="40"  class="float-right">
                                             </button>
                                         </h5>
                                     </div>
@@ -161,6 +165,7 @@
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                                 ¿Hay señalización dentro de la sede para ayudarme a encontrar los diferentes eventos?
+                                                <img src="pictures/indicador.png" alt="Botón de sesión" width="40" height="40"  class="float-right">
                                             </button>
                                         </h5>
                                     </div>
@@ -175,6 +180,7 @@
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                                 ¿Cómo puedo llegar al lugar del simposio?
+                                                <img src="pictures/marcadores.png" alt="Botón de sesión" width="40" height="40"  class="float-right">
                                             </button>
                                         </h5>
                                     </div>
@@ -190,6 +196,7 @@
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                                                 ¿Hay alojamiento disponible cerca del lugar del evento?
+                                                <img src="pictures/reserva.png" alt="Botón de sesión" width="40" height="40"  class="float-right">
                                             </button>
                                         </h5>
                                     </div>
@@ -214,6 +221,7 @@
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                                                 ¿Cómo puedo orientarme una vez que llegue a Golfito?
+                                                <img src="pictures/mapa.png" alt="Botón de sesión" width="40" height="40"  class="float-right">
                                             </button>
                                         </h5>
                                     </div>
@@ -230,6 +238,7 @@
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
                                                 ¿Cómo puedo desplazarme dentro de Golfito?
+                                                <img src="pictures/dispo.png" alt="Botón de sesión" width="40" height="40"  class="float-right">
                                             </button>
                                         </h5>
                                     </div>
@@ -246,6 +255,7 @@
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
                                                 ¿Habrá actividades sociales o recreativas durante el simposio?
+                                                <img src="pictures/social.png" alt="Botón de sesión" width="40" height="40" class="float-right">
                                             </button>
                                         </h5>
                                     </div>
@@ -262,6 +272,7 @@
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
                                                 ¿Cómo puedo obtener más información o asistencia?
+                                                <img src="pictures/acerca.png" alt="Botón de sesión" width="40" height="40"  class="float-right">
                                             </button>
                                         </h5>
                                     </div>
@@ -276,6 +287,8 @@
                     </div>
                 </div>
             </section>
+            <br/>
+            <br/>
         </div>
 
         <br/>

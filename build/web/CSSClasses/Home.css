@@ -205,4 +205,33 @@ body {
     background-color: #6dc067;
     border-color: #008641;
 }
+.carousel-item {
+    height: auto; /* Ajusta la altura del carrusel automáticamente */
+}
+
+.carousel-title {
+    font-size: 18px; /* Tamaño de fuente ajustado */
+}
+
+.card {
+    width: 100%; /* Ajusta el ancho de las tarjetas al 100% */
+    margin: 0 5px; /* Espacio entre las tarjetas ajustado */
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 10px); /* Tarjetas en dos columnas en dispositivos móviles */
+    }
+}
+.card-event {
+    width: 100%; /* Ajusta el ancho de las tarjetas al 100% */
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+}
+
+@media (max-width: 768px) {
+    .card-event {
+        width: calc(50% - 20px); /* Tarjetas en dos columnas en dispositivos móviles */
+    }
+}
+
 
