@@ -1,4 +1,4 @@
- <%-- 
+<%-- 
     Document   : registrar
     Created on : 16 may. 2024, 09:51:53
     Author     : Jordy
@@ -28,7 +28,8 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                max-width: 90%;
+                width: 90%;
+                max-width: 900px;
                 margin-top: 50px;
             }
             .form-container {
@@ -39,15 +40,28 @@
                 padding: 20px;
                 border-radius: 10px;
                 box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 600px;
+            }
+            .form-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
             }
             @media (min-width: 768px) {
-                .content {
+                .form-container {
                     flex-direction: row;
                     justify-content: space-between;
+                    align-items: flex-start;
                 }
-                .form-container, .contact-info {
-                    width: 45%;
-                    margin: 10px;
+                .contact-info {
+                    width: 40%;
+                    margin-top: 0;
+                    margin-left: 20px;
+                }
+                form {
+                    width: 55%;
                 }
             }
             h2, h3 {
@@ -57,6 +71,7 @@
             form {
                 display: flex;
                 flex-direction: column;
+                width: 100%;
             }
             label {
                 margin-bottom: 5px;
@@ -68,6 +83,8 @@
                 font-size: 16px;
                 border: 1px solid #ccc;
                 border-radius: 5px;
+                width: 100%;
+                box-sizing: border-box;
             }
             button {
                 min-height: 38px;
@@ -77,17 +94,22 @@
                 color: #fff;
                 background-color: #005da4;
                 border-color: #005da4de;
+                cursor: pointer;
             }
             button:hover {
                 background-color: #005da4de;
                 border-color: #005da4de;
             }
             .contact-info {
-                align-self: flex-start;
+                font-size: 17px;
+                font-family: Arial, sans-serif;
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
             }
             .contact-info p {
                 color: #333;
-                font-size: 16px;
+                font-size: 17px;
                 margin: 5px 0;
             }
         </style>
@@ -95,14 +117,9 @@
 
     <body>
         <div class="content">
-            <div class="contact-info">
-                <h3>Información de Contacto de los Organizadores</h3>
-                <p><strong>Correo Electrónico:</strong> organizadores@simposio.com</p>
-                <p><strong>Número de Teléfono:</strong> +123 456 7890</p>
-            </div>
             <div class="form-container">
-                <h2>Contáctenos</h2>
                 <form action="Contacts.jsp" method="POST">
+                    <h2>Contáctenos</h2>
                     <label for="name">Nombre completo:</label>
                     <input type="text" id="name" name="name" required>
 
@@ -117,6 +134,11 @@
 
                     <button type="submit">Enviar solicitud</button>
                 </form>
+                <div class="contact-info">
+                    <h3>Información de Contacto de los Organizadores</h3>
+                    <p><strong>Correo Electrónico:</strong> organizadores@simposio.com</p>
+                    <p><strong>Número de Teléfono:</strong> +123 456 7890</p>
+                </div>
             </div>
         </div>
 

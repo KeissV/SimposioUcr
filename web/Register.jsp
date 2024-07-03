@@ -67,9 +67,7 @@
                             <div class="form-group">
                                 <button type="submit" class="btn btn-purple btn-block">Confirmar</button>
                             </div>
-                            <div class="form-group">
-                                <a href="Home.jsp" class="btn btn-purple btn-block">Volver</a>
-                            </div>
+                          
                         </form>
                     </div>
                 </div>
