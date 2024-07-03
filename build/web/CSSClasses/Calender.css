@@ -1,0 +1,113 @@
+/* Estilos base para el cuerpo del documento */
+html, body {
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+.fullscreen-image {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+.separator-bar {
+    background-color: rgba(142,216,248, 0.7); /* Color café para el primer separador */
+    height: 20px; /* Misma altura que el footer */
+    width: 100%;
+    margin-top: 0; /* Sin espacio superior */
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+/* Estilos generales para los contenedores */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los eventos, utilizando flexbox para un diseño adaptable */
+.event {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #e9e9e9;
+    border-radius: 10px;
+}
+
+.event-image {
+    flex: 1; /* Ajusta la anchura y altura según necesites */
+    margin-right: 20px;
+    width: 150px; /* Controla el ancho de la imagen */
+    height: 100px; /* Controla la altura de la imagen */
+    overflow: hidden; /* Evita que la imagen desborde */
+}
+
+.event-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.event-content {
+    flex: 3;
+}
+
+.event h2 {
+    color: #007BFF;
+}
+
+.event p, .event a {
+    margin: 5px 0;
+}
+
+.event a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.footer, .footer * {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    box-sizing: border-box;
+    color: #ffffff;  /* Asegúrate de que el texto sea visible */
+}
+
+.footer {
+    width: 100%;
+     background-color: rgba(0, 93, 164, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    clear: both;  /* Esto debería ayudar si hay floats interfiriendo */
+}
+
+.footer p {
+    font-size: 16px;
+}
+.carousel-item img {
+    height: auto;
+    max-height: 500px; /* Ajusta este valor según sea necesario */
+    object-fit: cover;
+}
+.event-image img {
+    width: 100%;
+    height: auto;
+}
