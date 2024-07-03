@@ -66,10 +66,7 @@
                     </div>
                 </div>
             </nav>
-        <div class="p">
-            <div class="pict">
-                <img src="pictures/bn.png" class="fullscreen-image" alt="Imagen UCR">
-            </div>
+        
             <div class="separator-bar"></div>
         </div>
         <div class="container mt-5">
