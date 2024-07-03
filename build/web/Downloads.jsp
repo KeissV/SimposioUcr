@@ -200,7 +200,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Login.jsp">
-                                    <img src="pictures/icons8-nombre-48 (1).png" alt="Botón de sesión" width="40" height="40">
+                                    <img src="pictures/logg.png" alt="Botón de sesión" width="40" height="40">
                                 </a>
                             </li>
                         </ul>

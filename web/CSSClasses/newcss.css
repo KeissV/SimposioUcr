@@ -5,19 +5,7 @@ body, html {
     height: 100%;
 }
 
-.navbar-custom {
-    background-color: rgba(0, 93, 164, 0.9);
-    padding: 10px;
-}
 
-.navbar-nav .nav-item .nav-link {
-    color: white;
-    transition: color 0.3s;
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-    color: #ffcc00;
-}
 
 .img-custom {
     width: 100%;
@@ -52,15 +40,6 @@ p {
 
 .bg-white {
     background-color: white;
-}
-
-.footer {
-    background-color: rgba(0, 93, 164, 0.9);
-    color: white;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 .no-gutters {

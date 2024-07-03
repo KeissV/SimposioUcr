@@ -19,7 +19,7 @@
     </head>
     <body>
         <!-- Barra de Navegación  -->
-        <div class="container-fluid">
+        
             <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
                 <div class="container-fluid">
                     <div class="d-flex w-100 justify-content-between">
@@ -68,7 +68,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="Login.jsp">
-                                        <img src="pictures/icons8-nombre-48 (1).png" alt="Botón de sesión" width="40" height="40">
+                                        <img src="pictures/logg.png" alt="Botón de sesión" width="40" height="40">
                                     </a>
                                 </li>
                             </ul>
@@ -76,7 +76,7 @@
                     </div>
                 </div>
             </nav>
-        </div>
+        
         <!-- Contenido principal -->
         <div class="p">
             <div class="pict">
