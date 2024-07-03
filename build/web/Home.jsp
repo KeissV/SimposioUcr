@@ -16,69 +16,63 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <link href="CSSClasses/nav.css" rel="stylesheet">
         <link rel="stylesheet" href="CSSClasses/Home.css">
+        <link rel="stylesheet" href="CSSClasses/events.css">
     </head>
     <body>
         <!-- Barra de Navegación  -->
-        
-            <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-                <div class="container-fluid">
-                    <div class="d-flex w-100 justify-content-between">
-                        <!-- Logos de la UCR -->
-                        <a class="navbar-brand">
-                            <img src="pictures/logos.png" alt="logos UCR" width="303.7" height="60.1"/>
-                        </a>
-
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <!-- Contenido de la barra de navegación -->
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Accesibilidad
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <h8> Contraste de color :</h8>
-                                        <a class="dropdown-item" href="#">Normal</a>
-                                        <a class="dropdown-item" href="#">Escala de Azules</a>
-                                        <a class="dropdown-item" href="#">Alto contraste</a>
-                                        <a class="dropdown-item" href="#">Fondo claro</a>
-
-                                        <h8> Tamaño de Fuente:</h8>
-                                        <a class="dropdown-item" href="#">Pequeña</a>
-                                        <a class="dropdown-item" href="#">Mediana</a>
-                                        <a class="dropdown-item" href="#">Grande</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-text" href="Calender.jsp">Calendario</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-text" href="Map.jsp">Mapa</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-text" href="Downloads.jsp">Descargas</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-text" href="History.jsp">Historia</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-text" href="Questions.jsp">Preguntas</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-text" href="Contacts.jsp">Contactos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Login.jsp">
-                                        <img src="pictures/logg.png" alt="Botón de sesión" width="40" height="40">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="pictures/logos.png" alt="logos UCR" width="303.7" height="60.1"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Accesibilidad
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <h8> Contraste de color :</h8>
+                                <a class="dropdown-item" href="#">Normal</a>
+                                <a class="dropdown-item" href="#">Escala de Azules</a>
+                                <a class="dropdown-item" href="#">Alto contraste</a>
+                                <a class="dropdown-item" href="#">Fondo claro</a>
+                                <h8> Tamaño de Fuente:</h8>
+                                <a class="dropdown-item" href="#">Pequeña</a>
+                                <a class="dropdown-item" href="#">Mediana</a>
+                                <a class="dropdown-item" href="#">Grande</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="Calender.jsp">Calendario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="Map.jsp">Mapa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="Downloads.jsp">Descargas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="History.jsp">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="Questions.jsp">Preguntas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="Contacts.jsp">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Login.jsp">
+                                <img src="pictures/logg.png" alt="Botón de sesión" width="40" height="40">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
         
         <!-- Contenido principal -->
         <div class="p">
@@ -99,37 +93,36 @@
                 <br/>
             </div>
 
-
             <h5 class="text-center title-section">Presentadores</h5>
 
             <div id="presentersCarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="carousel-title">Bloque 1</div>
-                        <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-center flex-wrap presenters-container">
                             <!-- Primer bloque de presentadores -->
-                            <div class="card mx-3" style="width: 15rem;">
+                            <div class="card mx-3 my-2" style="width: 15rem;">
                                 <img src="pictures/userrr.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Título 1</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
                             </div>
-                            <div class="card mx-3" style="width: 15rem;">
+                            <div class="card mx-3 my-2" style="width: 15rem;">
                                 <img src="pictures/userrr.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Título 2</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
                             </div>
-                            <div class="card mx-3" style="width: 15rem;">
+                            <div class="card mx-3 my-2" style="width: 15rem;">
                                 <img src="pictures/userrr.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Título 3</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
                             </div>
-                            <div class="card mx-3" style="width: 15rem;">
+                            <div class="card mx-3 my-2" style="width: 15rem;">
                                 <img src="pictures/userrr.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Título 4</h5>
@@ -140,30 +133,30 @@
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-title">Bloque 2</div>
-                        <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-center flex-wrap presenters-container">
                             <!-- Segundo bloque de presentadores -->
-                            <div class="card mx-3" style="width: 15rem;">
+                            <div class="card mx-3 my-2" style="width: 15rem;">
                                 <img src="pictures/userrr.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Título 5</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
                             </div>
-                            <div class="card mx-3" style="width: 15rem;">
+                            <div class="card mx-3 my-2" style="width: 15rem;">
                                 <img src="pictures/userrr.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Título 6</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
                             </div>
-                            <div class="card mx-3" style="width: 15rem;">
+                            <div class="card mx-3 my-2" style="width: 15rem;">
                                 <img src="pictures/userrr.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Título 7</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
                             </div>
-                            <div class="card mx-3" style="width: 15rem;">
+                            <div class="card mx-3 my-2" style="width: 15rem;">
                                 <img src="pictures/userrr.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Título 8</h5>
@@ -188,159 +181,154 @@
             <br/>
 
             <h5 class="text-center title-section">Eventos</h5>
-            <div class="calendar-events-container">
-                <!-- Columnas de eventos -->
-                <div class="row">
-                    <div class="col-md-6">
-                        <!-- Columna 1 -->
-                        <div class="card-event">
-                            <div class="card-event-inner">
-                                <div class="card-event-front">
-                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Título del evento 1</h5>
-                                    </div>
-                                </div>                                <div class="card-event-back">
-                                    <h5 class="card-title"> evento 1</h5>
-                                    <p class="card-text center">Más información sobre el evento 1...</p>
-                                    <a href="Calender.jsp#event-1" class="btn btn-primary">Ver más</a>
-                                </div>
+            <div class="container events-grid">
+                <div class="card-event">
+                    <div class="card-event-inner">
+                        <div class="card-event-front">
+                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del evento 1</h5>
                             </div>
                         </div>
-                        <div class="card-event">
-                            <div class="card-event-inner">
-                                <div class="card-event-front">
-                                    <img src="pictures/giraCeles.png" class="card-img-top" alt="Imagen del Evento 1">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Título del evento 3</h5>
-                                    </div>
-                                </div>
-                                <div class="card-event-back">
-                                    <h5 class="card-title"> evento 3</h5>
-                                    <p class="card-text center">Más información sobre el evento 3...</p>
-                                    <a href="Calender.jsp#event-3" class="btn btn-primary">Ver más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-event">
-                            <div class="card-event-inner">
-                                <div class="card-event-front">
-                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Título del evento 5</h5>
-                                    </div>
-                                </div>                                <div class="card-event-back">
-                                    <h5 class="card-title"> evento 5</h5>
-                                    <p class="card-text center">Más información sobre el evento 5...</p>
-                                    <a href="Calender.jsp#event-5" class="btn btn-primary">Ver más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-event">
-                            <div class="card-event-inner">
-                                <div class="card-event-front">
-                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Título del evento 7</h5>
-                                    </div>
-                                </div>
-                                <div class="card-event-back">
-                                    <h5 class="card-title"> evento 7</h5>
-                                    <p class="card-text center">Más información sobre el evento 7...</p>
-                                    <a href="Calender.jsp#event-7" class="btn btn-primary">Ver más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-event">
-                            <div class="card-event-inner">
-                                <div class="card-event-front">
-                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Título del evento 9</h5>
-                                    </div>
-                                </div>                                <div class="card-event-back">
-                                    <h5 class="card-title"> evento 9</h5>
-                                    <p class="card-text center">Más información sobre el eventooooooooooooooooooo, </p>
-                                    <a href="Calender.jsp#event-9" class="btn btn-primary">Ver más</a>
-                                </div>
-                            </div>
+                        <div class="card-event-back">
+                            <h5 class="card-title">evento 1</h5>
+                            <p class="card-text center">Más información sobre el evento 1...</p>
+                            <a href="Calender.jsp#event-1" class="btn btn-primary">Ver más</a>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <!-- Columna 2 -->
-                        <div class="card-event">
-                            <div class="card-event-inner">
-                                <div class="card-event-front">
-                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Título del evento 2</h5>
-                                    </div>
-                                </div>
-                                <div class="card-event-back">
-                                    <h5 class="card-title">evento 2</h5>
-                                    <p class="card-text center"> detalws evento 2...</p>
-                                    <a href="Calender.jsp#event-2" class="btn btn-primary">Ver más</a>
-                                </div>
+                </div>
+                <div class="card-event">
+                    <div class="card-event-inner">
+                        <div class="card-event-front">
+                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del evento 2</h5>
                             </div>
                         </div>
-                        <div class="card-event">
-                            <div class="card-event-inner">
-                                <div class="card-event-front">
-                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Título del evento 4</h5>
-                                    </div>
-                                </div>
-                                <div class="card-event-back">
-                                    <h5 class="card-title">l evento 4</h5>
-                                    <p class="card-text center"> evento 4...</p>
-                                    <a href="Calender.jsp#event-4" class="btn btn-primary">Ver más</a>
-                                </div>
+                        <div class="card-event-back">
+                            <h5 class="card-title">evento 2</h5>
+                            <p class="card-text center">Más información sobre el evento 2...</p>
+                            <a href="Calender.jsp#event-2" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-event">
+                    <div class="card-event-inner">
+                        <div class="card-event-front">
+                            <img src="pictures/giraCeles.png" class="card-img-top" alt="Imagen del Evento 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del evento 3</h5>
                             </div>
                         </div>
-                        <div class="card-event">
-                            <div class="card-event-inner">
-                                <div class="card-event-front">
-                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Título del evento 6</h5>
-                                    </div>
-                                </div>
-                                <div class="card-event-back">
-                                    <h5 class="card-title"> evento 6</h5>
-                                    <p class="card-text center"> evento 6...</p>
-                                    <a href="Calender.jsp#event-6" class="btn btn-primary">Ver más</a>
-                                </div>
+                        <div class="card-event-back">
+                            <h5 class="card-title">evento 3</h5>
+                            <p class="card-text center">Más información sobre el evento 3...</p>
+                            <a href="Calender.jsp#event-3" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-event">
+                    <div class="card-event-inner">
+                        <div class="card-event-front">
+                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del evento 4</h5>
                             </div>
                         </div>
-                        <div class="card-event">
-                            <div class="card-event-inner">
-                                <div class="card-event-front">
-                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Título del evento 8</h5>
-                                    </div>
-                                </div>                                <div class="card-event-back">
-                                    <h5 class="card-title"> evento 8</h5>
-                                    <p class="card-text center">Más información sobre el evento 8...</p>
-                                    <a href="Calender.jsp#event-8" class="btn btn-primary">Ver más</a>
-                                </div>
+                        <div class="card-event-back">
+                            <h5 class="card-title">evento 4</h5>
+                            <p class="card-text center">Más información sobre el evento 4...</p>
+                            <a href="Calender.jsp#event-4" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-event">
+                    <div class="card-event-inner">
+                        <div class="card-event-front">
+                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del evento 5</h5>
                             </div>
                         </div>
-                        <div class="card-event">
-                            <div class="card-event-inner">
-                                <div class="card-event-front">
-                                    <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Título del evento 10</h5>
-                                    </div>
-                                </div>
-                                <div class="card-event-back">
-                                    <h5 class="card-title"> evento 10</h5>
-                                    <p class="card-text center">Más información sobre el evento 10...</p>
-                                    <a href="Calender.jsp#event-10" class="btn btn-primary">Ver más</a>
-                                </div>
+                        <div class="card-event-back">
+                            <h5 class="card-title">evento 5</h5>
+                            <p class="card-text center">Más información sobre el evento 5...</p>
+                            <a href="Calender.jsp#event-5" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-event">
+                    <div class="card-event-inner">
+                        <div class="card-event-front">
+                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del evento 6</h5>
                             </div>
+                        </div>
+                        <div class="card-event-back">
+                            <h5 class="card-title">evento 6</h5>
+                            <p class="card-text center">Más información sobre el evento 6...</p>
+                            <a href="Calender.jsp#event-6" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-event">
+                    <div class="card-event-inner">
+                        <div class="card-event-front">
+                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 7">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del evento 7</h5>
+                            </div>
+                        </div>
+                        <div class="card-event-back">
+                            <h5 class="card-title">evento 7</h5>
+                            <p class="card-text center">Más información sobre el evento 7...</p>
+                            <a href="Calender.jsp#event-7" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-event">
+                    <div class="card-event-inner">
+                        <div class="card-event-front">
+                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 8">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del evento 8</h5>
+                            </div>
+                        </div>
+                        <div class="card-event-back">
+                            <h5 class="card-title">evento 8</h5>
+                            <p class="card-text center">Más información sobre el evento 8...</p>
+                            <a href="Calender.jsp#event-8" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-event">
+                    <div class="card-event-inner">
+                        <div class="card-event-front">
+                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 9">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del evento 9</h5>
+                            </div>
+                        </div>
+                        <div class="card-event-back">
+                            <h5 class="card-title">evento 9</h5>
+                            <p class="card-text center">Más información sobre el evento 9...</p>
+                            <a href="Calender.jsp#event-9" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-event">
+                    <div class="card-event-inner">
+                        <div class="card-event-front">
+                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 10">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del evento 10</h5>
+                            </div>
+                        </div>
+                        <div class="card-event-back">
+                            <h5 class="card-title">evento 10</h5>
+                            <p class="card-text center">Más información sobre el evento 10...</p>
+                            <a href="Calender.jsp#event-10" class="btn btn-primary">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -359,4 +347,3 @@
         </div>
     </footer>
 </html>
-
