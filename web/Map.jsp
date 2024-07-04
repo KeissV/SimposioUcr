@@ -98,7 +98,7 @@
                     d="m 281.75553,131.89751 -4.16272,8.65285"
                     id="path86" /></a></g>
             <g
-                id="biblioteca" class="edificio" data-info="Biblioteca UCR <br>Aulas: 12, 13<br>Centro cultural<br>Biblioteca<br>Gimnasio<br>Laboratorio biología" data-detail="Detalles del Edificio 4000"><path
+                id="biblioteca" class="edificio" data-info="Biblioteca UCR <br>Aulas: 12, 13<br>Centro cultural<br>Biblioteca<br>Gimnasio<br>Laboratorio biología" data-detail="Biblioteca UCR <br>Aulas: 12, 13<br>Centro cultural<br>Biblioteca<br>Multiusos<br>Laboratorio biología<br><strong>Jueves: 9-12md</strong>. Actividad 1 (centro cultural)<br><strong>Jueves: 1:30-4pm</strong>. Actividad a docentes (centro cultural)"><path
                 d="m 92.191893,84.051535 v 6.650416 l 48.818447,17.466489 v -6.65041 z"
                 id="path1" /><path
                 d="m 92.202283,84.088918 8.686307,-15.019091 47.72223,16.881829 v 6.650415 l -7.60048,15.493289 -0.0365,-6.61387 z"
@@ -115,7 +115,7 @@
                     d="m 183.36005,100.40523 2.44823,-10.213145"
                     id="path14" /></a></g>
             <g
-                id="edificio4000" class="edificio" data-info="Edificio 4000 <br>Aulas: 1, 2, 3, 4, 5" data-detail="Detalles del Edificio 4000"><path
+                id="edificio4000" class="edificio" data-info="Edificio 4000 <br>Aulas: 1, 2, 3, 4, 5" data-detail="Edificio 4000 <br>Aulas: 1, 2, 3, 4, 5<br><strong>Jueves: 9-12md</strong>. Actividad 2 (aula 4)"><path
                 d="m 111.66855,155.51745 0.0365,6.7235 13.08159,7.78318 v -6.72349 z"
                 id="path15" /><path
                 d="m 117.73056,153.49463 0.0747,5.66878 6.98241,4.14453 8.92471,-9.9157 0.0669,-6.22522 -9.22106,9.95378 z"
@@ -153,7 +153,7 @@
                 d="m 26.725277,87.740022 14.073926,9.680015 18.888035,12.657833 18.702912,10.03306 -20.486209,6.82873 -15.490116,-9.32117 -15.670689,-11.61396 z"
                 id="path139" /></g>
             <g
-                id="poolydiseno" class="edificio" data-info="Edificio 4100 <br>Aulas: 6, 7, 8, 9, 10, 11<br>Comedor estudiantil" data-detail="No presenta actividades del simposio"><path
+                id="poolydiseno" class="edificio" data-info="Edificio 4100 <br>Aulas: 6, 7, 8, 9, 10, 11<br>Comedor estudiantil" data-detail="Club Centro <br>Aulas: 6, 7, 8, 9, 10, 11<br>Comedor estudiantil <br>No presenta actividades del simposio"><path
                 d="m 191.95297,174.086 3.83532,10.28988 -9.9157,2.71279 4.2095,11.4124 9.72861,-2.80633 1.96443,5.14494 19.83139,-5.33202 -1.87088,-4.39658 11.69304,-3.08698 -5.89329,-10.47696 -10.75761,2.71279 -4.30303,-9.82215 z"
                 id="path31" /><path
                 d="m 199.69427,209.12005 2.04484,4.69165 19.86313,-5.62102 0.0194,-12.63053 -19.81068,5.32474 -2.05052,-5.06015 z"
@@ -179,7 +179,7 @@
                 d="m 201.87708,207.79714 19.61224,-5.68855"
                 id="path42" /></g>
             <g
-                id="auditorio" class="edificio" data-info="Auditorio" data-detail="Apertura del simposio (actividad cultural)"><path
+                id="auditorio" class="edificio" data-info="Auditorio" data-detail="Auditorio <br><strong>Jueves: 8-9am</strong>. Apertura del simposio (actividad cultural)"><path
                 d="m 128.34788,35.994696 v 7.474479 l 27.40091,14.370182 -0.0992,-7.805208 z"
                 id="path45" /><path
                 style="display:none;"
