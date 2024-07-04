@@ -4,23 +4,15 @@
     Author     : franc
 --%>
 
-<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="java.io.File" %>
 <!DOCTYPE html>
-<html lang="es">
+<html>
     <head>
         <meta charset="UTF-8">
-<<<<<<< HEAD
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-=======
->>>>>>> e0f9debc40a003b2f7f05ada6c1eea18845d7653
         <title>Simposio UCR 2024 - Downloads</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="CSSClasses/Downloads.css">
-<<<<<<< HEAD
-        <link href="CSSClasses/nav.css" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-=======
         <link rel="stylesheet" href="CSSClasses/nav.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <style>
@@ -116,7 +108,6 @@
                 }
             }
         </style>
->>>>>>> e0f9debc40a003b2f7f05ada6c1eea18845d7653
     </head>
     <body>
         <!-- Barra de Navegación -->
@@ -135,20 +126,12 @@
                                 Accesibilidad
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-<<<<<<< HEAD
-                                <h8> Contraste de color :</h8>
-=======
                                 <h8>Contraste de color:</h8>
->>>>>>> e0f9debc40a003b2f7f05ada6c1eea18845d7653
                                 <a class="dropdown-item" href="#">Normal</a>
                                 <a class="dropdown-item" href="#">Escala de Azules</a>
                                 <a class="dropdown-item" href="#">Alto contraste</a>
                                 <a class="dropdown-item" href="#">Fondo claro</a>
-<<<<<<< HEAD
-                                <h8> Tamaño de Fuente:</h8>
-=======
                                 <h8>Tamaño de Fuente:</h8>
->>>>>>> e0f9debc40a003b2f7f05ada6c1eea18845d7653
                                 <a class="dropdown-item" href="#">Pequeña</a>
                                 <a class="dropdown-item" href="#">Mediana</a>
                                 <a class="dropdown-item" href="#">Grande</a>
@@ -161,12 +144,6 @@
                             <a class="nav-link nav-text" href="Calender.jsp">Calendario</a>
                         </li>
                         <li class="nav-item">
-<<<<<<< HEAD
-                            <a class="nav-link nav-text" href="Map.jsp">Mapa</a>
-                        </li>
-                        <li class="nav-item">
-=======
->>>>>>> e0f9debc40a003b2f7f05ada6c1eea18845d7653
                             <a class="nav-link nav-text" href="History.jsp">Historia</a>
                         </li>
                         <li class="nav-item">
@@ -185,14 +162,6 @@
             </div>
         </nav>
 
-<<<<<<< HEAD
-        <!-- Contenedor de archivos -->
-        <div class="file-container container">
-            <%
-                // Ruta relativa de la carpeta Downloads dentro del directorio del proyecto web
-                String downloadsPath = application.getRealPath("/Downloads");
-                File folder = new File(downloadsPath);
-=======
         <!-- Contenido Principal -->
         <div class="content container">
             <br/> <br/> <br/> <br/>
@@ -200,7 +169,6 @@
                 <%
                     String downloadsPath = application.getRealPath("/Downloads");
                     File folder = new File(downloadsPath);
->>>>>>> e0f9debc40a003b2f7f05ada6c1eea18845d7653
 
                     if (folder.exists() && folder.isDirectory()) {
                         File[] listOfFiles = folder.listFiles();
@@ -240,6 +208,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>
+
 
 
 
