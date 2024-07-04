@@ -11,7 +11,11 @@ import java.nio.file.Paths;
 
 public class Users {
 
+<<<<<<< HEAD
     private static final String FILE_PATH_2 = "C:\\Users\\Marcelle F\\Documents\\NetBeansProjects\\SimposioUcr\\register.txt";
+=======
+    private static final String FILE_PATH_2 = "C:\\Users\\franc\\OneDrive\\Documentos\\GitHub\\SimposioUcr\\register.txt";
+>>>>>>> e0f9debc40a003b2f7f05ada6c1eea18845d7653
 
     public boolean saveusers(String name, String username, String gmail, String idNumber, String phoneNumber, String institution, String interestArea, String role, String participantType, String password) {
         Path filePath = Paths.get(FILE_PATH_2);

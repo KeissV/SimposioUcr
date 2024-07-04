@@ -10,14 +10,116 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
+<<<<<<< HEAD
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+=======
+>>>>>>> e0f9debc40a003b2f7f05ada6c1eea18845d7653
         <title>Simposio UCR 2024 - Downloads</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="CSSClasses/Downloads.css">
+<<<<<<< HEAD
         <link href="CSSClasses/nav.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+=======
+        <link rel="stylesheet" href="CSSClasses/nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                font-family: Arial, sans-serif;
+            }
+
+            .content {
+                flex: 1;
+                padding-top: 80px;
+                padding: 20px;
+                background-color: #f8f9fa;
+            }
+
+            .header {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .header h1 {
+                font-size: 2.5em;
+                margin: 0;
+                color: #005da4;
+            }
+
+            .file-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .file-item {
+                background-color: #ffffff;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                margin-bottom: 15px;
+                padding: 15px;
+                width: 100%;
+                max-width: 800px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: transform 0.2s;
+            }
+
+            .file-item:hover {
+                transform: translateY(-5px);
+            }
+
+            .file-item p {
+                margin: 0;
+                font-size: 16px;
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+            }
+
+            .file-item p i {
+                margin-right: 10px;
+                color: #005da4;
+            }
+
+            .file-item button {
+                background-color: #005da4;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            .file-item button:hover {
+                background-color: #004080;
+            }
+
+            @media (max-width: 768px) {
+                .file-item {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                .file-item p {
+                    margin-bottom: 10px;
+                }
+
+                .file-item button {
+                    width: 100%;
+                }
+            }
+        </style>
+>>>>>>> e0f9debc40a003b2f7f05ada6c1eea18845d7653
     </head>
     <body>
-        <!-- Barra de Navegación  -->
+        <!-- Barra de Navegación -->
         <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
             <div class="container-fluid">
                 <a class="navbar-brand">
@@ -33,12 +135,20 @@
                                 Accesibilidad
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<<<<<<< HEAD
                                 <h8> Contraste de color :</h8>
+=======
+                                <h8>Contraste de color:</h8>
+>>>>>>> e0f9debc40a003b2f7f05ada6c1eea18845d7653
                                 <a class="dropdown-item" href="#">Normal</a>
                                 <a class="dropdown-item" href="#">Escala de Azules</a>
                                 <a class="dropdown-item" href="#">Alto contraste</a>
                                 <a class="dropdown-item" href="#">Fondo claro</a>
+<<<<<<< HEAD
                                 <h8> Tamaño de Fuente:</h8>
+=======
+                                <h8>Tamaño de Fuente:</h8>
+>>>>>>> e0f9debc40a003b2f7f05ada6c1eea18845d7653
                                 <a class="dropdown-item" href="#">Pequeña</a>
                                 <a class="dropdown-item" href="#">Mediana</a>
                                 <a class="dropdown-item" href="#">Grande</a>
@@ -51,9 +161,12 @@
                             <a class="nav-link nav-text" href="Calender.jsp">Calendario</a>
                         </li>
                         <li class="nav-item">
+<<<<<<< HEAD
                             <a class="nav-link nav-text" href="Map.jsp">Mapa</a>
                         </li>
                         <li class="nav-item">
+=======
+>>>>>>> e0f9debc40a003b2f7f05ada6c1eea18845d7653
                             <a class="nav-link nav-text" href="History.jsp">Historia</a>
                         </li>
                         <li class="nav-item">
@@ -72,51 +185,59 @@
             </div>
         </nav>
 
+<<<<<<< HEAD
         <!-- Contenedor de archivos -->
         <div class="file-container container">
             <%
                 // Ruta relativa de la carpeta Downloads dentro del directorio del proyecto web
                 String downloadsPath = application.getRealPath("/Downloads");
                 File folder = new File(downloadsPath);
+=======
+        <!-- Contenido Principal -->
+        <div class="content container">
+            <br/> <br/> <br/> <br/>
+            <div class="file-container">
+                <%
+                    String downloadsPath = application.getRealPath("/Downloads");
+                    File folder = new File(downloadsPath);
+>>>>>>> e0f9debc40a003b2f7f05ada6c1eea18845d7653
 
-                // Verifica si la carpeta existe y es un directorio
-                if (folder.exists() && folder.isDirectory()) {
-                    // Obtiene la lista de archivos en la carpeta Downloads
-                    File[] listOfFiles = folder.listFiles();
-
-                    // Itera sobre la lista de archivos
-                    if (listOfFiles != null) {
-                        for (File file : listOfFiles) {
-                            if (file.isFile()) {
-            %>
-                                <div class="file-item">
-                                    <p><%= file.getName() %></p>
-                                    <a href="Downloads/<%= file.getName() %>" download>
-                                        <button>Descargar</button>
-                                    </a>
-                                </div>
-            <%
+                    if (folder.exists() && folder.isDirectory()) {
+                        File[] listOfFiles = folder.listFiles();
+                        if (listOfFiles != null) {
+                            for (File file : listOfFiles) {
+                                if (file.isFile()) {
+                %>
+                <div class="file-item">
+                    <p><i class="fas fa-file-alt"></i><%= file.getName()%></p>
+                    <a href="Downloads/<%= file.getName()%>" download>
+                        <button>Descargar</button>
+                    </a>
+                </div>
+                <%
+                                }
                             }
+                        } else {
+                            out.println("<p>No se encontraron archivos en la carpeta Downloads.</p>");
                         }
                     } else {
-                        out.println("<p>No se encontraron archivos en la carpeta Downloads.</p>");
+                        out.println("<p>La carpeta Downloads no existe.</p>");
                     }
-                } else {
-                    out.println("<p>La carpeta Downloads no existe.</p>");
-                }
-            %>
+                %>
+            </div>
         </div>
+
+        <!-- Pie de Página -->
+        <footer class="footer">
+            <div class="container text-center">
+                <p>&copy; 2024 UCR SIMPOSIO INFORMATICA EMPRESARIAL.</p>
+            </div>
+        </footer>
 
         <!-- Scripts de Bootstrap y dependencias -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-        <footer class="footer">
-            <div class="container text-center">
-                <p>&copy; 2024 UCR SIMPOSIO INFORMATICA EMPRESARIAL. </p>
-            </div>
-        </footer>
     </body>
 </html>
 

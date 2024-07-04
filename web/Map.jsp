@@ -650,7 +650,7 @@
         </div>
 
 
-        <!-- Contenedor para mostrar el tooltip -->
+                <!-- Contenedor para mostrar el tooltip -->
         <div class="tooltip" id="tooltip"></div>
 
         <!-- Modal para mostrar el resultado -->
@@ -660,6 +660,92 @@
                 <p id="modal-text"></p>
             </div>
         </div>
+        
+        <!-- Formulario para seleccionar nodos de inicio y fin (enviará al servlet) -->
+        <div class="containert">
+        <form id="routeForm" action="${pageContext.request.contextPath}/DijsktraAlg/DijkstraServlet" method="post">
+            <label for="startOption">Seleccione el punto de partida:</label>
+            <select name="start" id="startOption">
+                <option value="1">Edificio 4000</option>
+                <option value="14">Auditorio</option>
+                <option value="17">Biblioteca UCR</option>
+                <option value="21">Club Centro</option>
+            </select>
+            <br><br>
+            <label for="endOption">Seleccione el punto destino:</label>
+            <select name="end" id="endOption">
+                <option value="1">Edificio 4000</option>
+                <option value="14">Auditorio</option>
+                <option value="17">Biblioteca UCR</option>
+                <option value="21">Club Centro</option>
+            </select>
+            <br><br>
+            <input type="button" value="Encontrar ruta" onclick="showDirection(document.getElementById('startOption').value, document.getElementById('endOption').value)">
+        </form>
+            
+            <hr class="styled-divider">
+            
+        </div>
+            <div class="containert">
+            <h2 style="padding-top: 10px; padding-bottom: 17px;">Mapa de Golfito</h2>
+        </div>
+            
+        <div class="map-container">
+            <div class="description">
+                <h2><strong>Golfito 2024</strong></h2>
+                    <p style="text-align: justify">Este mapa detalla la zona desde Bella Vista hasta el Depósito Libre Comercial de Golfito, abarcando una variedad de puntos de interés como panaderías, restaurantes, hospedajes y zonas familiares. Es ideal para localizar lugares clave en la ciudad y planificar tu recorrido.</p>
+            </div>
+            <div class="image-container">
+                <img src="pictures/golfitomap.png" alt="Mapa de Golfito" class="img-fluid img-custom img-map">
+            </div>
+        </div>
+            
+           <div class="highlights">
+        <div class="highlight-section">
+            <h2>Hospedajes</h2>
+            
+            <div class="highlight-item">
+                <h3>Hotel Casa Roland</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+        </div>
+            <div class="highlight-item">
+                <h3>Cabinas Golfito</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+
+            </div>
+        </div>
+               
+         <div class="highlight-section">
+        <h2>Sitios para Comer</h2>
+        <div class="highlight-item">
+            <h3>Coconut Café</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+        </div>
+        <div class="highlight-item">
+            <h3>La Papota</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+        </div>
+    </div>
+
+    <div class="highlight-section">
+        <h2>Zonas de interés</h2>
+        <div class="highlight-item">
+            <h3>Marina Bahía Golfito</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+        </div>
+        <div class="highlight-item">
+            <h3>Mirador de Golfito</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+        </div>
+        <div class="highlight-item">
+            <h3>Depósito Libre Comercial de Golfito</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+        </div>
+        <div class="highlight-item">
+            <h3>Zamia Wildlife Refuge</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+        </div>
+    </div>
 
         <!-- Script para manejar el modal y las direcciones -->
         <script>
@@ -800,28 +886,6 @@
             });
         </script>
 
-        <!-- Formulario para seleccionar nodos de inicio y fin (enviará al servlet) -->
-        <div class="containert">
-        <form id="routeForm" action="${pageContext.request.contextPath}/DijsktraAlg/DijkstraServlet" method="post">
-            <label for="startOption">Seleccione el punto de partida:</label>
-            <select name="start" id="startOption">
-                <option value="1">Edificio 4000</option>
-                <option value="14">Auditorio</option>
-                <option value="17">Biblioteca UCR</option>
-                <option value="21">Club Centro</option>
-            </select>
-            <br><br>
-            <label for="endOption">Seleccione el punto destino:</label>
-            <select name="end" id="endOption">
-                <option value="1">Edificio 4000</option>
-                <option value="14">Auditorio</option>
-                <option value="17">Biblioteca UCR</option>
-                <option value="21">Club Centro</option>
-            </select>
-            <br><br>
-            <input type="button" value="Encontrar ruta" onclick="showDirection(document.getElementById('startOption').value, document.getElementById('endOption').value)">
-        </form>
-        </div>
         <!-- Enlace a Bootstrap JS y dependencias -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

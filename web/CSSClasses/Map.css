@@ -66,7 +66,7 @@ circle, ellipse{
 }
 
 .hover-highlight path {
-    fill: #F99D1C; 
+    fill: #F99D1C;
     transition: fill 0.3s;
     cursor: pointer
 }
@@ -76,7 +76,7 @@ circle, ellipse{
 }
 #arboles path{
     fill: #006600;
-    
+
 }
 #greenarea path{
     fill: #82C319;
@@ -93,36 +93,117 @@ circle, ellipse{
     fill: #819B54;
 }
 
-        .containert {
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        .containert h2 {
-            display: inline-block;
-            position: relative;
-            padding-bottom: 10px;
-            font-size: 2rem;
-            font-weight: bold;
-            color: #007bff;
-        }
-        .containert h2::after {
-            content: '';
-            display: block;
-            width: 100px;
-            height: 5px;
-            background-color: #007bff;
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            animation: move-line 3s infinite linear;
-        }
-        @keyframes move-line {
-            0%, 100% { transform: translateX(-50%); }
-            50% { transform: translateX(-30%); }
-        }
-        
-        #routeForm {
-            
-        }
+.containert {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.containert h2 {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+.containert h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: move-line 3s infinite linear;
+}
+@keyframes move-line {
+    0%, 100% {
+        transform: translateX(-50%);
+    }
+    50% {
+        transform: translateX(-30%);
+    }
+}
+
+#routeForm {
+
+}
+
+.map-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.description p {
+    text-align: justify;
+    word-spacing: 0.15em;
+    line-height: 1.6;
+    font-size: 1.2em;
+}
+
+.image-container {
+    width: 80%;
+}
+
+.img-map {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.highlight-section {
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-section h2 {
+    margin: 0 0 20px 0;
+    font-size: 2em;
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+}
+
+.highlight-item {
+    margin-bottom: 20px;
+}
+
+.highlight-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.6em;
+    color: #2980b9;
+}
+
+.highlight-item p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #7f8c8d;
+}
+
+.styled-divider {
+
+    border: 0;
+    height: 2px;
+    background: #b02792;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%; /* Ajusta el ancho para que no toque los extremos */
+}
