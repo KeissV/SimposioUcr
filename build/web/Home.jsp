@@ -95,18 +95,30 @@
             <br/>
         </div>
 
-        <h5 class="text-center title-section">Presentadores</h5>
+        <h5 class="text-center title-section">Ponentes</h5>
 
         <%
             PresenterList presenterList = new PresenterList();
-            presenterList.addPresenter(new Presenter("Ponente: Agustin Fernandez ", "Descripción 1", "pictures/Agustin Fernandez.jpg"));
-            presenterList.addPresenter(new Presenter("Ponente: Arturo Ramirez ", "Descripción 2", "pictures/Arturo Ramirez.jpeg"));
-            presenterList.addPresenter(new Presenter("Ponente: Jessica Pineda ", "Descripción 3", "pictures/Jessica Pineda.jpg"));
-            presenterList.addPresenter(new Presenter("Ponente: Mariana Corrales ", "Descripción 4", "pictures/Mariana Corrales.jpg"));
-            presenterList.addPresenter(new Presenter("Ponente: Luis Vindas ", "Descripción 5", "pictures/Luis Vindas.jpeg"));
-            presenterList.addPresenter(new Presenter("Ponente: Peter Hernández ", "Descripción 6", "pictures/Peter Hernández.jpeg"));
-            presenterList.addPresenter(new Presenter("Ponente: Sandra Díaz ", "Descripción 7", "pictures/Sandra Díaz.jpeg"));
-            presenterList.addPresenter(new Presenter("Ponente: Sofía Mora ", "Descripción 8", "pictures/Sofía Mora.jpeg"));
+            presenterList.addPresenter(new Presenter("Agustin Fernandez ", "En "
+                    + "el evento 1, abordará las últimas tendencias en "
+                    + "transformación digital, mientras que en el evento 2, "
+                    + "discutirá estrategias innovadoras para la gestión de "
+                    + "proyectos tecnológicos.", "pictures/Agustin Fernandez.jpg"));
+            presenterList.addPresenter(new Presenter("Arturo Ramirez ", "Presentará "
+                    + "en el evento 3, donde hablará sobre las mejores prácticas "
+                    + "en protección de datos y, en el evento 4, compartirá "
+                    + "casos de estudio sobre la implementación de soluciones "
+                    + "de seguridad en empresas líderes.", "pictures/Arturo Ramirez.jpeg"));
+            presenterList.addPresenter(new Presenter("Jessica Pineda ", "En el evento 5, "
+                    + "explorará el impacto de la inteligencia artificial en el "
+                    + "desarrollo de software, y en el evento 6, ofrecerá una "
+                    + "visión detallada sobre el futuro de la automatización en "
+                    + "el entorno empresarial.", "pictures/Jessica Pineda.jpg"));
+            presenterList.addPresenter(new Presenter("Mariana Corrales ", "Presentará en el evento 7 del Simposio de Informática Empresarial 2024, donde discutirá los desafíos y oportunidades en la integración de sistemas empresariales. En el evento 8, se centrará en la optimización de procesos mediante el uso de software ERP. ", "pictures/Mariana Perez.jpg"));
+            presenterList.addPresenter(new Presenter("Luis Vindas ", "Presentará en el evento 9, donde hablará sobre la adopción de metodologías ágiles en equipos de desarrollo. En el evento 10, compartirá técnicas avanzadas para la gestión ágil de proyectos", "pictures/Luis Vindas.jpeg"));
+            presenterList.addPresenter(new Presenter("Peter Hernández ", "Presentará en el evento 11 del Simposio de Informática Empresarial 2024, ofreciendo una charla sobre la creación de una cultura de innovación en las organizaciones. En el evento 12, discutirá cómo las empresas pueden utilizar tecnologías emergentes para mantenerse competitivas.", "pictures/Peter Hernández.jpeg"));
+            presenterList.addPresenter(new Presenter("Sandra Díaz ", "En el evento 13, hablará sobre las mejores prácticas para la digitalización de operaciones", "pictures/Sandra Díaz.jpeg"));
+            presenterList.addPresenter(new Presenter("Sofía Mora ", "Presentará en el evento 14 del Simposio de Informática Empresarial 2024, se centrará en el uso de grandes volúmenes de datos para la toma de decisiones empresariales", "pictures/Sofía Mora.jpeg"));
 
             Node currentNode = presenterList.getHead();
             int blockSize = 4;
@@ -127,12 +139,12 @@
                             Presenter presenter = currentNode.getData();
                         %>
                         <div class="card mx-3 my-2" style="width: 15rem;">
-                            <img src="<%= presenter.getImagePath() %>" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><%= presenter.getTitle() %></h5>
-                                <p class="card-text"><%= presenter.getDescription() %></p>
-                            </div>
-                        </div>
+    <img src="<%= presenter.getImagePath() %>" class="card-img-top presenter-image" alt="...">
+    <div class="card-body">
+        <h5 class="card-title"><%= presenter.getTitle() %></h5>
+        <p class="card-text"><%= presenter.getDescription() %></p>
+    </div>
+</div>
                         <%
                             currentNode = currentNode.getNext();
                             index++;
