@@ -31,7 +31,7 @@ public class DijkstraServlet extends HttpServlet {
                 StringBuilder result = new StringBuilder();
 
         if (shortestPathNodes != null) {
-            // Construir la lista de nodos recorridos
+         
             result.append("<strong>Ruta más corta:</strong><br>");
             for (int i = 0; i < shortestPathNodes.size(); i++) {
                 Node node = shortestPathNodes.get(i);
@@ -43,7 +43,7 @@ public class DijkstraServlet extends HttpServlet {
             }
             result.append("<br><br>");
 
-            // Encontrar la dirección asociada a la ruta más corta
+        
             String direction = findDirection(startNodeId, endNodeId);
             if (direction != null) {
                 result.append("<strong>Dirección:</strong><br>").append(direction);
@@ -59,13 +59,13 @@ public class DijkstraServlet extends HttpServlet {
     }
 
     private String findDirection(String startNode, String endNode) {
-        // Arreglo de direcciones predefinidas
+        
         Map<String, String> directions = new HashMap<>();
         directions.put("1-17", "Ir del Edificio 4000 a la Biblioteca UCR.");
         directions.put("14-21", "Ir del Auditorio al Club Centro.");
         // Agregar más direcciones según sea necesario
 
-        // Formar la clave para buscar la dirección
+       
         String key = startNode + "-" + endNode;
         return directions.get(key);
     }

@@ -8,7 +8,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class Request {
-    private static final String FILE_PATH = "C:\\Users\\manua\\OneDrive\\Documentos\\NetBeansProjects\\SimposioUcr\\request.txt";
+    private static final String FILE_PATH = "C:\\Users\\Jordy vindas\\OneDrive - Universidad de Costa Rica\\Documentos\\NetBeansProjects\\SimposioUcr\\request.txt";
     
     /**
      * This method saves a new user to a file users.txt

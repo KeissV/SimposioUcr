@@ -76,7 +76,7 @@
         </div>
     </nav>
 
-    <!-- Contenido principal -->
+   
     <div class="p">
         <div class="pict">
             <!-- Imagen local -->
@@ -157,7 +157,7 @@
                     }
                 %>
             </div>
-            <!-- Controles del carrusel -->
+         
             <a class="carousel-control-prev" href="#presentersCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -325,10 +325,7 @@
                 </div>
             </div>
     </div>
-    <!-- Enlace a Bootstrap JS y dependencias -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </body>
 <br>
 <br>

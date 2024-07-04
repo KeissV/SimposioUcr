@@ -10,20 +10,20 @@ import java.util.*;
  */
 public class Dijkstra {
 
-        // Método para encontrar el camino más corto usando Dijkstra
+       
     public static List<Node> findShortestPath(List<Node> nodes, List<Edge> edges, Node start, Node end) {
-        Map<Node, Integer> distances = new HashMap<>(); // Distancias mínimas desde el nodo inicial
-        Map<Node, Node> parents = new HashMap<>(); // Nodos predecesores en el camino más corto
-        Set<Node> visited = new HashSet<>(); // Conjunto de nodos visitados
+        Map<Node, Integer> distances = new HashMap<>(); 
+        Map<Node, Node> parents = new HashMap<>();
+        Set<Node> visited = new HashSet<>(); 
 
-        // Inicialización de distancias y padres
+        
         for (Node node : nodes) {
             distances.put(node, Integer.MAX_VALUE);
             parents.put(node, null);
         }
-        distances.put(start, 0); // La distancia desde el nodo inicial hasta sí mismo es 0
+        distances.put(start, 0); 
 
-        // Cola de prioridad para explorar nodos
+        
         PriorityQueue<Node> priorityQueue = new PriorityQueue<>(Comparator.comparingInt(distances::get));
         priorityQueue.add(start);
 
@@ -48,7 +48,7 @@ public class Dijkstra {
             }
         }
 
-        // Reconstruir el camino más corto desde el nodo de inicio hasta el nodo final
+       
         List<Node> shortestPath = new ArrayList<>();
         Node node = end;
         while (node != null) {
@@ -57,10 +57,10 @@ public class Dijkstra {
         }
         Collections.reverse(shortestPath);
 
-        return shortestPath.size() > 1 ? shortestPath : null; // Retorna el camino más corto o null si no hay camino
+        return shortestPath.size() > 1 ? shortestPath : null; 
     }
 
-    // Método auxiliar para obtener las aristas salientes de un nodo
+   
     private static List<Edge> getOutgoingEdges(Node node, List<Edge> edges) {
         List<Edge> outgoingEdges = new ArrayList<>();
         for (Edge edge : edges) {

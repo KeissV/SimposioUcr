@@ -1,4 +1,4 @@
-<%@page import="Files.Inscripciones"%>
+<%@page import="Files.Inscriptions"%>
 <%@page import="java.io.StringWriter"%>
 <%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@page import="java.io.BufferedReader, java.io.FileReader, java.io.PrintWriter, java.io.FileWriter, java.util.ArrayList, java.util.List, java.util.Map, java.util.TreeMap"%>
@@ -9,8 +9,8 @@
     // Crear instancia de la clase Encrypted
     Encrypted encrypted = new Encrypted();
 
-    // Leer el archivo de registros
-    String registerFilePath = "C:/Users/manua/OneDrive/Documentos/NetBeansProjects/SimposioUcr/register.txt";
+    
+    String registerFilePath = "C:/Users/Jordy vindas/OneDrive - Universidad de Costa Rica/Documentos/NetBeansProjects/SimposioUcr/register.txt";
     BufferedReader registerReader = new BufferedReader(new FileReader(registerFilePath));
     String registerLine;
     boolean userFound = false;
@@ -38,7 +38,7 @@
         return;
     }
 
-   // Manejar la inscripción
+   
     if (request.getMethod().equalsIgnoreCase("POST")) {
         String eventId = request.getParameter("eventId");
         String eventName = request.getParameter("eventName");
@@ -46,26 +46,26 @@
         String idNumber = (String) session.getAttribute("idNumber");
         String email = (String) session.getAttribute("email");
 
-        // Validar el formato del email
+        
         String emailPattern = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
         if (!email.matches(emailPattern)) {
             out.println("<script>alert('El email no es válido: " + email + "');</script>");
         } else {
-            // Guardar los datos en el archivo de inscripciones
+          
             String inscripcionesFilePath = application.getRealPath("/WEB-INF/inscripciones.txt");
             try (PrintWriter writer = new PrintWriter(new FileWriter(inscripcionesFilePath, true))) {
                 writer.println(eventId + "|" + eventName + "|" + userName + "|" + idNumber + "|" + email);
             }
 
-            // Guardar la inscripción encriptada
-            Inscripciones inscripciones = new Inscripciones();
+           
+            Inscriptions inscripciones = new Inscriptions();
             if (inscripciones.saveInscripcion(email, userName, idNumber, eventId, eventName)) {
                 out.println("<script>alert('Inscripción guardada exitosamente.');</script>");
             } else {
                 out.println("<script>alert('Error al guardar la inscripción.');</script>");
             }
 
-            // Enviar correo de confirmación
+            
             String subject = "Confirmación de Inscripción";
             String message = "Usted se ha inscrito correctamente al evento: " + eventName;
 
@@ -75,12 +75,12 @@
                  out.println("<script>alert('Resultado del envío del correo: " + result + "');</script>");
                 out.println("<script>alert('Correo de confirmación enviado exitosamente a: " + email + "');</script>");
                 
-                  // Encriptar y guardar la información en inscripciones.txt
+                  
                 String encryptedEmail = encrypted.encrypt(email);
                 String encryptedUserName = encrypted.encrypt(userName);
                 String encryptedIdNumber = encrypted.encrypt(idNumber);
 
-                String encryptedFilePath = application.getRealPath("C:/Users/manua/OneDrive/Documentos/NetBeansProjects/SimposioUcr/inscripciones_encrypted.txt");
+                String encryptedFilePath = application.getRealPath("C:/Users/Jordy vindas/OneDrive - Universidad de Costa Rica/Documentos/NetBeansProjects/SimposioUcr/inscripciones_encrypted.txt");
                 try (PrintWriter writer = new PrintWriter(new FileWriter(encryptedFilePath, true))) {
                     writer.println(encryptedUserName + "|" + encryptedIdNumber + "|" + encryptedEmail);
                 }
@@ -119,8 +119,8 @@
     }
     reader.close();
 
-    // Separar los eventos por fecha
-    Map<String, List<String[]>> eventsByDate = new TreeMap<>(); // Cambiado a TreeMap para ordenar las fechas
+    
+    Map<String, List<String[]>> eventsByDate = new TreeMap<>(); 
     for (String[] event : events) {
         String eventDate = event[5];
         if (!eventsByDate.containsKey(eventDate)) {
@@ -202,14 +202,7 @@
                 <img src="pictures/IMG_4947.jpg" class="d-block w-100" alt="Slide 3">
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+       
     </div>
 
     <div class="container mt-5">

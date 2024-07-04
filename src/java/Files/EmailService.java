@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class EmailService {
 
-    private static final String API_KEY = " "; // Reemplaza con tu clave API real
+    private static final String API_KEY = " ";
     private static final String API_URL = "https://api.brevo.com/v3/smtp/email";
 
     public static String sendEmail(String toEmail, String subject, String content) throws Exception {

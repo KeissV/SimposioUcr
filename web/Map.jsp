@@ -766,7 +766,7 @@
                     {start: "21", end: "17", text: "Salir del Club Centro y tomar la acera de la izquierda, pasar por la entrada del edificio 4000, cruzar la carretera, bajar las escaleras, tomar el camino de la izquierda, cruzar la carretera y llegar a la biblioteca"}
                 ];
 
-                // Buscar la dirección correspondiente
+                
                 const direction = directions.find(dir => dir.start === startNode && dir.end === endNode);
                 if (direction) {
                     showModal("<strong>Dirección:</strong><br>" + direction.text);
@@ -794,7 +794,7 @@
                 }
             });
 
-            // Tooltip and modal logic
+           
             document.querySelectorAll('.edificio').forEach(edificio => {
                 edificio.addEventListener('mouseover', function (event) {
                     const tooltip = document.getElementById('tooltip');
@@ -856,7 +856,7 @@
                     const endNode = this.getAttribute('data-end');
                     showDirection(startNode, endNode);
                 });
-                // Tooltip and modal logic
+             
                 document.querySelectorAll('.edificio').forEach(edificio => {
                     edificio.addEventListener('mouseover', function (event) {
                         const tooltip = document.getElementById('tooltip');
@@ -886,7 +886,7 @@
             });
         </script>
 
-        <!-- Enlace a Bootstrap JS y dependencias -->
+        
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

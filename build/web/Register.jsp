@@ -11,7 +11,7 @@
         <!-- Estilo personalizado -->
         <link rel="stylesheet" href="CSSClasses/Register.css">
         <style>
-            /* Estilos adicionales personalizados si los necesitas */
+           
         </style>
     </head>
     <body style="background-image: url('pictures/nuevoFondo.png'); background-repeat: no-repeat; background-position: center center; background-attachment: fixed; background-size: cover;">
@@ -121,9 +121,9 @@
                     boolean saveSuccess = userController.saveusers(encryptedFullName, encryptedUsername, encryptedEmail, encryptedIdNumber, encryptedPhoneNumber, encryptedInstitution, encryptedInterestArea, encryptedRole, encryptedParticipantType, encryptedPassword);
                     if (saveSuccess) {
                         out.println("Usuario guardado exitosamente en la base de datos.<br>");
-                        // Envío del correo de confirmación
+                      
                         try {
-                            out.println("Intentando enviar correo...<br>"); // Mensaje de depuración
+                            out.println("Intentando enviar correo...<br>"); 
                             String emailResponse = EmailService.sendEmail(email, "Bienvenido al Simposio UCR 2024", "Hola, " + fullName + " " + ". Tu registro se ha completado exitosamente.");
                             out.println("Respuesta del servicio de email: " + emailResponse + "<br>"); // Mensaje de depuración
                             if ("Success".equals(emailResponse)) {
@@ -132,17 +132,17 @@
                                 session.setAttribute("error", "Usuario registrado pero falló el envío de email. Error: " + emailResponse);
                             }
                         } catch (Exception e) {
-                            out.println("Error al enviar correo: " + e.getMessage() + "<br>"); // Mensaje de depuración
+                            out.println("Error al enviar correo: " + e.getMessage() + "<br>"); 
                             session.setAttribute("error", "Usuario registrado pero falló el envío de email. Error: " + e.getMessage());
                         }
                         response.sendRedirect("Login.jsp");
                     } else {
-                        out.println("No se pudo registrar al usuario.<br>"); // Mensaje de depuración
+                        out.println("No se pudo registrar al usuario.<br>"); 
                         session.setAttribute("error", "No se pudo registrar al usuario.");
                         response.sendRedirect("Register.jsp");
                     }
                 } else {
-                    out.println("Las contraseñas no coinciden.<br>"); // Mensaje de depuración
+                    out.println("Las contraseñas no coinciden.<br>"); 
                     session.setAttribute("error", "Las contraseñas no coinciden.");
                     response.sendRedirect("Register.jsp");
                 }

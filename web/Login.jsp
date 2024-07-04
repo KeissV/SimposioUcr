@@ -51,11 +51,11 @@
                 if ("POST".equalsIgnoreCase(request.getMethod())) {
                     Users lg = new Users();
                     try {
-                        // Obtener los datos del formulario
+                       
                         String user = request.getParameter("usuario");
                         String password = request.getParameter("contrasena");
 
-                        // Intentar el login con los datos ingresados
+                       
                         if (lg.loginuser(password, user)) {
                             session.setAttribute("usuarioLogueado", user);
                             response.sendRedirect("index.jsp");

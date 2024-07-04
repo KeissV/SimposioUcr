@@ -11,11 +11,11 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Inscripciones {
-    private static final String FILE_PATH = "C:\\Users\\manua\\OneDrive\\Documentos\\NetBeansProjects\\SimposioUcr\\inscripciones_encrypted.txt";
+public class Inscriptions {
+    private static final String FILE_PATH = "C:\\Users\\Jordy vindas\\OneDrive - Universidad de Costa Rica\\Documentos\\NetBeansProjects\\SimposioUcr\\inscripciones_encrypted.txt";
     private Encrypted encryptor;
 
-    public Inscripciones() {
+    public Inscriptions() {
         encryptor = new Encrypted();
     }
 
