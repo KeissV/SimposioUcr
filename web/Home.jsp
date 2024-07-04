@@ -99,14 +99,14 @@
 
         <%
             PresenterList presenterList = new PresenterList();
-            presenterList.addPresenter(new Presenter("Título 1", "Descripción 1", "pictures/userrr.png"));
-            presenterList.addPresenter(new Presenter("Título 2", "Descripción 2", "pictures/userrr.png"));
-            presenterList.addPresenter(new Presenter("Título 3", "Descripción 3", "pictures/userrr.png"));
-            presenterList.addPresenter(new Presenter("Título 4", "Descripción 4", "pictures/userrr.png"));
-            presenterList.addPresenter(new Presenter("Título 5", "Descripción 5", "pictures/userrr.png"));
-            presenterList.addPresenter(new Presenter("Título 6", "Descripción 6", "pictures/userrr.png"));
-            presenterList.addPresenter(new Presenter("Título 7", "Descripción 7", "pictures/userrr.png"));
-            presenterList.addPresenter(new Presenter("Título 8", "Descripción 8", "pictures/userrr.png"));
+            presenterList.addPresenter(new Presenter("Ponente: Agustin Fernandez ", "Descripción 1", "pictures/Agustin Fernandez.jpg"));
+            presenterList.addPresenter(new Presenter("Ponente: Arturo Ramirez ", "Descripción 2", "pictures/Arturo Ramirez.jpeg"));
+            presenterList.addPresenter(new Presenter("Ponente: Jessica Pineda ", "Descripción 3", "pictures/Jessica Pineda.jpg"));
+            presenterList.addPresenter(new Presenter("Ponente: Mariana Corrales ", "Descripción 4", "pictures/Mariana Corrales.jpg"));
+            presenterList.addPresenter(new Presenter("Ponente: Luis Vindas ", "Descripción 5", "pictures/Luis Vindas.jpeg"));
+            presenterList.addPresenter(new Presenter("Ponente: Peter Hernández ", "Descripción 6", "pictures/Peter Hernández.jpeg"));
+            presenterList.addPresenter(new Presenter("Ponente: Sandra Díaz ", "Descripción 7", "pictures/Sandra Díaz.jpeg"));
+            presenterList.addPresenter(new Presenter("Ponente: Sofía Mora ", "Descripción 8", "pictures/Sofía Mora.jpeg"));
 
             Node currentNode = presenterList.getHead();
             int blockSize = 4;
