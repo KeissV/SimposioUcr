@@ -6,7 +6,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Created on : 19 jun. 2024, 23:17:36
     Author     : franc
 */
-
 .navbar-custom {
     background-color: rgba(0, 93, 164, 0.8);
     position: absolute;
@@ -83,4 +82,3 @@ body{
     font-family: Arial, sans-serif;
     font-size: 15px;
 }
-

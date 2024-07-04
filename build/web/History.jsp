@@ -1,75 +1,66 @@
+<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Historia del Lugar - Simposio de Informática Empresarial</title>
-        <!-- Enlace a Bootstrap CSS -->
+        <title>Simposio UCR 2024 - Historia</title>
+        <link rel="stylesheet" href="CSSClasses/History.css">
+        <link href="CSSClasses/nav.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="../CSSClasses/History.css">
-        <link href="CSSClasses/newcss.css" rel="stylesheet" >
-        <link href="CSSClasses/nav.css" rel="stylesheet" >
     </head>
     <body>
-        <!-- Barra de Navegación  -->
-
+        <!-- Barra de NavegaciÃ³n  -->
         <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
             <div class="container-fluid">
-                <div class="d-flex w-100 justify-content-between">
-                    <!-- Logos de la UCR -->
-                    <a class="navbar-brand">
-                        <img src="pictures/logos.png" alt="logos UCR" width="303.7" height="60.1"/>
-                    </a>
-
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- Contenido de la barra de navegación -->
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Accesibilidad
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <h8> Contraste de color :</h8>
-                                    <a class="dropdown-item" href="#">Normal</a>
-                                    <a class="dropdown-item" href="#">Escala de Azules</a>
-                                    <a class="dropdown-item" href="#">Alto contraste</a>
-                                    <a class="dropdown-item" href="#">Fondo claro</a>
-
-                                    <h8> Tamaño de Fuente:</h8>
-                                    <a class="dropdown-item" href="#">Pequeña</a>
-                                    <a class="dropdown-item" href="#">Mediana</a>
-                                    <a class="dropdown-item" href="#">Grande</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-text" href="Home.jsp">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-text" href="Calender.jsp">Calendario</a>
-                            </li>
-                            <li class="nav-item">
-                                    <a class="nav-link nav-text" href="Map.jsp">Mapa</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-text" href="Downloads.jsp">Descargas</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link nav-text" href="Questions.jsp">Preguntas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-text" href="Contacts.jsp">Contactos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Login.jsp">
-                                    <img src="pictures/logg.png" alt="Botón de sesión" width="40" height="40">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <a class="navbar-brand">
+                    <img src="pictures/logos.png" alt="logos UCR" width="303.7" height="60.1"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Accesibilidad
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <h8> Contraste de color :</h8>
+                                <a class="dropdown-item" href="#">Normal</a>
+                                <a class="dropdown-item" href="#">Escala de Azules</a>
+                                <a class="dropdown-item" href="#">Alto contraste</a>
+                                <a class="dropdown-item" href="#">Fondo claro</a>
+                                <h8> TamaÃ±o de Fuente:</h8>
+                                <a class="dropdown-item" href="#">PequeÃ±a</a>
+                                <a class="dropdown-item" href="#">Mediana</a>
+                                <a class="dropdown-item" href="#">Grande</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="Home.jsp">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="Calender.jsp">Calendario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="Map.jsp">Mapa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="Downloads.jsp">Descargas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="Questions.jsp">Preguntas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="Contacts.jsp">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Login.jsp">
+                                <img src="pictures/logg.png" alt="BotÃ³n de sesiÃ³n" width="40" height="40">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -80,9 +71,9 @@
                 </div>
                 <div class="col-md-6 d-flex align-items-center bg-white">
                     <div class="p-4 text-container">
-                        <h2>El cantón de Golfito: Sus inicios</h2>
-                        <p>La región fue descubierta en 1519, por don Juan de Castañeda y don Hernán Ponce de León, que en su travesía marítima, pasaron por punta Burica y llegaron al golfo de Osa (hoy golfo Dulce) y continuaron su recorrido por nuestro litoral Pacífico hacia el noroeste.</p>
-                        <p>La primera ermita se construyó en 1874, en Puerto Jiménez, dedicada a Santo Domingo y en 1951 se edificó la iglesia de Golfito con advocación a San José, además la primera escuela se construyó en 1912, en Puerto Jiménez, y se denominó Escuela de Golfo Dulce.</p>
+                        <h2>El cantÃ³n de Golfito: Sus inicios</h2>
+                        <p>La regiÃ³n fue descubierta en 1519, por don Juan de CastaÃ±eda y don HernÃ¡n Ponce de LeÃ³n, que en su travesÃ­a marÃ­tima, pasaron por punta Burica y llegaron al golfo de Osa (hoy golfo Dulce) y continuaron su recorrido por nuestro litoral PacÃ­fico hacia el noroeste.</p>
+                        <p>La primera ermita se construyÃ³ en 1874, en Puerto JimÃ©nez, dedicada a Santo Domingo y en 1951 se edificÃ³ la iglesia de Golfito con advocaciÃ³n a San JosÃ©, ademÃ¡s la primera escuela se construyÃ³ en 1912, en Puerto JimÃ©nez, y se denominÃ³ Escuela de Golfo Dulce.</p>
                     </div>
                 </div>
             </div>
@@ -92,9 +83,9 @@
                 </div>
                 <div class="col-md-6 d-flex align-items-center bg-white order-md-1">
                     <div class="p-4 text-container">
-                        <h2>Prosperidad en el cantón</h2>
-                        <p>El nombre del cantón se debe a la forma que presenta el litoral, de un golfo pequeño, dentro del golfo Dulce; la cual dio origen a la denominación del sitio en donde se ubica la actual ciudad de Golfito.</p>
-                        <p>A partir de 1936, Golfito experimentó un gran cambio cuando una empresa bananera estadounidense, llamada United Fruit Company, se estableció en la zona. La compañía construyó un puerto y una serie de infraestructuras para facilitar la exportación de bananas desde Golfito a Estados Unidos.</p>
+                        <h2>Prosperidad en el cantÃ³n</h2>
+                        <p>El nombre del cantÃ³n se debe a la forma que presenta el litoral, de un golfo pequeÃ±o, dentro del golfo Dulce; la cual dio origen a la denominaciÃ³n del sitio en donde se ubica la actual ciudad de Golfito.</p>
+                        <p>A partir de 1936, Golfito experimentÃ³ un gran cambio cuando una empresa bananera estadounidense, llamada United Fruit Company, se estableciÃ³ en la zona. La compaÃ±Ã­a construyÃ³ un puerto y una serie de infraestructuras para facilitar la exportaciÃ³n de bananas desde Golfito a Estados Unidos.</p>
                     </div>
                 </div>
             </div>
@@ -105,8 +96,8 @@
                 <div class="col-md-6 d-flex align-items-center bg-white">
                     <div class="p-4 text-container">
                         <h2>Patrimonios de la Zona</h2>
-                        <p>Dichas infraestructuras son de gran valor histórico, por el papel desempeñado dentro del desarrollo de la producción bananera en el Pacífico Sur. Dentro de los edificios de la Gerencia Administrativa de la Compañía y del Club Centro, se cumplieron con funciones muy importantes cómo dictar políticas administrativas y realizar actividades socioculturales.</p>
-                        <p>Estas edificaciones de gran relevancia y complejidad por su distribución interna en la región bananera de Golfito fueron declaradas de interés Histórico Arquitectónico bajo matrícula de Folio Real número 56492-000 de la Provincia de Puntarenas.</p>
+                        <p>Dichas infraestructuras son de gran valor histÃ³rico, por el papel desempeÃ±ado dentro del desarrollo de la producciÃ³n bananera en el PacÃ­fico Sur. Dentro de los edificios de la Gerencia Administrativa de la CompaÃ±Ã­a y del Club Centro, se cumplieron con funciones muy importantes cÃ³mo dictar polÃ­ticas administrativas y realizar actividades socioculturales.</p>
+                        <p>Estas edificaciones de gran relevancia y complejidad por su distribuciÃ³n interna en la regiÃ³n bananera de Golfito fueron declaradas de interÃ©s HistÃ³rico ArquitectÃ³nico bajo matrÃ­cula de Folio Real nÃºmero 56492-000 de la Provincia de Puntarenas.</p>
                     </div>
                 </div>
             </div>
@@ -118,21 +109,22 @@
                 <div class="col-md-6 d-flex align-items-center bg-white order-md-1">
                     <div class="p-4 text-container">
                         <h2>Golfito: Comercio y Desarrollo</h2>
-                        <p>Después de que la United Fruit Company dejó de operar en la zona en los años 80, el gobierno costarricense decidió convertir parte de las instalaciones en una zona libre de impuestos. Esta iniciativa atrajo a numerosos turistas nacionales que buscan productos a precios reducidos.</p>
-                        <p>Hoy en día, la zona libre de Golfito es un destino popular para las compras, y la ciudad se ha convertido en un importante centro comercial y turístico en el sur de Costa Rica.</p>
+                        <p>DespuÃ©s de que la United Fruit Company dejÃ³ de operar en la zona en los aÃ±os 80, el gobierno costarricense decidiÃ³ convertir parte de las instalaciones en una zona libre de impuestos. Esta iniciativa atrajo a numerosos turistas nacionales que buscan productos a precios reducidos.</p>
+                        <p>Hoy en dÃ­a, la zona libre de Golfito es un destino popular para las compras, y la ciudad se ha convertido en un importante centro comercial y turÃ­stico en el sur de Costa Rica.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Enlace a Bootstrap JS -->
+        <!-- Scripts de Bootstrap y dependencias -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <footer class="footer">
+            <div class="container text-center">
+                <p>&copy; 2024 UCR SIMPOSIO INFORMATICA EMPRESARIAL. </p>
+            </div>
+        </footer>
     </body>
-     <footer class="footer">
-        <div class="container text-center">
-            <p>       &copy; 2024 UCR SIMPOSIO INFORMATICA EMPRESARIAL. </p>
-        </div>
-    </footer>
 </html>
