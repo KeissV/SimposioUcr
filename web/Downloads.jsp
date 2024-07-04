@@ -6,265 +6,206 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="java.io.File" %>
-<%
-    if (session == null || session.getAttribute("usuarioLogueado") == null) {
-        response.sendRedirect("Login.jsp?message=Debe%20iniciar%20sesion%20para%20continuar.");
-        return;
-    }
-%>
-
-
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
         <title>Simposio UCR 2024 - Downloads</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="CSSClasses/Downloads.css">
-        <link href="CSSClasses/nav.css" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="CSSClasses/nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                font-family: Arial, sans-serif;
+            }
+
+            .content {
+                flex: 1;
+                padding-top: 80px;
+                padding: 20px;
+                background-color: #f8f9fa;
+            }
+
+            .header {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .header h1 {
+                font-size: 2.5em;
+                margin: 0;
+                color: #005da4;
+            }
+
             .file-container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-top: 100px; /* Ajustar el margen superior */
             }
 
             .file-item {
-                background-color: #f9f9f9;
+                background-color: #ffffff;
                 border: 1px solid #ddd;
-                border-radius: 5px;
-                margin-bottom: 10px;
-                padding: 10px;
-                width: 80%;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                margin-bottom: 15px;
+                padding: 15px;
+                width: 100%;
+                max-width: 800px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                transition: transform 0.2s;
+            }
+
+            .file-item:hover {
+                transform: translateY(-5px);
             }
 
             .file-item p {
                 margin: 0;
-                font-family: Arial, sans-serif;
-                font-size: 14px;
+                font-size: 16px;
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+            }
+
+            .file-item p i {
+                margin-right: 10px;
+                color: #005da4;
             }
 
             .file-item button {
-                background-color: rgba(0, 93, 164, 0.8);
+                background-color: #005da4;
                 color: white;
                 border: none;
-                padding: 5px 10px;
-                border-radius: 3px;
+                padding: 10px 15px;
+                border-radius: 5px;
                 cursor: pointer;
                 transition: background-color 0.3s ease;
             }
 
             .file-item button:hover {
-                background-color: rgba(0, 93, 164, 0.6);
+                background-color: #004080;
             }
 
-            .footer {
-                background-color: rgba(0, 93, 164, 0.8);
-                color: white;
-                position: relative;
-                width: 100%;
-                text-align: center;
-                padding: 20px 0;
-                font-family: Arial, sans-serif;
-                font-size: 15px;
-            }
+            @media (max-width: 768px) {
+                .file-item {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
 
-            .footer p {
-                margin: 0;
-                color: white;
-            }
+                .file-item p {
+                    margin-bottom: 10px;
+                }
 
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                padding-top: 80px; /* Añadir padding-top para que el contenido se muestre debajo del header */
-            }
-
-            .navbar-custom {
-                background-color: rgba(0, 93, 164, 0.8);
-                position: fixed; /* Cambiar a fixed para que el header se quede en la parte superior */
-                top: 0;
-                width: 100%;
-                z-index: 1;
-            }
-
-            .navbar-nav .nav-link {
-                font-family: Arial, sans-serif;
-                font-size: 15px;
-                color: white !important;
-            }
-
-            .navbar-nav .nav-link.nav-text {
-                font-size: 17px;
-                color: white !important;
-                margin-top: auto;
-                margin-bottom: auto;
-                padding-top: 16px;
-                padding-bottom: 10px;
-            }
-
-            .dropdown-menu {
-                font-family: Arial, sans-serif;
-                font-size: 14px;
-                background-color: rgba(0, 93, 164, 0.8);
-                color: white;
-                border: none;
-                padding: 0;
-                box-shadow: none;
-                min-width: 200px;
-            }
-
-            .dropdown-item {
-                color: white;
-                padding: 10px 20px;
-                transition: background-color 0.3s ease, color 0.3s ease;
-            }
-
-            .dropdown-item:hover {
-                background-color: rgba(0, 93, 164, 0.6);
-            }
-
-            .dropdown-section-title {
-                font-size: 15px;
-                color: white;
-                margin-top: 10px;
-                margin-bottom: 5px;
-                padding-left: 20px;
-                display: block;
-            }
-
-            .dropdown-section-title + .dropdown-item {
-                margin-top: 5px;
-            }
-
-            .text-Ta {
-                font-size: 16px;
-            }
-
-            .t {
-                font-family: Arial, sans-serif;
-                font-size: 15px;
-                width: 85%;
-                margin: auto;
+                .file-item button {
+                    width: 100%;
+                }
             }
         </style>
     </head>
     <body>
-        <!-- Barra de Navegación  -->
+        <!-- Barra de Navegación -->
         <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
             <div class="container-fluid">
-                <div class="d-flex w-100 justify-content-between">
-                    <!-- Logos de la UCR -->
-                    <a class="navbar-brand">
-                        <img src="pictures/logos.png" alt="logos UCR" width="303.7" height="60.1"/>
-                    </a>
-
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- Contenido de la barra de navegación -->
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Accesibilidad
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <h8> Contraste de color :</h8>
-                                    <a class="dropdown-item" href="#">Normal</a>
-                                    <a class="dropdown-item" href="#">Escala de Azules</a>
-                                    <a class="dropdown-item" href="#">Alto contraste</a>
-                                    <a class="dropdown-item" href="#">Fondo claro</a>
-
-                                    <h8> Tamaño de Fuente:</h8>
-                                    <a class="dropdown-item" href="#">Pequeña</a>
-                                    <a class="dropdown-item" href="#">Mediana</a>
-                                    <a class="dropdown-item" href="#">Grande</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-text" href="Home.jsp">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-text" href="Calender.jsp">Calendario</a>
-                            </li>
-                            <li class="nav-item">
-                                    <a class="nav-link nav-text" href="Map.jsp">Mapa</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-text" href="History.jsp">Historia</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-text" href="Questions.jsp">Preguntas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-text" href="Contacts.jsp">Contactos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Login.jsp">
-                                    <img src="pictures/logg.png" alt="Botón de sesión" width="40" height="40">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <a class="navbar-brand">
+                    <img src="pictures/logos.png" alt="logos UCR" width="303.7" height="60.1"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Accesibilidad
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <h8>Contraste de color:</h8>
+                                <a class="dropdown-item" href="#">Normal</a>
+                                <a class="dropdown-item" href="#">Escala de Azules</a>
+                                <a class="dropdown-item" href="#">Alto contraste</a>
+                                <a class="dropdown-item" href="#">Fondo claro</a>
+                                <h8>Tamaño de Fuente:</h8>
+                                <a class="dropdown-item" href="#">Pequeña</a>
+                                <a class="dropdown-item" href="#">Mediana</a>
+                                <a class="dropdown-item" href="#">Grande</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="Home.jsp">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="Calender.jsp">Calendario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="History.jsp">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="Questions.jsp">Preguntas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="Contacts.jsp">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Login.jsp">
+                                <img src="pictures/logg.png" alt="Botón de sesión" width="40" height="40">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- Contenedor de archivos -->
-        <div class="file-container">
-            <%
-                // Ruta relativa de la carpeta Downloads dentro del directorio del proyecto web
-                String downloadsPath = application.getRealPath("/Downloads");
-                File folder = new File(downloadsPath);
+        <!-- Contenido Principal -->
+        <div class="content container">
+            <br/> <br/> <br/> <br/>
+            <div class="file-container">
+                <%
+                    String downloadsPath = application.getRealPath("/Downloads");
+                    File folder = new File(downloadsPath);
 
-                // Verifica si la carpeta existe y es un directorio
-                if (folder.exists() && folder.isDirectory()) {
-                    // Obtiene la lista de archivos en la carpeta Downloads
-                    File[] listOfFiles = folder.listFiles();
-
-                    // Itera sobre la lista de archivos
-                    if (listOfFiles != null) {
-                        for (File file : listOfFiles) {
-                            if (file.isFile()) {
-            %>
-                                <div class="file-item">
-                                    <p><%= file.getName() %></p>
-                                    <a href="Downloads/<%= file.getName() %>" download>
-                                        <button>Descargar</button>
-                                    </a>
-                                </div>
-            <%
+                    if (folder.exists() && folder.isDirectory()) {
+                        File[] listOfFiles = folder.listFiles();
+                        if (listOfFiles != null) {
+                            for (File file : listOfFiles) {
+                                if (file.isFile()) {
+                %>
+                <div class="file-item">
+                    <p><i class="fas fa-file-alt"></i><%= file.getName()%></p>
+                    <a href="Downloads/<%= file.getName()%>" download>
+                        <button>Descargar</button>
+                    </a>
+                </div>
+                <%
+                                }
                             }
+                        } else {
+                            out.println("<p>No se encontraron archivos en la carpeta Downloads.</p>");
                         }
                     } else {
-                        out.println("<p>No se encontraron archivos en la carpeta Downloads.</p>");
+                        out.println("<p>La carpeta Downloads no existe.</p>");
                     }
-                } else {
-                    out.println("<p>La carpeta Downloads no existe.</p>");
-                }
-            %>
+                %>
+            </div>
         </div>
+
+        <!-- Pie de Página -->
+        <footer class="footer">
+            <div class="container text-center">
+                <p>&copy; 2024 UCR SIMPOSIO INFORMATICA EMPRESARIAL.</p>
+            </div>
+        </footer>
 
         <!-- Scripts de Bootstrap y dependencias -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-        <footer class="footer">
-            <div class="container text-center">
-                <p>&copy; 2024 UCR SIMPOSIO INFORMATICA EMPRESARIAL. </p>
-            </div>
-        </footer>
     </body>
 </html>
 
