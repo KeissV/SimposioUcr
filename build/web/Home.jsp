@@ -176,7 +176,7 @@
                 <div class="card-event">
                     <div class="card-event-inner">
                         <div class="card-event-front">
-                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 1">
+                            <img src="pictures/giraCeles.png" class="card-img-top" alt="Imagen del Evento 1">
                             <div class="card-body">
                                 <h5 class="card-title">Título del evento 1</h5>
                             </div>
@@ -191,7 +191,7 @@
                 <div class="card-event">
                     <div class="card-event-inner">
                         <div class="card-event-front">
-                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 2">
+                            <img src="pictures/giraCeles.png" class="card-img-top" alt="Imagen del Evento 2">
                             <div class="card-body">
                                 <h5 class="card-title">Título del evento 2</h5>
                             </div>
@@ -221,7 +221,7 @@
                 <div class="card-event">
                     <div class="card-event-inner">
                         <div class="card-event-front">
-                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 4">
+                            <img src="pictures/giraCeles.png" class="card-img-top" alt="Imagen del Evento 4">
                             <div class="card-body">
                                 <h5 class="card-title">Título del evento 4</h5>
                             </div>
@@ -236,7 +236,7 @@
                 <div class="card-event">
                     <div class="card-event-inner">
                         <div class="card-event-front">
-                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 5">
+                            <img src="pictures/giraCeles.png" class="card-img-top" alt="Imagen del Evento 5">
                             <div class="card-body">
                                 <h5 class="card-title">Título del evento 5</h5>
                             </div>
@@ -251,7 +251,7 @@
                 <div class="card-event">
                     <div class="card-event-inner">
                         <div class="card-event-front">
-                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 6">
+                            <img src="pictures/giraCeles.png" class="card-img-top" alt="Imagen del Evento 6">
                             <div class="card-body">
                                 <h5 class="card-title">Título del evento 6</h5>
                             </div>
@@ -266,7 +266,7 @@
                 <div class="card-event">
                     <div class="card-event-inner">
                         <div class="card-event-front">
-                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 7">
+                            <img src="pictures/giraCeles.png" class="card-img-top" alt="Imagen del Evento 7">
                             <div class="card-body">
                                 <h5 class="card-title">Título del evento 7</h5>
                             </div>
@@ -281,7 +281,7 @@
                 <div class="card-event">
                     <div class="card-event-inner">
                         <div class="card-event-front">
-                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 8">
+                            <img src="pictures/giraCeles.png" class="card-img-top" alt="Imagen del Evento 8">
                             <div class="card-body">
                                 <h5 class="card-title">Título del evento 8</h5>
                             </div>
@@ -296,7 +296,7 @@
                 <div class="card-event">
                     <div class="card-event-inner">
                         <div class="card-event-front">
-                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 9">
+                            <img src="pictures/giraCeles.png" class="card-img-top" alt="Imagen del Evento 9">
                             <div class="card-body">
                                 <h5 class="card-title">Título del evento 9</h5>
                             </div>
@@ -311,7 +311,7 @@
                 <div class="card-event">
                     <div class="card-event-inner">
                         <div class="card-event-front">
-                            <img src="img/evento1.jpg" class="card-img-top" alt="Imagen del Evento 10">
+                            <img src="pictures/giraCeles.png" class="card-img-top" alt="Imagen del Evento 10">
                             <div class="card-body">
                                 <h5 class="card-title">Título del evento 10</h5>
                             </div>
