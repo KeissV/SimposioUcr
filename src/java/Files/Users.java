@@ -11,12 +11,9 @@ import java.nio.file.Paths;
 
 public class Users {
 
-<<<<<<< Updated upstream
-    private static final String FILE_PATH_2 = "C:\\Users\\franc\\OneDrive\\Documentos\\GitHub\\SimposioUcr\\register.txt";
-=======
+
 
     private static final String FILE_PATH_2 = "C:\\Users\\Marcelle F\\Documents\\NetBeansProjects\\SimposioUcr\\register.txt";
->>>>>>> Stashed changes
 
 
     public boolean saveusers(String name, String username, String gmail, String idNumber, String phoneNumber, String institution, String interestArea, String role, String participantType, String password) {
