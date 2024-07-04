@@ -152,7 +152,7 @@ circle, ellipse{
     text-align: justify;
     word-spacing: 0.15em;
     line-height: 1.6;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .image-container {
@@ -176,7 +176,7 @@ circle, ellipse{
 
 .highlight-section h2 {
     margin: 0 0 20px 0;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #2c3e50;
     border-bottom: 2px solid #2c3e50;
     padding-bottom: 10px;
@@ -188,13 +188,13 @@ circle, ellipse{
 
 .highlight-item h3 {
     margin: 0 0 10px 0;
-    font-size: 1.6em;
+    font-size: 1.2em;
     color: #2980b9;
 }
 
 .highlight-item p {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.0em;
     color: #7f8c8d;
 }
 
@@ -202,8 +202,8 @@ circle, ellipse{
 
     border: 0;
     height: 2px;
-    background: #b02792;
+    background: #5ADBDD;
     margin: 20px auto;
     border-radius: 10px;
-    width: 80%; /* Ajusta el ancho para que no toque los extremos */
+    width: 80%; 
 }
