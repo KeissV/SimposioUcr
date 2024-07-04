@@ -5,182 +5,161 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import="List.Presenter" %>
+<%@ page import="List.PresenterList" %>
+<%@ page import="List.Node" %>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <title>Simposio UCR 2024</title>
-        <!-- Enlace a Bootstrap CSS -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-        <link href="CSSClasses/nav.css" rel="stylesheet">
-        <link rel="stylesheet" href="CSSClasses/Home.css">
-        <link rel="stylesheet" href="CSSClasses/events.css">
-    </head>
-    <body>
-        <!-- Barra de Navegación  -->
-        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-            <div class="container-fluid">
-                <a class="navbar-brand">
-                    <img src="pictures/logos.png" alt="logos UCR" width="303.7" height="60.1"/>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Accesibilidad
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <h8> Contraste de color :</h8>
-                                <a class="dropdown-item" href="#">Normal</a>
-                                <a class="dropdown-item" href="#">Escala de Azules</a>
-                                <a class="dropdown-item" href="#">Alto contraste</a>
-                                <a class="dropdown-item" href="#">Fondo claro</a>
-                                <h8> Tamaño de Fuente:</h8>
-                                <a class="dropdown-item" href="#">Pequeña</a>
-                                <a class="dropdown-item" href="#">Mediana</a>
-                                <a class="dropdown-item" href="#">Grande</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-text" href="Calender.jsp">Calendario</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-text" href="Map.jsp">Mapa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-text" href="Downloads.jsp">Descargas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-text" href="History.jsp">Historia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-text" href="Questions.jsp">Preguntas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-text" href="Contacts.jsp">Contactos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Login.jsp">
-                                <img src="pictures/logg.png" alt="Botón de sesión" width="40" height="40">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simposio UCR 2024</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="CSSClasses/nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSSClasses/Home.css">
+    <link rel="stylesheet" href="CSSClasses/events.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="pictures/logos.png" alt="logos UCR" width="303.7" height="60.1"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Accesibilidad
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <h8> Contraste de color :</h8>
+                            <a class="dropdown-item" href="#">Normal</a>
+                            <a class="dropdown-item" href="#">Escala de Azules</a>
+                            <a class="dropdown-item" href="#">Alto contraste</a>
+                            <a class="dropdown-item" href="#">Fondo claro</a>
+                            <h8> Tamaño de Fuente:</h8>
+                            <a class="dropdown-item" href="#">Pequeña</a>
+                            <a class="dropdown-item" href="#">Mediana</a>
+                            <a class="dropdown-item" href="#">Grande</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="Calender.jsp">Calendario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="Map.jsp">Mapa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="Downloads.jsp">Descargas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="History.jsp">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="Questions.jsp">Preguntas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="Contacts.jsp">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.jsp">
+                            <img src="pictures/logg.png" alt="Botón de sesión" width="40" height="40">
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        
-        <!-- Contenido principal -->
-        <div class="p">
-            <div class="pict">
-                <!-- Imagen local -->
-                <img src="pictures/bn.png" class="fullscreen-image img-fluid" alt="Imagen UCR">
-            </div>
-            <div class="separator-bar"></div>
-            <div class="t">
-                <div class="text-left">
-                    <h3 class="text-Ti">Simposio Informatica Empresarial 2024</h3>
-                    <p class="text-Ta"> Lorem ipsum dolor sit amet consectetur adipiscing elit eu erat etiam sodales, litora vel iaculis netus donec non aliquam cras laoreet nulla. 
-                        Non eget cum auctor dictum elementum per in, est pharetra fringilla iaculis purus cras mus lacinia, blandit gravida pretium quis enim taciti.
-                        Rhoncus senectus commodo lobortis tempus at scelerisque, turpis vel odio fermentum fusce cursus habitasse vestibulum condimentum.
-                        Potenti tincidunt quisque porta facilisis lobortis rhoncus ultricies blandit, nostra porttitor duis conubia habitasse suspendisse auctor, quam vivamus phasellus torquent pretium non facilisi.</p>
-                </div>
-                <br/>
-                <br/>
-            </div>
+        </div>
+    </nav>
 
-            <h5 class="text-center title-section">Presentadores</h5>
+    <!-- Contenido principal -->
+    <div class="p">
+        <div class="pict">
+            <!-- Imagen local -->
+            <img src="pictures/bn.png" class="fullscreen-image img-fluid" alt="Imagen UCR">
+        </div>
+        <div class="separator-bar"></div>
+        <div class="t">
+            <div class="text-left">
+                <h3 class="text-Ti">Simposio Informatica Empresarial 2024</h3>
+                <p class="text-Ta"> Lorem ipsum dolor sit amet consectetur adipiscing elit eu erat etiam sodales, litora vel iaculis netus donec non aliquam cras laoreet nulla. 
+                    Non eget cum auctor dictum elementum per in, est pharetra fringilla iaculis purus cras mus lacinia, blandit gravida pretium quis enim taciti.
+                    Rhoncus senectus commodo lobortis tempus at scelerisque, turpis vel odio fermentum fusce cursus habitasse vestibulum condimentum.
+                    Potenti tincidunt quisque porta facilisis lobortis rhoncus ultricies blandit, nostra porttitor duis conubia habitasse suspendisse auctor, quam vivamus phasellus torquent pretium non facilisi.</p>
+            </div>
+            <br/>
+            <br/>
+        </div>
 
-            <div id="presentersCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="carousel-title">Bloque 1</div>
-                        <div class="d-flex justify-content-center flex-wrap presenters-container">
-                            <!-- Primer bloque de presentadores -->
-                            <div class="card mx-3 my-2" style="width: 15rem;">
-                                <img src="pictures/userrr.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título 1</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                            </div>
-                            <div class="card mx-3 my-2" style="width: 15rem;">
-                                <img src="pictures/userrr.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título 2</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                            </div>
-                            <div class="card mx-3 my-2" style="width: 15rem;">
-                                <img src="pictures/userrr.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título 3</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                            </div>
-                            <div class="card mx-3 my-2" style="width: 15rem;">
-                                <img src="pictures/userrr.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título 4</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
+        <h5 class="text-center title-section">Presentadores</h5>
+
+        <%
+            PresenterList presenterList = new PresenterList();
+            presenterList.addPresenter(new Presenter("Título 1", "Descripción 1", "pictures/userrr.png"));
+            presenterList.addPresenter(new Presenter("Título 2", "Descripción 2", "pictures/userrr.png"));
+            presenterList.addPresenter(new Presenter("Título 3", "Descripción 3", "pictures/userrr.png"));
+            presenterList.addPresenter(new Presenter("Título 4", "Descripción 4", "pictures/userrr.png"));
+            presenterList.addPresenter(new Presenter("Título 5", "Descripción 5", "pictures/userrr.png"));
+            presenterList.addPresenter(new Presenter("Título 6", "Descripción 6", "pictures/userrr.png"));
+            presenterList.addPresenter(new Presenter("Título 7", "Descripción 7", "pictures/userrr.png"));
+            presenterList.addPresenter(new Presenter("Título 8", "Descripción 8", "pictures/userrr.png"));
+
+            Node currentNode = presenterList.getHead();
+            int blockSize = 4;
+            int index = 0;
+        %>
+
+        <div id="presentersCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <%
+                    while (currentNode != null) {
+                        if (index % blockSize == 0) {
+                %>
+                <div class="carousel-item <%= (index == 0) ? "active" : "" %>">
+                    <div class="carousel-title">Bloque <%= (index / blockSize) + 1 %></div>
+                    <div class="d-flex justify-content-center flex-wrap presenters-container">
+                        <%
+                            }
+                            Presenter presenter = currentNode.getData();
+                        %>
+                        <div class="card mx-3 my-2" style="width: 15rem;">
+                            <img src="<%= presenter.getImagePath() %>" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><%= presenter.getTitle() %></h5>
+                                <p class="card-text"><%= presenter.getDescription() %></p>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-title">Bloque 2</div>
-                        <div class="d-flex justify-content-center flex-wrap presenters-container">
-                            <!-- Segundo bloque de presentadores -->
-                            <div class="card mx-3 my-2" style="width: 15rem;">
-                                <img src="pictures/userrr.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título 5</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                            </div>
-                            <div class="card mx-3 my-2" style="width: 15rem;">
-                                <img src="pictures/userrr.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título 6</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                            </div>
-                            <div class="card mx-3 my-2" style="width: 15rem;">
-                                <img src="pictures/userrr.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título 7</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                            </div>
-                            <div class="card mx-3 my-2" style="width: 15rem;">
-                                <img src="pictures/userrr.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título 8</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                            </div>
-                        </div>
+                        <%
+                            currentNode = currentNode.getNext();
+                            index++;
+                            if (index % blockSize == 0 || currentNode == null) {
+                        %>
                     </div>
                 </div>
-                <!-- Controles del carrusel -->
-                <a class="carousel-control-prev" href="#presentersCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#presentersCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <%
+                            }
+                    }
+                %>
             </div>
-            <br/>
-            <br/>
-            <br/>
+            <!-- Controles del carrusel -->
+            <a class="carousel-control-prev" href="#presentersCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#presentersCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <br/>
+        <br/>
+        <br/>
 
-            <h5 class="text-center title-section">Eventos</h5>
+        <h5 class="text-center title-section">Eventos</h5>
             <div class="container events-grid">
                 <div class="card-event">
                     <div class="card-event-inner">
@@ -333,17 +312,17 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Enlace a Bootstrap JS y dependencias -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
-    <br>
-    <br>
-    <footer class="footer">
-        <div class="container text-center">
-            <p>&copy; 2024 UCR SIMPOSIO INFORMATICA EMPRESARIAL. </p>
-        </div>
-    </footer>
+    </div>
+    <!-- Enlace a Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<br>
+<br>
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2024 UCR SIMPOSIO INFORMATICA EMPRESARIAL. </p>
+    </div>
+</footer>
 </html>
